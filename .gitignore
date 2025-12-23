@@ -4,3 +4,7 @@
 .venv/
 __pycache__/
 *.pyc
+
+map_designer_gameplay_*.mp4
+logs/
+scenarios/mario/map*.txt

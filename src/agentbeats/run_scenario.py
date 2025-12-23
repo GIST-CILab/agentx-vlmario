@@ -1,6 +1,11 @@
 import argparse
 import asyncio
-import os, sys, time, subprocess, shlex, signal
+import os
+import sys
+import time
+import subprocess
+import shlex
+import signal
 from pathlib import Path
 import tomllib
 import httpx
@@ -10,6 +15,7 @@ from a2a.client import A2ACardResolver
 
 
 load_dotenv(override=True)
+IS_WINDOWS = os.name == "nt"
 
 
 async def wait_for_agents(cfg: dict, timeout: int = 30) -> bool:
@@ -95,6 +101,22 @@ def parse_toml(scenario_path: str) -> dict:
     }
 
 
+def _terminate_process(proc: subprocess.Popen, *, force: bool = False) -> None:
+    if proc.poll() is not None:
+        return
+    try:
+        if IS_WINDOWS:
+            if force:
+                proc.kill()
+            else:
+                proc.terminate()
+        else:
+            sig = signal.SIGKILL if force else signal.SIGTERM
+            os.killpg(proc.pid, sig)
+    except ProcessLookupError:
+        pass
+
+
 def main():
     parser = argparse.ArgumentParser(description="Run agent scenario")
     parser.add_argument("scenario", help="Path to scenario TOML file")
@@ -166,18 +188,10 @@ def main():
     finally:
         print("\nShutting down...")
         for p in procs:
-            if p.poll() is None:
-                try:
-                    os.killpg(p.pid, signal.SIGTERM)
-                except ProcessLookupError:
-                    pass
+            _terminate_process(p, force=False)
         time.sleep(1)
         for p in procs:
-            if p.poll() is None:
-                try:
-                    os.killpg(p.pid, signal.SIGKILL)
-                except ProcessLookupError:
-                    pass
+            _terminate_process(p, force=True)
 
 
 if __name__ == "__main__":

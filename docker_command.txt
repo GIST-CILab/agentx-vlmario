@@ -9,5 +9,5 @@ docker run -it --rm -v "%cd%/src:/app/src" -v "%cd%/scenarios:/app/scenarios" -v
 
 
 # Run 
-python src/agentbeats/run_scenario.py scenarios/debate/scenario.toml
+python src/agentbeats/run_scenario.py scenarios/mario/scenario.toml
 --show-logs: 로그보는 옵션

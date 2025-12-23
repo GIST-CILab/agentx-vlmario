@@ -1,4 +1,5 @@
 import asyncio
+import json
 import logging
 from uuid import uuid4
 
@@ -36,7 +37,11 @@ def merge_parts(parts: list[Part]) -> str:
         if isinstance(part.root, TextPart):
             chunks.append(part.root.text)
         elif isinstance(part.root, DataPart):
-            chunks.append(part.root.data)
+            data = part.root.data
+            if isinstance(data, str):
+                chunks.append(data)
+            else:
+                chunks.append(json.dumps(data, ensure_ascii=False))
     return "\n".join(chunks)
 
 async def send_message(message: str, base_url: str, context_id: str | None = None, streaming=False, consumer: Consumer | None = None):
