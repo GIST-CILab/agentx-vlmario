@@ -184,7 +184,7 @@ class MarioJudge(GreenAgent):
             # 4. LLM Evaluation
             score_data = self._evaluate_map(ascii_map, video_path)
             
-            # 5. Collect Data
+            # 5. Collect Data (Matching the schema in the image)
             video_base64 = None
             if video_path and Path(video_path).exists():
                 try:
@@ -192,13 +192,28 @@ class MarioJudge(GreenAgent):
                 except Exception as e:
                     logger.error(f"Failed to encode video base64: {e}")
 
+            # Extract sub-scores for task_rewards
+            llm_result = score_data.get("result", {})
+            task_rewards = {
+                k: v.get("score") if isinstance(v, dict) else v 
+                for k, v in llm_result.items()
+            }
+            
+            current_score = float(score_data.get("score", 0))
+            max_score = 20.0  # Mario evaluation is out of 20
+
             result_entry = {
+                "domain": "mario",
+                "score": current_score,
+                "max_score": max_score,
+                "pass_rate": (current_score / max_score) * 100,
+                "task_rewards": task_rewards,
+                "time_used": 0.0,  # Placeholder for execution time
                 "role": role,
                 "map_index": map_idx,
                 "map": ascii_map,
-                "video": video_path,
                 "video_base64": video_base64,
-                **score_data  # Unpack exact scores from LLM
+                "explain": score_data.get("explain", "")
             }
             results.append(result_entry)
 
