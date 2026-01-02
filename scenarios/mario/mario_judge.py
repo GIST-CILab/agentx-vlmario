@@ -154,196 +154,116 @@ class MarioJudge(GreenAgent):
         reference_video_path = req.config.get(
             "reference_video_path", self.REFERENCE_VIDEO_PATH)
         reference_score = float(req.config.get("reference_score", self.REFERENCE_SCORE))
-
         try:
             # Step 0: Initialize cached prompt with reference video
-            await self._update_status_with_log(
-                updater, "Initializing cached prompt...")
+            await self._update_status_with_log(updater, "Initializing cached prompt...")
             self._initialize_cached_prompt(reference_video_path, reference_score)
-            await self._update_status_with_log(
-                updater, "Cached prompt initialized.")
+            
+            # To store ALL results for the final leaderboard artifact
+            all_leaderboard_results: list[dict[str, Any]] = []
 
-            # Process each participant, requesting and evaluating one map at a time
+            # Process each participant
             for idx, (role, endpoint) in enumerate(req.participants.items(), start=1):
                 map_evaluations: list[dict[str, Any]] = []
 
-                # Request and evaluate maps one by one
                 for map_idx in range(1, num_maps + 1):
-                    # Only send full prompt for the first map
-                    # For subsequent maps, feedback already includes "generate next map" message
                     if map_idx == 1:
-                        await self._update_status_with_log(
-                            updater,
-                            f"Requesting map {map_idx}/{num_maps} from {role} ({idx}/{len(req.participants)})...")
-
-                        # Build prompt for first map with ASCII guide
+                        await self._update_status_with_log(updater, f"Requesting map {map_idx}/{num_maps} from {role}...")
                         prompt = self._build_map_request_prompt(map_idx, num_maps)
-
-                        # Log A2A request
-                        self._write_log(f"\n--- A2A Request to {role} (map {map_idx}) at {datetime.now().isoformat()} ---")
-                        self._write_log(f"Endpoint: {endpoint}")
-                        self._write_log(f"Prompt:\n{prompt}")
-
-                        # Request first map
-                        response = await self._tool_provider.talk_to_agent(
-                            prompt,
-                            str(endpoint),
-                            new_conversation=True,
-                        )
+                        response = await self._tool_provider.talk_to_agent(prompt, str(endpoint), new_conversation=True)
                     else:
-                        # For maps 2+, just wait for response (request was sent in previous feedback)
-                        await self._update_status_with_log(
-                            updater,
-                            f"Receiving map {map_idx}/{num_maps} from {role}...")
-                        
-                        # Get response without sending new request
-                        # The previous feedback already asked for this map
-                        response = await self._tool_provider.talk_to_agent(
-                            "",  # Empty message to just receive
-                            str(endpoint),
-                            new_conversation=False,
-                        )
+                        await self._update_status_with_log(updater, f"Receiving map {map_idx}/{num_maps} from {role}...")
+                        response = await self._tool_provider.talk_to_agent("", str(endpoint), new_conversation=False)
 
-                    # Log A2A response
-                    self._write_log(f"\n--- A2A Response from {role} (map {map_idx}) at {datetime.now().isoformat()} ---")
-                    self._write_log(f"Response:\n{response}")
-
-                    # Extract single map from response
                     ascii_map = self._extract_ascii_map(response)
+                    if not ascii_map: continue
 
-                    if not ascii_map:
-                        logger.warning(
-                            f"No map extracted from {role} for map {map_idx}")
-                        continue
-
-                    await self._update_status_with_log(
-                        updater,
-                        f"Evaluating map {map_idx}/{num_maps} from {role}...")
-
-                    # Step 1: Validate row lengths
-                    if not self._validate_map_row_lengths(ascii_map):
-                        logger.warning(
-                            f"Map {map_idx} from {role} has inconsistent row lengths. Scoring 0.")
-                        map_evaluations.append({
-                            "map": ascii_map,
-                            "map_index": map_idx,
-                            "score_breakdown": {
-                                "total_score": 0.0,
-                                "validation_error": "Inconsistent row lengths",
-                            },
-                            "video": None,
-                        })
-                        continue
-
-                    # Step 2: Save map, run JAR, and evaluate
-                    try:
-                        output_name = jar_output_template.format(
-                            role=role, ts=int(time.time()), map_idx=map_idx)
-                    except KeyError:
-                        output_name = jar_output_template.format(
-                            role=role, ts=int(time.time()))
-                        output_name = output_name.replace(
-                            ".mp4", f"_{map_idx}.mp4")
-
-                    # Run Java JAR to generate gameplay video
-                    video_path = self._run_astar_and_record(
-                        ascii_map, jar_output_dir, output_name, map_idx)
-
-                    # Evaluate map using cached prompt + video
-                    score = self._evaluate_map(ascii_map, video_path)
-
+                    # Run simulation and evaluation
+                    output_name = jar_output_template.format(role=role, ts=int(time.time()), map_idx=map_idx)
+                    video_path = self._run_astar_and_record(ascii_map, jar_output_dir, output_name, map_idx)
+                    score_data = self._evaluate_map(ascii_map, video_path)
+                    
                     map_evaluations.append({
-                        "map": ascii_map,
+                        "role": role, "map_index": map_idx, "map": ascii_map,
+                        "score_data": score_data, "video": video_path,
+                    })
+                    
+                    all_leaderboard_results.append({
+                        "role": role,
                         "map_index": map_idx,
-                        "score_breakdown": score,
-                        "video": video_path,
+                        **score_data
                     })
 
-                    # Send feedback for this single map (score is 1-20)
-                    feedback_message = (
-                        f"Map {map_idx} evaluation completed. "
-                        f"Score: {score.get('score', 0)}/20"
-                    )
-                    
-                    # Always request the next map (except for the last one)
-                    if map_idx < num_maps:
-                        next_map_idx = map_idx + 1
-                        feedback_message += (
-                            f"\n\nPlease generate map {next_map_idx}/{num_maps}. "
-                            f"Return ONLY the ASCII map in a ```ascii code block."
-                        )
-                    
-                    # Log A2A feedback request
-                    self._write_log(f"\n--- A2A Feedback to {role} (map {map_idx}) at {datetime.now().isoformat()} ---")
-                    self._write_log(f"Feedback:\n{feedback_message}")
-                    
-                    await self._tool_provider.talk_to_agent(
-                        feedback_message,
-                        str(endpoint),
-                        new_conversation=False,
-                    )
+                    # Feedback
+                    feedback = f"Map {map_idx} score: {score_data.get('score', 0)}/20"
+                    if map_idx < num_maps: feedback += f"\n\nPlease generate map {map_idx+1}/{num_maps}."
+                    await self._tool_provider.talk_to_agent(feedback, str(endpoint), new_conversation=False)
 
-                # Step 3: Log all evaluations for this role
-                logger.info(f"\n=== Evaluation Results for {role} ===")
-                for eval_data in map_evaluations:
-                    logger.info(
-                        f"Map {eval_data['map_index']}: "
-                        f"Score = {eval_data['score_breakdown'].get('score', 0)}/20")
-                logger.info("=" * 50)
+                # Send final summary to agent
+                avg_score = sum(e["score_data"].get("score", 0) for e in map_evaluations) / len(map_evaluations) if map_evaluations else 0
+                await self._tool_provider.talk_to_agent(f"Evaluation finished. Avg: {avg_score:.1f}", str(endpoint), new_conversation=False)
 
-                # Step 4: Send final summary to purple agent
-                scores_summary = {
-                    str(eval_data["map_index"]): eval_data["score_breakdown"].get("score", 0)
-                    for eval_data in map_evaluations
-                }
-                avg_score = sum(scores_summary.values()) / len(scores_summary) if scores_summary else 0
-                summary_message = (
-                    f"All {len(map_evaluations)} map evaluations completed. "
-                    f"Average score: {avg_score:.1f}/20\n"
-                    f"Scores: {json.dumps(scores_summary, indent=2)}"
-                )
-                
-                # Log A2A summary
-                self._write_log(f"\n--- A2A Final Summary to {role} at {datetime.now().isoformat()} ---")
-                self._write_log(f"Summary:\n{summary_message}")
-                
-                await self._tool_provider.talk_to_agent(
-                    summary_message,
-                    str(endpoint),
-                    new_conversation=False,
-                )
-
-                await self._update_status_with_log(
-                    updater,
-                    f"{role} evaluation completed. "
-                    f"Average score: {avg_score:.1f}/20")
-
-                # Store evaluations for artifacts
-                for eval_data in map_evaluations:
+                # Add artifacts for this participant
+                for e in map_evaluations:
                     await updater.add_artifact(
                         parts=[
-                            Part(root=TextPart(
-                                text=f"{role} map {eval_data['map_index']}:\n```ascii\n{eval_data['map']}\n```")),
-                            Part(root=TextPart(
-                                text=f"{role} map {eval_data['map_index']} score: {eval_data['score_breakdown']}")),
+                            Part(root=TextPart(text=f"{role} map {e['map_index']}:\n```ascii\n{e['map']}\n```")),
+                            Part(root=TextPart(text=f"Score: {e['score_data']}")),
                         ],
-                        name=f"{role}-map-{eval_data['map_index']}",
+                        name=f"{role}-map-{e['map_index']}",
                     )
+                    if e["video"] and Path(e["video"]).exists():
+                        video_bytes = Path(e["video"]).read_bytes()
+                        await updater.add_artifact(
+                            parts=[Part(root=DataPart(mime_type="video/mp4", data={"base64": base64.b64encode(video_bytes).decode("utf-8")}))],
+                            name=f"{role}-video-{e['map_index']}",
+                        )
 
-                    if eval_data.get("video"):
-                        video_path = Path(eval_data["video"])
-                        if video_path.exists():
-                            video_data = base64.b64encode(
-                                video_path.read_bytes()).decode("utf-8")
-                            await updater.add_artifact(
-                                parts=[
-                                    Part(root=DataPart(
-                                        mime_type="video/mp4",
-                                        data={"base64": video_data},
-                                    ))
-                                ],
-                                name=f"{role}-gameplay-{eval_data['map_index']}",
-                            )
+            # --- FINAL STEP: Prepare and send the unified results artifact for the Leaderboard ---
+            # Group results by role to calculate averages for all numeric fields
+            final_submission_data = {
+                "participants": {role: str(url) for role, url in req.participants.items()},
+                "per_agent_results": {}
+            }
+
+            for role in req.participants.keys():
+                role_evals = [e for e in all_leaderboard_results if e["role"] == role]
+                if not role_evals:
+                    continue
+                
+                # Identify all numeric keys (excluding map_index)
+                numeric_keys = set()
+                for e in role_evals:
+                    for k, v in e.items():
+                        if isinstance(v, (int, float)) and k != "map_index":
+                            numeric_keys.add(k)
+                
+                # Calculate averages for each numeric key
+                averages = {}
+                for k in numeric_keys:
+                    values = [e[k] for e in role_evals if k in e]
+                    if values:
+                        averages[f"avg_{k}"] = sum(values) / len(values)
+                
+                # Store both detailed results and pre-calculated averages
+                final_submission_data["per_agent_results"][role] = {
+                    "averages": averages,
+                    "map_details": role_evals
+                }
+
+            # Also provide a flat list of all evaluations for the standard unnest query
+            # (Adding a 'results' key at the top level for backward compatibility with the query)
+            final_submission_data["results"] = all_leaderboard_results
+
+            await updater.add_artifact(
+                parts=[
+                    Part(root=DataPart(
+                        mime_type="application/json",
+                        data=final_submission_data
+                    ))
+                ],
+                name="results"
+            )
         finally:
             self._tool_provider.reset()
 
