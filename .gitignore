@@ -8,3 +8,5 @@ __pycache__/
 map_designer_gameplay_*.mp4
 logs/
 scenarios/mario/map*.txt
+# tau2-bench data (downloaded via setup.sh)
+scenarios/tau2/tau2-bench/

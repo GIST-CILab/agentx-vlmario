@@ -31,23 +31,22 @@ def create_message(*, role: Role = Role.user, text: str, context_id: str | None 
         context_id=context_id
     )
 
+
 def merge_parts(parts: list[Part]) -> str:
     chunks = []
     for part in parts:
         if isinstance(part.root, TextPart):
             chunks.append(part.root.text)
         elif isinstance(part.root, DataPart):
-            data = part.root.data
-            if isinstance(data, str):
-                chunks.append(data)
-            else:
-                chunks.append(json.dumps(data, ensure_ascii=False))
+            chunks.append(json.dumps(part.root.data, indent=2))
     return "\n".join(chunks)
+
 
 async def send_message(message: str, base_url: str, context_id: str | None = None, streaming=False, consumer: Consumer | None = None):
     """Returns dict with context_id, response and status (if exists)"""
     async with httpx.AsyncClient(timeout=DEFAULT_TIMEOUT) as httpx_client:
-        resolver = A2ACardResolver(httpx_client=httpx_client, base_url=base_url)
+        resolver = A2ACardResolver(
+            httpx_client=httpx_client, base_url=base_url)
         agent_card = await resolver.get_agent_card()
         config = ClientConfig(
             httpx_client=httpx_client,
