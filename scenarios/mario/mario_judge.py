@@ -139,7 +139,7 @@ class MarioJudge(GreenAgent):
                 all_results.extend(participant_results)
 
             # Send Final Consolidated Results for Leaderboard
-            await self._send_leaderboard_artifact(updater, all_results)
+            await self._send_leaderboard_artifact(updater, all_results, req.participants)
 
         finally:
             self._tool_provider.reset()
@@ -230,19 +230,20 @@ class MarioJudge(GreenAgent):
         )
         
         # Video Artifact
-        if entry.get("video"):
-            v_path = Path(entry["video"])
-            if v_path.exists():
-                v_data = base64.b64encode(v_path.read_bytes()).decode("utf-8")
-                await updater.add_artifact(
-                    parts=[Part(root=DataPart(mime_type="video/mp4", data={"base64": v_data}))],
-                    name=f"{role}-video-{idx}",
-                )
+        if entry.get("video_base64"):
+            await updater.add_artifact(
+                parts=[Part(root=DataPart(mime_type="video/mp4", data={"base64": entry["video_base64"]}))],
+                name=f"{role}-video-{idx}",
+            )
 
-    async def _send_leaderboard_artifact(self, updater: TaskUpdater, all_results: list[dict[str, Any]]) -> None:
+    async def _send_leaderboard_artifact(self, updater: TaskUpdater, all_results: list[dict[str, Any]], participants: dict[str, Any]) -> None:
         """Send the unified JSON artifact for the leaderboard."""
+        valid_participants = {k: str(v) for k, v in participants.items()}
         await updater.add_artifact(
-            parts=[Part(root=DataPart(mime_type="application/json", data={"results": all_results}))],
+            parts=[Part(root=DataPart(mime_type="application/json", data={
+                "participants": valid_participants,
+                "results": all_results
+            }))],
             name="results"
         )
 
