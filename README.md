@@ -17,6 +17,9 @@
 
 ---
 
+> [!IMPORTANT]
+> **Jan 27, 2026 Update**: Simulator and evaluation agent have been updated for reproducibility.
+
 ## Overview
 
 While advancements in Procedural Content Generation (PCG) and Large Language Models (LLMs) have enabled controllable level generation ([Khalifa et al., 2020](https://ojs.aaai.org/index.php/AIIDE/article/view/7416); [Sudhakaran et al., 2023](https://proceedings.neurips.cc/paper_files/paper/2023/hash/a9bbeb2858dfbdbd4c19814e5d80ec60-Abstract-Conference.html)), evaluation continues to rely heavily on numerical proxies and computable metrics ([Earle et al., 2024](https://ieeexplore.ieee.org/abstract/document/10645598/)) that often fail to capture qualitative player experiences such as **aesthetics**, **fairness**, and **fun**.
