@@ -106,6 +106,9 @@ docker run -it --env-file .env -v $(pwd):/app -v /app/.venv vlmario
 --show-logs: Show logs during evaluation
 ```
 
+> **Tip**: To change the number of maps or evaluation settings, edit `scenarios/mario/scenario.toml`. Because of the volume mount (`-v`), your changes will apply instantly without rebuilding the image.
+
+
 Running this command will automatically perform the following:
 1. Start Map Evaluator (Green Agent)
 2. Start Map Designer (Purple Agent)
@@ -115,6 +118,17 @@ Running this command will automatically perform the following:
 6. Report final scores based on the average across all maps.
 
 ## Evaluation
+
+### Evaluation Process
+
+The benchmark follows a systematic pipeline to evaluate each submitted map:
+
+1.  **Map Request**: The Evaluator requests a map from the Map Designer agent.
+2.  **Extraction**: The ASCII map is parsed from the agent's response.
+3.  **Simulation**: The map is loaded into the **Mario-AI-Framework**, and an A* agent attempts to solve it.
+4.  **Recording**: The gameplay is captured as an `.mp4` video.
+5.  **VLM Judgment**: The video is analyzed by the VLM (Gemini), which assigns a score and provides feedback based on visual evidence.
+6.  **Aggregation**: This process repeats for all maps (25 by default), and the final score is calculated based on the session configuration.
 
 ### Scoring System
 
