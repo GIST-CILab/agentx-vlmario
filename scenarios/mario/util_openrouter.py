@@ -21,7 +21,8 @@ def call_openrouter(
     messages: List[Dict[str, Any]],
     temperature: float = 0.0,
     max_tokens: int = 4096,
-    response_format: Optional[Dict[str, str]] = None
+    response_format: Optional[Dict[str, str]] = None,
+    **kwargs
 ) -> Dict[str, Any]:
     """
     Calls the OpenRouter API.
@@ -32,6 +33,7 @@ def call_openrouter(
         temperature: Sampling temperature.
         max_tokens: Maximum tokens to generate.
         response_format: Optional response format (e.g., {"type": "json_object"}).
+        **kwargs: Additional parameters to pass to the API (e.g., top_p, top_k, seed).
     
     Returns:
         The JSON response from OpenRouter.
@@ -55,6 +57,9 @@ def call_openrouter(
     
     if response_format:
         payload["response_format"] = response_format
+
+    # Add any additional parameters
+    payload.update(kwargs)
 
     try:
         response = requests.post(OPENROUTER_API_URL, headers=headers, json=payload, timeout=120)

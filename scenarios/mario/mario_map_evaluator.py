@@ -545,7 +545,10 @@ class MarioMapEvaluator(GreenAgent):
              model="google/gemini-2.5-pro",
              messages=messages,
              temperature=temp,
-             response_format={"type": "json_object"}
+             response_format={"type": "json_object"},
+             seed=0,
+             top_p=0.,
+             top_k=1,
         )
         
         if "choices" in resp_json and len(resp_json["choices"]) > 0:
