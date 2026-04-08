@@ -1,0 +1,3 @@
+evaluations:
+  - game: "mario"
+    iterations: 1

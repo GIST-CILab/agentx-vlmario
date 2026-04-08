@@ -1,14 +1,19 @@
 [green_agent]
 endpoint = "http://127.0.0.1:9100"
-cmd = "uv run python scenarios/mario/mario_map_evaluator.py --host 127.0.0.1 --port 9100"
+cmd = "uv run python scenarios/mario/mario_evaluator.py --host 127.0.0.1 --port 9100"
 
 [[participants]]
-role = "agent"
+role = "designer"
 endpoint = "http://127.0.0.1:9110"
-cmd = "uv run python scenarios/mario/mario_map_designer.py --host 127.0.0.1 --port 9110"
+cmd = "uv run python scenarios/mario/mario_designer.py --host 127.0.0.1 --port 9110"
 env = { MODEL = "gemini-2.5-pro" }
+
+[[participants]]
+role = "player"
+endpoint = "http://127.0.0.1:9120"
+cmd = "uv run python scenarios/mario/mario_player.py --host 127.0.0.1 --port 9120"
 
 [config]
 num_maps = 25
 top_k = 25
-jar_output_dir = "outputs"
+jar_output_dir = "outputs/mario"
