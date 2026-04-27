@@ -1,3 +1,18 @@
+runtime:
+  host: "127.0.0.1"
+  output_root: "outputs"
+  use_player: true
+  show_logs: true
+  serve_only: false
+  designer_model: "gemini-2.5-pro"
+  ports:
+    green_agent: 9100
+    designer: 9110
+    player: 9120
+
 evaluations:
-  - game: "mario"
+  - name: "default"
+    game: "mario"
     iterations: 1
+    top_k: 1
+    output_dir: "outputs/mario"

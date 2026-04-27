@@ -1,0 +1,65 @@
+{
+  "game_profile": {
+    "game_name": "Super Mario Bros",
+    "subject_noun": "level",
+    "verb": "playing",
+    "observation_cue": "the layout, enemy placement, difficulty flow, and how the player interacts with the world"
+  },
+  "model": "google/gemini-2.5-pro",
+  "prompt": "You are designing a standardized evaluation protocol for gameplay videos of Super Mario Bros levels.\nA reviewer will watch a short video of a player playing the level and rate it against the criteria below on a 1-5 Likert scale.\n\nEvaluation Criteria:\n- enjoyment: It was fun to play. (Measures the fundamental enjoyment and fun of the gameplay.)\n- difficulty: It was very challenging. (Measures cognitive and operational difficulty, as well as the desire for challenge.)\n- frustration: I felt frustrated while playing it. (Captures negative emotions, feelings of unfairness, or feeling stuck.)\n- novelty: It had surprises or unexpected elements. (Evaluates novelty or unexpectedness compared to existing games.)\n- aesthetics: The layout felt well-designed and high quality. (Assesses the completeness of the level composition and visual harmony.)\n\nEvaluation Steps:\nGenerate a concise numbered chain-of-thoughts (4-6 steps) that the reviewer should follow to evaluate the video against ALL five criteria above. The steps must be objective, game-agnostic within this genre, and applicable to any level. Focus on the layout, enemy placement, difficulty flow, and how the player interacts with the world.\n\nReturn strict JSON only:\n{\"evaluation_steps\": [\"1. ...\", \"2. ...\", \"3. ...\", \"4. ...\"]}",
+  "raw_response_text": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1776861700-xqLlxVmYp3gQl1aIRMBt\",\"object\":\"chat.completion\",\"created\":1776861700,\"model\":\"google/gemini-2.5-pro\",\"provider\":\"Google\",\"system_fingerprint\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"STOP\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"evaluation_steps\\\": [\\n    \\\"1. Analyze the initial level layout and mechanics. Observe the introduction of core challenges, enemy types, and platforming sequences. Assess the immediate visual appeal and clarity of the level's theme (Aesthetics, Novelty).\\\",\\n    \\\"2. Observe the player's initial interactions and success rate. Note if the player navigates early obstacles with ease or struggles, indicating the initial difficulty curve and potential for early frustration (Difficulty, Frustration, Enjoyment).\\\",\\n    \\\"3. Track the progression of challenge and introduction of new elements. Evaluate how difficulty escalates. Are new mechanics or enemy combinations introduced logically, or do they feel chaotic and unfair? Look for surprising twists or unique uses of standard game elements (Novelty, Difficulty, Frustration).\\\",\\n    \\\"4. Evaluate the rhythm and flow of the gameplay. Observe moments of high action, rest, and exploration. Assess if the obstacle and enemy placement creates a satisfying and engaging rhythm for the player, or if it leads to repetitive failure and tedious sections (Enjoyment, Frustration, Aesthetics).\\\",\\n    \\\"5. Assess the overall level composition and climax. Consider the level's structure from start to finish. Does it build towards a final, conclusive challenge? Evaluate the overall coherence of the design and whether it feels like a complete, polished experience (Aesthetics, Enjoyment, Difficulty).\\\"\\n  ]\\n}\",\"refusal\":null}}],\"usage\":{\"prompt_tokens\":281,\"completion_tokens\":359,\"total_tokens\":640,\"cost\":0.00394125,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00394125,\"upstream_inference_prompt_cost\":0.00035125,\"upstream_inference_completions_cost\":0.00359},\"completion_tokens_details\":{\"reasoning_tokens\":65,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "raw_response_json": {
+    "id": "gen-1776861700-xqLlxVmYp3gQl1aIRMBt",
+    "object": "chat.completion",
+    "created": 1776861700,
+    "model": "google/gemini-2.5-pro",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"evaluation_steps\": [\n    \"1. Analyze the initial level layout and mechanics. Observe the introduction of core challenges, enemy types, and platforming sequences. Assess the immediate visual appeal and clarity of the level's theme (Aesthetics, Novelty).\",\n    \"2. Observe the player's initial interactions and success rate. Note if the player navigates early obstacles with ease or struggles, indicating the initial difficulty curve and potential for early frustration (Difficulty, Frustration, Enjoyment).\",\n    \"3. Track the progression of challenge and introduction of new elements. Evaluate how difficulty escalates. Are new mechanics or enemy combinations introduced logically, or do they feel chaotic and unfair? Look for surprising twists or unique uses of standard game elements (Novelty, Difficulty, Frustration).\",\n    \"4. Evaluate the rhythm and flow of the gameplay. Observe moments of high action, rest, and exploration. Assess if the obstacle and enemy placement creates a satisfying and engaging rhythm for the player, or if it leads to repetitive failure and tedious sections (Enjoyment, Frustration, Aesthetics).\",\n    \"5. Assess the overall level composition and climax. Consider the level's structure from start to finish. Does it build towards a final, conclusive challenge? Evaluate the overall coherence of the design and whether it feels like a complete, polished experience (Aesthetics, Enjoyment, Difficulty).\"\n  ]\n}",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 281,
+      "completion_tokens": 359,
+      "total_tokens": 640,
+      "cost": 0.00394125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00394125,
+        "upstream_inference_prompt_cost": 0.00035125,
+        "upstream_inference_completions_cost": 0.00359
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 65,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "parsed": {
+    "evaluation_steps": [
+      "1. Analyze the initial level layout and mechanics. Observe the introduction of core challenges, enemy types, and platforming sequences. Assess the immediate visual appeal and clarity of the level's theme (Aesthetics, Novelty).",
+      "2. Observe the player's initial interactions and success rate. Note if the player navigates early obstacles with ease or struggles, indicating the initial difficulty curve and potential for early frustration (Difficulty, Frustration, Enjoyment).",
+      "3. Track the progression of challenge and introduction of new elements. Evaluate how difficulty escalates. Are new mechanics or enemy combinations introduced logically, or do they feel chaotic and unfair? Look for surprising twists or unique uses of standard game elements (Novelty, Difficulty, Frustration).",
+      "4. Evaluate the rhythm and flow of the gameplay. Observe moments of high action, rest, and exploration. Assess if the obstacle and enemy placement creates a satisfying and engaging rhythm for the player, or if it leads to repetitive failure and tedious sections (Enjoyment, Frustration, Aesthetics).",
+      "5. Assess the overall level composition and climax. Consider the level's structure from start to finish. Does it build towards a final, conclusive challenge? Evaluate the overall coherence of the design and whether it feels like a complete, polished experience (Aesthetics, Enjoyment, Difficulty)."
+    ]
+  },
+  "text": "1. Analyze the initial level layout and mechanics. Observe the introduction of core challenges, enemy types, and platforming sequences. Assess the immediate visual appeal and clarity of the level's theme (Aesthetics, Novelty).\n2. Observe the player's initial interactions and success rate. Note if the player navigates early obstacles with ease or struggles, indicating the initial difficulty curve and potential for early frustration (Difficulty, Frustration, Enjoyment).\n3. Track the progression of challenge and introduction of new elements. Evaluate how difficulty escalates. Are new mechanics or enemy combinations introduced logically, or do they feel chaotic and unfair? Look for surprising twists or unique uses of standard game elements (Novelty, Difficulty, Frustration).\n4. Evaluate the rhythm and flow of the gameplay. Observe moments of high action, rest, and exploration. Assess if the obstacle and enemy placement creates a satisfying and engaging rhythm for the player, or if it leads to repetitive failure and tedious sections (Enjoyment, Frustration, Aesthetics).\n5. Assess the overall level composition and climax. Consider the level's structure from start to finish. Does it build towards a final, conclusive challenge? Evaluate the overall coherence of the design and whether it feels like a complete, polished experience (Aesthetics, Enjoyment, Difficulty)."
+}

@@ -1,0 +1,3 @@
+config = "config.yaml"
+env_file = ".env"
+evaluation = "default"

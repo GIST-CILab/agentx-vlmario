@@ -1,0 +1,577 @@
+{
+  "game": "sokoban",
+  "raw_dir": "outputs\\procedural_sokoban\\raw",
+  "num_raw_files": 30,
+  "num_runs_total": 600,
+  "num_runs_valid": 599,
+  "num_runs_failed": 0,
+  "run_level_rq1": {
+    "accuracy": 0.5525876460767947,
+    "fpr": 0.41,
+    "fnr": 0.48494983277591974,
+    "counts": {
+      "tn": 177,
+      "fp": 123,
+      "fn": 145,
+      "tp": 154
+    }
+  },
+  "run_level_rq4": {
+    "enjoyment": {
+      "truth_human_mean": 2.8733333333333335,
+      "truth_ai_mean": 2.448160535117057,
+      "truth_p_value": 4.547987735616753e-06,
+      "truth_u": 35448.0,
+      "truth_n_human": 300,
+      "truth_n_ai": 299,
+      "belief_human_mean": 3.437888198757764,
+      "belief_ai_mean": 1.7581227436823104,
+      "belief_p_value": 1.0968971663736169e-73,
+      "belief_u": 7464.5,
+      "belief_n_human": 322,
+      "belief_n_ai": 277,
+      "belief_bias_detected": true
+    },
+    "difficulty": {
+      "truth_human_mean": 1.9166666666666667,
+      "truth_ai_mean": 1.5719063545150502,
+      "truth_p_value": 6.147037181318523e-06,
+      "truth_u": 36176.0,
+      "truth_n_human": 300,
+      "truth_n_ai": 299,
+      "belief_human_mean": 2.1614906832298137,
+      "belief_ai_mean": 1.259927797833935,
+      "belief_p_value": 1.6437151866224281e-37,
+      "belief_u": 20111.0,
+      "belief_n_human": 322,
+      "belief_n_ai": 277,
+      "belief_bias_detected": true
+    },
+    "frustration": {
+      "truth_human_mean": 1.3133333333333332,
+      "truth_ai_mean": 1.2408026755852843,
+      "truth_p_value": 0.02234828259105966,
+      "truth_u": 41738.0,
+      "truth_n_human": 300,
+      "truth_n_ai": 299,
+      "belief_human_mean": 1.2236024844720497,
+      "belief_ai_mean": 1.339350180505415,
+      "belief_p_value": 0.12251546670164219,
+      "belief_u": 42499.0,
+      "belief_n_human": 322,
+      "belief_n_ai": 277,
+      "belief_bias_detected": false
+    },
+    "novelty": {
+      "truth_human_mean": 1.5233333333333334,
+      "truth_ai_mean": 1.3043478260869565,
+      "truth_p_value": 7.438380367010111e-05,
+      "truth_u": 38064.0,
+      "truth_n_human": 300,
+      "truth_n_ai": 299,
+      "belief_human_mean": 1.720496894409938,
+      "belief_ai_mean": 1.0577617328519855,
+      "belief_p_value": 7.020163520268302e-39,
+      "belief_u": 22321.5,
+      "belief_n_human": 322,
+      "belief_n_ai": 277,
+      "belief_bias_detected": true
+    },
+    "aesthetics": {
+      "truth_human_mean": 3.0566666666666666,
+      "truth_ai_mean": 2.588628762541806,
+      "truth_p_value": 1.970396897217152e-08,
+      "truth_u": 33527.0,
+      "truth_n_human": 300,
+      "truth_n_ai": 299,
+      "belief_human_mean": 3.515527950310559,
+      "belief_ai_mean": 2.0180505415162453,
+      "belief_p_value": 7.407236574307997e-83,
+      "belief_u": 5819.0,
+      "belief_n_human": 322,
+      "belief_n_ai": 277,
+      "belief_bias_detected": true
+    }
+  },
+  "per_map_consistency": {
+    "num_maps": 30,
+    "majority_fraction_mean": 0.6616666666666667,
+    "majority_fraction_min": 0.5,
+    "majority_fraction_max": 0.9,
+    "entropy_mean_bits": 0.876064670342593,
+    "num_unanimous_maps": 0,
+    "num_close_call_maps": 9
+  },
+  "confidence_calibration": {
+    "1": {
+      "n": 47,
+      "accuracy": 0.48936170212765956,
+      "num_human_true": 25,
+      "num_ai_true": 22
+    },
+    "2": {
+      "n": 130,
+      "accuracy": 0.5615384615384615,
+      "num_human_true": 65,
+      "num_ai_true": 65
+    },
+    "3": {
+      "n": 422,
+      "accuracy": 0.556872037914692,
+      "num_human_true": 210,
+      "num_ai_true": 212
+    }
+  },
+  "map_summaries": [
+    {
+      "map_id": "2v2qgbvC",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 5,
+        "AI": 15,
+        "Other": 0
+      },
+      "majority_label": "AI",
+      "majority_fraction": 0.75,
+      "entropy_bits": 0.8112781244591328,
+      "agreement_with_truth_fraction": 0.25
+    },
+    {
+      "map_id": "3xtQxBWH",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 13,
+        "AI": 7,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.65,
+      "entropy_bits": 0.934068055375491,
+      "agreement_with_truth_fraction": 0.65
+    },
+    {
+      "map_id": "5Au4nrI2",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 15,
+        "AI": 5,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.75,
+      "entropy_bits": 0.8112781244591328,
+      "agreement_with_truth_fraction": 0.75
+    },
+    {
+      "map_id": "5iXJGqnK",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 15,
+        "AI": 5,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.75,
+      "entropy_bits": 0.8112781244591328,
+      "agreement_with_truth_fraction": 0.25
+    },
+    {
+      "map_id": "73sJaNBn",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 10,
+        "AI": 10,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.5,
+      "entropy_bits": 1.0,
+      "agreement_with_truth_fraction": 0.5
+    },
+    {
+      "map_id": "79DSy6TF",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 13,
+        "AI": 7,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.65,
+      "entropy_bits": 0.934068055375491,
+      "agreement_with_truth_fraction": 0.35
+    },
+    {
+      "map_id": "7V2mu5KA",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 15,
+        "AI": 5,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.75,
+      "entropy_bits": 0.8112781244591328,
+      "agreement_with_truth_fraction": 0.75
+    },
+    {
+      "map_id": "8Ua6YU1D",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 8,
+        "AI": 12,
+        "Other": 0
+      },
+      "majority_label": "AI",
+      "majority_fraction": 0.6,
+      "entropy_bits": 0.9709505944546686,
+      "agreement_with_truth_fraction": 0.4
+    },
+    {
+      "map_id": "aE7sjnta",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 5,
+        "AI": 15,
+        "Other": 0
+      },
+      "majority_label": "AI",
+      "majority_fraction": 0.75,
+      "entropy_bits": 0.8112781244591328,
+      "agreement_with_truth_fraction": 0.75
+    },
+    {
+      "map_id": "bhRr4CCv",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 9,
+        "AI": 11,
+        "Other": 0
+      },
+      "majority_label": "AI",
+      "majority_fraction": 0.55,
+      "entropy_bits": 0.9927744539878083,
+      "agreement_with_truth_fraction": 0.45
+    },
+    {
+      "map_id": "cHhvQJlr",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 10,
+        "AI": 10,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.5,
+      "entropy_bits": 1.0,
+      "agreement_with_truth_fraction": 0.5
+    },
+    {
+      "map_id": "cTxMstwv",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 7,
+        "AI": 13,
+        "Other": 0
+      },
+      "majority_label": "AI",
+      "majority_fraction": 0.65,
+      "entropy_bits": 0.934068055375491,
+      "agreement_with_truth_fraction": 0.65
+    },
+    {
+      "map_id": "extLxWet",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 8,
+        "AI": 12,
+        "Other": 0
+      },
+      "majority_label": "AI",
+      "majority_fraction": 0.6,
+      "entropy_bits": 0.9709505944546686,
+      "agreement_with_truth_fraction": 0.6
+    },
+    {
+      "map_id": "f8sbFI0a",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 15,
+        "AI": 5,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.75,
+      "entropy_bits": 0.8112781244591328,
+      "agreement_with_truth_fraction": 0.75
+    },
+    {
+      "map_id": "H77pn4iQ",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 16,
+        "AI": 4,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.8,
+      "entropy_bits": 0.7219280948873623,
+      "agreement_with_truth_fraction": 0.2
+    },
+    {
+      "map_id": "HjLVlKx4",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 13,
+        "AI": 7,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.65,
+      "entropy_bits": 0.934068055375491,
+      "agreement_with_truth_fraction": 0.65
+    },
+    {
+      "map_id": "ij6onaGt",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 10,
+        "AI": 10,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.5,
+      "entropy_bits": 1.0,
+      "agreement_with_truth_fraction": 0.5
+    },
+    {
+      "map_id": "iJNJxWfZ",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 17,
+        "AI": 3,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.85,
+      "entropy_bits": 0.6098403047164004,
+      "agreement_with_truth_fraction": 0.85
+    },
+    {
+      "map_id": "Iz5BqRyu",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 10,
+        "AI": 10,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.5,
+      "entropy_bits": 1.0,
+      "agreement_with_truth_fraction": 0.5
+    },
+    {
+      "map_id": "LUiVjpMm",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 6,
+        "AI": 14,
+        "Other": 0
+      },
+      "majority_label": "AI",
+      "majority_fraction": 0.7,
+      "entropy_bits": 0.8812908992306927,
+      "agreement_with_truth_fraction": 0.7
+    },
+    {
+      "map_id": "oHSLE5UO",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 4,
+        "AI": 16,
+        "Other": 0
+      },
+      "majority_label": "AI",
+      "majority_fraction": 0.8,
+      "entropy_bits": 0.7219280948873623,
+      "agreement_with_truth_fraction": 0.8
+    },
+    {
+      "map_id": "QUT4qGl2",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 6,
+        "AI": 14,
+        "Other": 0
+      },
+      "majority_label": "AI",
+      "majority_fraction": 0.7,
+      "entropy_bits": 0.8812908992306927,
+      "agreement_with_truth_fraction": 0.3
+    },
+    {
+      "map_id": "QV6Qfb7T",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 16,
+        "AI": 4,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.8,
+      "entropy_bits": 0.7219280948873623,
+      "agreement_with_truth_fraction": 0.2
+    },
+    {
+      "map_id": "ROciIZDL",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 10,
+        "AI": 10,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.5,
+      "entropy_bits": 1.0,
+      "agreement_with_truth_fraction": 0.5
+    },
+    {
+      "map_id": "t7mUz3Qe",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 13,
+        "AI": 7,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.65,
+      "entropy_bits": 0.934068055375491,
+      "agreement_with_truth_fraction": 0.65
+    },
+    {
+      "map_id": "TIXMBKaj",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 18,
+        "AI": 2,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.9,
+      "entropy_bits": 0.4689955935892812,
+      "agreement_with_truth_fraction": 0.9
+    },
+    {
+      "map_id": "UeeTjy5b",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 11,
+        "AI": 9,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.55,
+      "entropy_bits": 0.9927744539878083,
+      "agreement_with_truth_fraction": 0.45
+    },
+    {
+      "map_id": "UTSKBMio",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 5,
+        "AI": 15,
+        "Other": 0
+      },
+      "majority_label": "AI",
+      "majority_fraction": 0.75,
+      "entropy_bits": 0.8112781244591328,
+      "agreement_with_truth_fraction": 0.75
+    },
+    {
+      "map_id": "wSCVt298",
+      "true_creator": "AI",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 9,
+        "AI": 10,
+        "Other": 1
+      },
+      "majority_label": "AI",
+      "majority_fraction": 0.5,
+      "entropy_bits": 0.9980008838722996,
+      "agreement_with_truth_fraction": 0.5
+    },
+    {
+      "map_id": "Z0SxyjXq",
+      "true_creator": "Human",
+      "num_runs": 20,
+      "num_parsed": 20,
+      "votes": {
+        "Human": 10,
+        "AI": 10,
+        "Other": 0
+      },
+      "majority_label": "Human",
+      "majority_fraction": 0.5,
+      "entropy_bits": 1.0,
+      "agreement_with_truth_fraction": 0.5
+    }
+  ]
+}

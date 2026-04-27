@@ -1,6 +1,7 @@
 import argparse
 import asyncio
 import os, sys, time, subprocess, shlex, signal
+import re
 from pathlib import Path
 import tomllib
 import httpx
@@ -10,6 +11,114 @@ from a2a.client import A2ACardResolver
 
 
 load_dotenv(override=True)
+
+LOCAL_HOSTS = {"127.0.0.1", "localhost", "0.0.0.0", "::1"}
+
+
+def is_local_host(host: str) -> bool:
+    return (host or "").strip().lower() in LOCAL_HOSTS
+
+
+def get_listening_pids(host: str, port: int) -> list[int]:
+    """Return PIDs listening on the given port for local endpoints."""
+    if not is_local_host(host):
+        return []
+
+    if os.name == "nt":
+        proc = subprocess.run(
+            ["netstat", "-ano", "-p", "tcp"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        pids: set[int] = set()
+        for line in proc.stdout.splitlines():
+            if f":{port}" not in line or "LISTENING" not in line:
+                continue
+            parts = line.split()
+            if len(parts) < 5:
+                continue
+            local_addr = parts[1]
+            state = parts[3]
+            pid_text = parts[4]
+            if state != "LISTENING":
+                continue
+            if not (
+                local_addr.endswith(f":{port}")
+                or local_addr.lower().endswith(f"]:{port}")
+            ):
+                continue
+            if pid_text.isdigit():
+                pids.add(int(pid_text))
+        return sorted(pids)
+
+    proc = subprocess.run(
+        ["lsof", "-ti", f"tcp:{port}", "-sTCP:LISTEN"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return sorted(
+        {
+            int(match.group(0))
+            for match in re.finditer(r"\d+", proc.stdout)
+            if int(match.group(0)) != os.getpid()
+        }
+    )
+
+
+def kill_pid(pid: int) -> None:
+    if pid == os.getpid():
+        return
+
+    if os.name == "nt":
+        subprocess.run(
+            ["taskkill", "/PID", str(pid), "/T", "/F"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        return
+
+    try:
+        os.kill(pid, signal.SIGTERM)
+    except OSError:
+        return
+
+
+def ensure_port_free(host: str, port: int, timeout: float = 5.0) -> None:
+    pids = get_listening_pids(host, port)
+    if not pids:
+        return
+
+    print(f"Port {host}:{port} already in use. Terminating PID(s): {', '.join(str(pid) for pid in pids)}")
+    for pid in pids:
+        kill_pid(pid)
+
+    deadline = time.time() + timeout
+    while time.time() < deadline:
+        if not get_listening_pids(host, port):
+            print(f"Freed port {host}:{port}")
+            return
+        time.sleep(0.2)
+
+    remaining = get_listening_pids(host, port)
+    if remaining:
+        raise RuntimeError(
+            f"Failed to free port {host}:{port}. Remaining PID(s): {', '.join(str(pid) for pid in remaining)}"
+        )
+
+
+def cleanup_bound_ports(cfg: dict) -> None:
+    targets: set[tuple[str, int]] = set()
+    for participant in cfg["participants"]:
+        if participant.get("cmd"):
+            targets.add((participant["host"], int(participant["port"])))
+    if cfg["green_agent"].get("cmd"):
+        targets.add((cfg["green_agent"]["host"], int(cfg["green_agent"]["port"])))
+
+    for host, port in sorted(targets):
+        ensure_port_free(host, port)
 
 
 async def wait_for_agents(cfg: dict, timeout: int = 30) -> bool:
@@ -122,6 +231,7 @@ def main():
     args = parser.parse_args()
 
     cfg = parse_toml(args.scenario)
+    cleanup_bound_ports(cfg)
 
     sink = None if args.show_logs or args.serve_only else subprocess.DEVNULL
     parent_bin = str(Path(sys.executable).parent)

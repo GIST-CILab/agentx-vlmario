@@ -1,0 +1,74 @@
+{
+  "game": "mario",
+  "results_csv": "outputs\\procedural_mario\\results_20260422-214139.csv",
+  "num_total_rows": 30,
+  "num_valid_rows": 30,
+  "rq1": {
+    "accuracy": 0.36666666666666664,
+    "fpr": 1.0,
+    "fnr": 0.26666666666666666,
+    "counts": {
+      "tn": 0,
+      "fp": 15,
+      "fn": 4,
+      "tp": 11
+    }
+  },
+  "rq4": {
+    "enjoyment": {
+      "truth_human_mean": 1.9466666666666665,
+      "truth_ai_mean": 2.5866666666666664,
+      "truth_p_value": 0.017785348169156362,
+      "truth_u": 55.0,
+      "belief_human_mean": 3.4,
+      "belief_ai_mean": 2.0923076923076924,
+      "belief_p_value": 0.0036720618144404013,
+      "belief_u": 4.0,
+      "belief_bias_detected": true
+    },
+    "difficulty": {
+      "truth_human_mean": 1.3,
+      "truth_ai_mean": 1.87,
+      "truth_p_value": 0.0010178336454242406,
+      "truth_u": 33.0,
+      "belief_human_mean": 1.5,
+      "belief_ai_mean": 1.598076923076923,
+      "belief_p_value": 0.975599542196183,
+      "belief_u": 51.0,
+      "belief_bias_detected": false
+    },
+    "frustration": {
+      "truth_human_mean": 1.72,
+      "truth_ai_mean": 1.7333333333333334,
+      "truth_p_value": 0.2592264766502111,
+      "truth_u": 85.0,
+      "belief_human_mean": 1.225,
+      "belief_ai_mean": 1.8038461538461539,
+      "belief_p_value": 0.35656683251091575,
+      "belief_u": 36.5,
+      "belief_bias_detected": false
+    },
+    "novelty": {
+      "truth_human_mean": 1.1733333333333333,
+      "truth_ai_mean": 1.3533333333333333,
+      "truth_p_value": 0.025282067065480505,
+      "truth_u": 58.5,
+      "belief_human_mean": 1.35,
+      "belief_ai_mean": 1.25,
+      "belief_p_value": 0.2186712601913695,
+      "belief_u": 31.5,
+      "belief_bias_detected": false
+    },
+    "aesthetics": {
+      "truth_human_mean": 1.59,
+      "truth_ai_mean": 2.1666666666666665,
+      "truth_p_value": 0.011997456990949272,
+      "truth_u": 51.5,
+      "belief_human_mean": 3.2125,
+      "belief_ai_mean": 1.6730769230769231,
+      "belief_p_value": 0.0033712364478123962,
+      "belief_u": 3.5,
+      "belief_bias_detected": true
+    }
+  }
+}

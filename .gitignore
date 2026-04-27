@@ -5,8 +5,9 @@
 __pycache__/
 *.pyc
 
-/outputs/
+/outputs*/
 /map*.txt
 /agent_gameplay_*.mp4
 /actions.txt
 /observations.txt
+/test

@@ -14,6 +14,7 @@ endpoint = "http://127.0.0.1:9120"
 cmd = "uv run python scenarios/mario/mario_player.py --host 127.0.0.1 --port 9120"
 
 [config]
-num_maps = 25
-top_k = 25
+num_maps = 30
+top_k = 30
 jar_output_dir = "outputs/mario"
+video_only = true

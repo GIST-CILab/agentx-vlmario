@@ -1,0 +1,145 @@
+{
+  "game": "combined",
+  "num_total_rows": 60,
+  "num_valid_rows": 60,
+  "paper_human_accuracy_reference": 0.53,
+  "game_counts": {
+    "mario_total": 30,
+    "mario_valid": 30,
+    "sokoban_total": 30,
+    "sokoban_valid": 30
+  },
+  "rq1_proxy": {
+    "llm_accuracy": 0.48333333333333334,
+    "paper_human_accuracy": 0.53,
+    "accuracy_gap": -0.04666666666666669
+  },
+  "internal_bias": {
+    "fun": {
+      "belief_human_mean": 3.1130434782608694,
+      "belief_ai_mean": 2.060810810810811,
+      "paper_trend": "Human > AI",
+      "llm_trend": "Human > AI",
+      "trend_matches_paper": true,
+      "u_stat": 63.5,
+      "p_value": 3.743223587451377e-08,
+      "significant": true
+    },
+    "challenge": {
+      "belief_human_mean": 1.8978260869565218,
+      "belief_ai_mean": 1.518918918918919,
+      "paper_trend": "AI > Human",
+      "llm_trend": "Human > AI",
+      "trend_matches_paper": false,
+      "u_stat": 258.0,
+      "p_value": 0.010989077716363227,
+      "significant": true
+    },
+    "frustration": {
+      "belief_human_mean": 1.2282608695652173,
+      "belief_ai_mean": 1.6716216216216218,
+      "paper_trend": "AI > Human",
+      "llm_trend": "AI > Human",
+      "trend_matches_paper": true,
+      "u_stat": 317.0,
+      "p_value": 0.09830015575762863,
+      "significant": false
+    },
+    "surprise": {
+      "belief_human_mean": 1.5108695652173914,
+      "belief_ai_mean": 1.231081081081081,
+      "paper_trend": "AI > Human",
+      "llm_trend": "Human > AI",
+      "trend_matches_paper": false,
+      "u_stat": 210.0,
+      "p_value": 0.0010245492829357094,
+      "significant": true
+    },
+    "design": {
+      "belief_human_mean": 3.0847826086956522,
+      "belief_ai_mean": 1.8945945945945943,
+      "paper_trend": "Human > AI",
+      "llm_trend": "Human > AI",
+      "trend_matches_paper": true,
+      "u_stat": 52.0,
+      "p_value": 1.3946087953954441e-08,
+      "significant": true
+    }
+  },
+  "paper_mean_comparison": {
+    "AI": {
+      "metrics": {
+        "fun": {
+          "llm_mean": 2.060810810810811,
+          "paper_mean": 2.92,
+          "absolute_error": 0.859189189189189
+        },
+        "challenge": {
+          "llm_mean": 1.518918918918919,
+          "paper_mean": 3.88,
+          "absolute_error": 2.361081081081081
+        },
+        "frustration": {
+          "llm_mean": 1.6716216216216218,
+          "paper_mean": 3.6,
+          "absolute_error": 1.9283783783783783
+        },
+        "surprise": {
+          "llm_mean": 1.231081081081081,
+          "paper_mean": 2.65,
+          "absolute_error": 1.4189189189189189
+        },
+        "design": {
+          "llm_mean": 1.8945945945945943,
+          "paper_mean": 2.7,
+          "absolute_error": 0.8054054054054058
+        }
+      },
+      "group_mae": 1.4745945945945946
+    },
+    "Human": {
+      "metrics": {
+        "fun": {
+          "llm_mean": 3.1130434782608694,
+          "paper_mean": 3.72,
+          "absolute_error": 0.6069565217391308
+        },
+        "challenge": {
+          "llm_mean": 1.8978260869565218,
+          "paper_mean": 3.65,
+          "absolute_error": 1.7521739130434781
+        },
+        "frustration": {
+          "llm_mean": 1.2282608695652173,
+          "paper_mean": 2.84,
+          "absolute_error": 1.6117391304347826
+        },
+        "surprise": {
+          "llm_mean": 1.5108695652173914,
+          "paper_mean": 2.62,
+          "absolute_error": 1.1091304347826088
+        },
+        "design": {
+          "llm_mean": 3.0847826086956522,
+          "paper_mean": 3.57,
+          "absolute_error": 0.4852173913043476
+        }
+      },
+      "group_mae": 1.1130434782608696
+    }
+  },
+  "paper_mean_correlation": {
+    "AI": {
+      "pearson_correlation": -0.11247917920646087,
+      "num_points": 5
+    },
+    "Human": {
+      "pearson_correlation": 0.7916156416973397,
+      "num_points": 5
+    },
+    "overall": {
+      "pearson_correlation": 0.4855026946327686,
+      "num_points": 10
+    }
+  }
+}

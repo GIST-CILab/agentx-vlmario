@@ -1,0 +1,601 @@
+﻿map_id,run_index,true_creator,llm_believed_creator,llm_believed_creator_raw,parsed_ok,confidence_level,enjoyment,difficulty,frustration,novelty,aesthetics,reasoning,error,map_status
+2v2qgbvC,1,Human,AI,AI-generated,True,2.0,3.0,2.0,1.0,1.0,2.0,The slightly disorganized and symmetrical yet disconnected layout feels more procedural than intentionally designed.,,ok
+2v2qgbvC,2,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,The puzzle's simple symmetrical layout and very direct solution path feel mechanical and uninspired.,,ok
+2v2qgbvC,3,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,The puzzle is highly symmetrical and the solution is to just push each box onto its obvious goal.,,ok
+2v2qgbvC,4,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle felt more like a simple task than a brain teaser, with no misdirection or need for advanced planning.",,ok
+2v2qgbvC,5,Human,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is divided into two clear, symmetrical sections, which is a common human design pattern.",,ok
+2v2qgbvC,6,Human,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle has a simple, grid-like symmetry and lacks a 'human touch' or clever trick in its design.",,ok
+2v2qgbvC,7,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,It lacks a clear theme or clever twist; it's just pushing boxes into an adjacent column.,,ok
+2v2qgbvC,8,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The direct, almost algorithmic solution and symmetric design feel very procedural and lack human-like ingenuity.",,ok
+2v2qgbvC,9,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is symmetrical, simple, and lacks any clever design tricks typical of human creators.",,ok
+2v2qgbvC,10,Human,AI,AI-generated,True,1.0,3.0,1.0,1.0,1.0,3.0,The puzzle's symmetric layout and straightforward push sequence lack the unique quirks often found in human-designed levels.,,ok
+2v2qgbvC,11,Human,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,4.0,"It features a very symmetrical and organized layout, which is a classic human design style for introducing concepts.",,ok
+2v2qgbvC,12,Human,Human,Human-designed,True,2.0,3.0,2.0,1.0,2.0,4.0,The puzzle requires freeing up space methodically by moving boxes from one side to the other first.,,ok
+2v2qgbvC,13,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,3.0,"The level design is perfectly symmetrical, and the solution path is simply repeated on both sides.",,ok
+2v2qgbvC,14,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle's simple, symmetric layout and straightforward solution feel like a human-made introductory level.",,ok
+2v2qgbvC,15,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle's symmetric layout and repetitive, procedural solution felt more machine-like than creatively designed.",,ok
+2v2qgbvC,16,Human,Human,Human-designed,True,2.0,4.0,3.0,1.0,3.0,3.0,"The core puzzle mechanic involves realizing the goals are initially blocked by the wrong boxes, a common human-made trick.",,ok
+2v2qgbvC,17,Human,AI,AI-generated,True,1.0,3.0,1.0,1.0,1.0,2.0,"The puzzle is highly symmetrical and the solution is a basic, step-by-step process without any tricky interactions.",,ok
+2v2qgbvC,18,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,The level is solved by simply pushing boxes from one side to the other without any obstacles.,,ok
+2v2qgbvC,19,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is just two columns, where one column's boxes just need to be moved to the other.",,ok
+2v2qgbvC,20,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, straightforward, and symmetrical, lacking any creative twist or challenge.",,ok
+3xtQxBWH,1,Human,AI,AI-generated,True,1.0,3.0,3.0,1.0,2.0,4.0,"Since there is no gameplay, I cannot analyze the solution path or intended logic, which are key indicators.",,ok
+3xtQxBWH,2,Human,Human,Human-designed,True,1.0,3.0,2.0,2.0,1.0,4.0,"The puzzle has a small, constrained layout and features decorative, non-functional elements (the plants), suggesting human aesthetic choices.",,ok
+3xtQxBWH,3,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"It's a very simple and compact puzzle with a clear, single-step logic which is typical for human design principles.",,ok
+3xtQxBWH,4,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and symmetrical, lacking any clever design or challenge. It feels like a basic configuration an AI might create as a tutorial or starting point.",,ok
+3xtQxBWH,5,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,The puzzle's absolute simplicity and symmetry strongly suggest it is a human-made tutorial level.,,ok
+3xtQxBWH,6,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"This puzzle feels like a handcrafted tutorial level, designed to teach a basic Sokoban concept.",,ok
+3xtQxBWH,7,Human,Human,Human-designed,True,3.0,3.0,3.0,2.0,1.0,4.0,"The puzzle's symmetrical layout and deliberate placement of goals feel like a classic human design, meant to be solved with a specific sequence in mind.",,ok
+3xtQxBWH,8,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,3.0,5.0,"The puzzle's flow feels intentional and designed around a specific solution path, making it fair but thoughtful.",,ok
+3xtQxBWH,9,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and lacks any interesting interactions, resembling a basic training level.",,ok
+3xtQxBWH,10,Human,Human,Human-designed,True,1.0,3.0,4.0,3.0,2.0,4.0,"The layout appears considered, with grouped goals and boxes placed to create distinct sub-problems.",,ok
+3xtQxBWH,11,Human,AI,AI-generated,True,3.0,3.0,2.0,1.0,1.0,2.0,"The puzzle's simple, almost utilitarian structure and straightforward solve path feel computationally derived for low difficulty.",,ok
+3xtQxBWH,12,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,The puzzle's symmetry and the specific constraints on box movement feel deliberately crafted for a focused solving experience.,,ok
+3xtQxBWH,13,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle is a tight, interlocking problem requiring specific sequential moves, which feels handcrafted for a satisfying solution.",,ok
+3xtQxBWH,14,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The level feels like a basic tutorial, lacking any clever tricks or thoughtful box interactions.",,ok
+3xtQxBWH,15,Human,Human,Human-designed,True,2.0,4.0,3.0,2.0,2.0,4.0,"The puzzle has a symmetric feel and requires careful navigation around the central box, a classic human design trope.",,ok
+3xtQxBWH,16,Human,Human,Human-designed,True,3.0,4.0,4.0,3.0,2.0,4.0,"The puzzle uses a small space to create a tricky interlocked problem, which feels like a classic human design.",,ok
+3xtQxBWH,17,Human,Human,Human-designed,True,2.0,3.0,4.0,3.0,3.0,4.0,The puzzle's symmetric feel and the deliberate placement of obstacles suggest intentional human design for a specific challenge.,,ok
+3xtQxBWH,18,Human,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,2.0,"The puzzle has a simple, uninspired layout with little apparent structure or intended path.",,ok
+3xtQxBWH,19,Human,Human,Human-designed,True,3.0,4.0,5.0,3.0,2.0,4.0,"This puzzle has a specific, constrained setup designed to force you to solve one part before another.",,ok
+3xtQxBWH,20,Human,AI,AI-generated,True,3.0,1.0,2.0,5.0,1.0,1.0,"The puzzle is extremely small and simple, and it leads to an immediate and obvious unsolvable state, suggesting a lack of human design or testing.",,ok
+5Au4nrI2,1,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"The puzzle's simple, almost symmetrical layout and straightforward, sequential solution feel thoughtfully crafted by a person.",,ok
+5Au4nrI2,2,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle has a simple, clean layout and solution path that feels intentional, not randomly generated.",,ok
+5Au4nrI2,3,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,It lacks the clever misdirection or subtle constraints that human designers often include.,,ok
+5Au4nrI2,4,Human,AI,AI-generated,True,1.0,3.0,2.0,1.0,1.0,2.0,"The puzzle is a basic execution of Sokoban mechanics, feeling more like a procedural arrangement than an intentional design.",,ok
+5Au4nrI2,5,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,3.0,"The puzzle has a simple, focused theme which is solving the boxes in a particular order from right to left.",,ok
+5Au4nrI2,6,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,5.0,"It's a compact, symmetrical design where every box placement feels interconnected and deliberate, a classic human design trait.",,ok
+5Au4nrI2,7,Human,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle lacks a clear thematic or clever sequence, feeling more like a random arrangement of boxes and goals.",,ok
+5Au4nrI2,8,Human,Human,Human-designed,True,2.0,4.0,3.0,2.0,2.0,4.0,"The puzzle appears simple but uses space constraints effectively, requiring thoughtful sequencing which implies deliberate human design.",,ok
+5Au4nrI2,9,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,3.0,The puzzle has a clear flow and intentional interactions that feel crafted rather than randomly generated.,,ok
+5Au4nrI2,10,Human,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,3.0,"The puzzle requires thinking a few steps ahead to avoid trapping boxes, which suggests a human's touch.",,ok
+5Au4nrI2,11,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,1.0,4.0,"The puzzle is a classic small-room shuffle that requires careful ordering, a common human design pattern.",,ok
+5Au4nrI2,12,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"The puzzle has a straightforward, almost tutorial-like quality, guiding the player through a logical sequence of pushes.",,ok
+5Au4nrI2,13,Human,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle has an asymmetric, somewhat random layout with large empty areas that don't contribute to the solving process.",,ok
+5Au4nrI2,14,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,3.0,4.0,"The puzzle's solution felt like a sequence of deliberate and logical steps, characteristic of human design.",,ok
+5Au4nrI2,15,Human,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,2.0,"It feels like a classic, introductory Sokoban level centered on a specific box-ordering task.",,ok
+5Au4nrI2,16,Human,Human,Human-designed,True,2.0,4.0,2.0,1.0,2.0,4.0,"The puzzle's solution has a nice, fluid path that teaches sequencing without being overly complex or random.",,ok
+5Au4nrI2,17,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,3.0,The puzzle has a straightforward and understandable solution path which feels deliberately crafted for a player to solve.,,ok
+5Au4nrI2,18,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle has a logical flow designed for a smooth, progressive learning experience, typical of human design.",,ok
+5Au4nrI2,19,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,The puzzle has a clear flow and a specific intended solution path that feels deliberately crafted for players.,,ok
+5Au4nrI2,20,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The level lacks clever tricks or misdirection typical of human design, feeling more like a basic functional exercise.",,ok
+5iXJGqnK,1,AI,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, serving as a basic introduction to Sokoban mechanics rather than presenting a unique challenge.",,ok
+5iXJGqnK,2,AI,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,2.0,"The puzzle is a basic but logical sequence of clearing space, which suggests intentional human design for learning. It doesn't have the complexity or strange layouts I'd expect from an AI.",,ok
+5iXJGqnK,3,AI,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,2.0,"The puzzle required simple foresight and sequential moves, common traits of human design for introducing mechanics.",,ok
+5iXJGqnK,4,AI,Human,Human-designed,True,2.0,4.0,2.0,1.0,2.0,3.0,"The puzzle requires specific sequencing and forethought, particularly in how the bottom boxes are moved to allow access.",,ok
+5iXJGqnK,5,AI,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,3.0,"The puzzle divides into sub-problems, suggesting a human designer's thought process.",,ok
+5iXJGqnK,6,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle requires thinking about box placement orders, indicating a deliberate design intended to guide the player's thoughts.",,ok
+5iXJGqnK,7,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"The puzzle solution requires a clear, logical sequence of steps, which feels intentionally designed by a human.",,ok
+5iXJGqnK,8,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,The puzzle's solution felt extremely linear and lacked any interesting interactions or difficulty.,,ok
+5iXJGqnK,9,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle's layout and solution are very traditional, serving as a clean, simple introduction to the game's mechanics.",,ok
+5iXJGqnK,10,AI,AI,AI-generated,True,2.0,3.0,2.0,1.0,1.0,2.0,"The puzzle feels like a collection of components rather than a holistic, aesthetically pleasing design.",,ok
+5iXJGqnK,11,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"The puzzle required understanding the specific order of operations, which is a classic human puzzle design philosophy.",,ok
+5iXJGqnK,12,AI,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,2.0,"The puzzle requires a specific, logical sequence of steps, typical of human design meant to teach a concept.",,ok
+5iXJGqnK,13,AI,Human,Human-designed,True,2.0,4.0,3.0,1.0,2.0,3.0,The puzzle requires planning and sequencing that feels intentional and designed for a human to solve.,,ok
+5iXJGqnK,14,AI,Human,Human-designed,True,2.0,4.0,2.0,1.0,2.0,4.0,"The puzzle has a simple, logical flow and an almost tutorial-like feel, suggesting a human designed it.",,ok
+5iXJGqnK,15,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"It featured a distinct critical path, where solving one section unlocked the ability to solve the next.",,ok
+5iXJGqnK,16,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"The puzzle's logic, requiring temporary box placement to create paths, feels like intentional human puzzle crafting.",,ok
+5iXJGqnK,17,AI,AI,AI-generated,True,1.0,3.0,2.0,1.0,1.0,2.0,The puzzle presents a basic challenge without any unique flair or specific design philosophy guiding it.,,ok
+5iXJGqnK,18,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle lacks thematic design or a core 'aha' moment, just direct pushing actions from start to finish.",,ok
+5iXJGqnK,19,AI,Human,Human-designed,True,2.0,4.0,2.0,1.0,1.0,4.0,"The puzzle feels like a classic, well-structured introduction, with a clear and smooth sequence of moves.",,ok
+5iXJGqnK,20,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"The puzzle's solution path is clearly deliberate, requiring a human-like flow of logic to solve. The difficulty ramps up perfectly.",,ok
+73sJaNBn,1,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"The puzzle's simple, symmetrical layout and straightforward solution path feel intentional and typical of human design.",,ok
+73sJaNBn,2,Human,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,The level lacks a distinct clever trick or 'aha' moment often found in human-made puzzles.,,ok
+73sJaNBn,3,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,This puzzle feels more like a tutorial than a real level; there's no challenge or thinking required.,,ok
+73sJaNBn,4,Human,AI,AI-generated,True,2.0,3.0,1.0,1.0,1.0,2.0,"The puzzle has a straightforward solution with three independent box paths, which feels systematic and less creative.",,ok
+73sJaNBn,5,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is symmetrical and solved with simple, direct pushes, lacking the intricate dependencies often found in human designs.",,ok
+73sJaNBn,6,Human,AI,AI-generated,True,3.0,3.0,2.0,1.0,4.0,3.0,The ten goals for three boxes feels like a mathematical problem rather than a crafted human experience.,,ok
+73sJaNBn,7,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is a basic introductory level, intentionally designed to teach fundamental movement without any complex interactions.",,ok
+73sJaNBn,8,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The structure is very basic, with boxes and goals placed symmetrically in an uninspired arrangement.",,ok
+73sJaNBn,9,Human,AI,AI-generated,True,3.0,1.0,1.0,5.0,1.0,1.0,"It's a fundamentally broken puzzle with three boxes for eight goals, a mistake a human designer would not make.",,ok
+73sJaNBn,10,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,4.0,"The puzzle focuses on a specific, recognizable human logic trap: ordering boxes correctly within a tight space.",,ok
+73sJaNBn,11,Human,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is a basic, symmetrical layout without any surprising or nuanced design elements.",,ok
+73sJaNBn,12,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple with a straightforward, brute-force solution that lacks any clever human design.",,ok
+73sJaNBn,13,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,3.0,5.0,"The level's symmetrical layout and elegant, flowing solution suggest human design with aesthetic intent.",,ok
+73sJaNBn,14,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle solution is direct and mechanical, lacking clever misdirection or a satisfying 'aha' moment.",,ok
+73sJaNBn,15,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,3.0,4.0,"It feels like a tutorial for a concept; getting boxes arranged along a single-tile-wide corridor, which suggests human intent.",,ok
+73sJaNBn,16,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle's solution has a nice, rotational flow that feels guided and intentional, unlike a brute-forced design.",,ok
+73sJaNBn,17,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle is a basic but elegant demonstration of how boxes can block other boxes, a classic human design.",,ok
+73sJaNBn,18,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"The puzzle has a simple, deliberate flow requiring a specific order of operations, typical of human design.",,ok
+73sJaNBn,19,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,4.0,"This puzzle feels like a classic introduction. It has symmetrical box placements and a methodical, logical flow.",,ok
+73sJaNBn,20,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,2.0,The puzzle is a simple exercise in navigating tight spaces without any truly convoluted or surprising steps.,,ok
+79DSy6TF,1,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"The puzzle is a classic, simple Sokoban setup that teaches the basic concept of irreversible moves.",,ok
+79DSy6TF,2,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is extremely simple and perfectly symmetrical, serving as a clear tutorial on splitting boxes, which is a common human design pattern for early levels.",,ok
+79DSy6TF,3,AI,Human,Human-designed,True,2.0,2.0,1.0,1.0,1.0,3.0,The puzzle's extreme simplicity and direct solution path feel like a tutorial level made by a human developer.,,ok
+79DSy6TF,4,AI,AI,AI-generated,True,3.0,1.0,1.0,4.0,1.0,1.0,This puzzle is technically impossible because it has four goals but only two boxes to place on them.,,ok
+79DSy6TF,5,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is extremely simple and symmetrical, serving as a basic introduction to the game's concepts.",,ok
+79DSy6TF,6,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,This puzzle is a straightforward exercise with a simple layout and no challenging interactions.,,ok
+79DSy6TF,7,AI,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,3.0,"This puzzle is incredibly simple and lacks any tricks, giving it a very basic, almost procedural feel.",,ok
+79DSy6TF,8,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"The puzzle is simple, symmetrical, and teaches a basic Sokoban concept, which feels like a human tutorial level.",,ok
+79DSy6TF,9,AI,AI,AI-generated,True,3.0,1.0,1.0,5.0,1.0,1.0,This puzzle is fundamentally unsolvable from the start which suggests a generation error rather than intentional human design.,,ok
+79DSy6TF,10,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and symmetrical, lacking any creative challenge or human touch.",,ok
+79DSy6TF,11,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely basic, lacking any discernible design intricacy or cleverness, suggesting a simple procedural generation.",,ok
+79DSy6TF,12,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is a simple, symmetrical concept designed to teach the player basic movement and box isolation.",,ok
+79DSy6TF,13,AI,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle is a classic, simple setup that requires a non-obvious first move to succeed.",,ok
+79DSy6TF,14,AI,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,4.0,"The puzzle feels like an introductory level, teaching players the basic movements in a simple, symmetrical layout.",,ok
+79DSy6TF,15,AI,Human,Human-designed,True,2.0,4.0,1.0,1.0,2.0,4.0,"The puzzle has a simple, intentional design that teaches a basic maneuver without unnecessary complexity.",,ok
+79DSy6TF,16,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is a basic introductory problem demonstrating box separation, a common human-designed teaching concept.",,ok
+79DSy6TF,17,AI,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,4.0,"The puzzle is a basic introductory level, designed to teach the fundamentals of pushing boxes onto goals.",,ok
+79DSy6TF,18,AI,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is a basic introductory level, intentionally designed for a new player to learn mechanics.",,ok
+79DSy6TF,19,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and symmetrical, lacking any clever tricks or required planning, which suggests an automated process.",,ok
+79DSy6TF,20,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"The puzzle is a simple, symmetrical, classic introductory Sokoban level designed to teach basic movement and box placement.",,ok
+7V2mu5KA,1,Human,Human,Human-designed,True,3.0,5.0,2.0,1.0,3.0,5.0,"The puzzle's elegant, symmetrical design and single clear 'aha' moment feel intentionally crafted for a player's satisfaction.",,ok
+7V2mu5KA,2,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,5.0,"The puzzle's symmetrical design and focused, simple core idea feel more deliberate than randomly generated.",,ok
+7V2mu5KA,3,Human,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,4.0,The puzzle is highly symmetrical; it feels like it was designed as a simple but elegant tutorial level.,,ok
+7V2mu5KA,4,Human,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,2.0,"The puzzle focuses on a simple, classic Sokoban interaction: shuffling boxes in a tight space, which feels human-authored.",,ok
+7V2mu5KA,5,Human,Human,Human-designed,True,2.0,3.0,2.0,1.0,2.0,4.0,"The puzzle has a simple concept of moving boxes as pairs, which points toward a human design focus.",,ok
+7V2mu5KA,6,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"The puzzle is a simple teaching level focused on push order, a common human design pattern.",,ok
+7V2mu5KA,7,Human,AI,AI-generated,True,2.0,4.0,1.0,1.0,1.0,4.0,It feels very simple and its perfect symmetry makes it seem procedurally generated rather than cleverly designed.,,ok
+7V2mu5KA,8,Human,AI,AI-generated,True,1.0,3.0,2.0,1.0,1.0,2.0,"The puzzle's small, symmetrical layout and straightforward logic feel mechanically generated rather than artistically designed by a person.",,ok
+7V2mu5KA,9,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,4.0,"The puzzle feels like an introductory lesson on managing boxes in pairs and not blocking pathways, a human touch.",,ok
+7V2mu5KA,10,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,1.0,3.0,"The puzzle has a simple, symmetrical layout and a very methodical, sequential solution which feels intentional.",,ok
+7V2mu5KA,11,Human,AI,AI-generated,True,2.0,3.0,2.0,1.0,1.0,4.0,The puzzle's symmetry and straightforward solution lack the clever twists or unusual layouts often found in human-designed challenges.,,ok
+7V2mu5KA,12,Human,Human,Human-designed,True,3.0,4.0,4.0,2.0,3.0,5.0,The puzzle's elegant symmetry and focus on a central solving area suggest deliberate human crafting for a solvable challenge.,,ok
+7V2mu5KA,13,Human,Human,Human-designed,True,3.0,4.0,1.0,1.0,1.0,3.0,"The puzzle has a deliberate, clean solution path and a symmetrical feel that suggests intentional design.",,ok
+7V2mu5KA,14,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is simple and symmetrical, solved with no backtracking, resembling basic training patterns.",,ok
+7V2mu5KA,15,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle has a simple, clean layout and a straightforward solution path that feels intentional.",,ok
+7V2mu5KA,16,Human,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is overly simple, with no real traps or planning needed, resembling an uninspired introductory level.",,ok
+7V2mu5KA,17,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,4.0,4.0,"The puzzle is built around a single, elegant trick: using one goal as a temporary holding spot. This points to a human designer's clever misdirection.",,ok
+7V2mu5KA,18,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,4.0,"The puzzle is a compact, classic Sokoban problem relying on interdependent pushes and careful sequencing.",,ok
+7V2mu5KA,19,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"It presents a classic Sokoban setup requiring a specific, discoverable sequence, a common trait in human design.",,ok
+7V2mu5KA,20,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle's solution path feels deliberately crafted and requires thinking several moves ahead, a human design trait.",,ok
+8Ua6YU1D,1,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is very small, symmetrical, and presents no real obstacles or complex interactions, making it seem machine-generated.",,ok
+8Ua6YU1D,2,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle was solved in two moves and had zero challenge; it felt like a randomly generated, uncurated level.",,ok
+8Ua6YU1D,3,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"It's extremely simple, with no tricks or difficult maneuvers, making it feel like a basic tutorial level.",,ok
+8Ua6YU1D,4,Human,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,3.0,"The puzzle seems like a simple, introductory level meant to teach basic push mechanics without being too complex.",,ok
+8Ua6YU1D,5,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,1.0,"The puzzle is trivial, lacking any complexity, tricks, or cleverness that would suggest a human designer's touch.",,ok
+8Ua6YU1D,6,Human,AI,AI-generated,True,2.0,1.0,1.0,3.0,1.0,1.0,"The puzzle is trivial and appears unsolvable, which feels like a mistake an AI might make.",,ok
+8Ua6YU1D,7,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,3.0,4.0,"The puzzle has a clear, elegant solution path with just enough steps to be a satisfying micro-puzzle.",,ok
+8Ua6YU1D,8,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,1.0,"The puzzle is so rudimentary it barely registers as a challenge, resembling a tutorial step more than a designed level.",,ok
+8Ua6YU1D,9,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,1.0,"This level is extremely simple and can be solved with just a few direct pushes, showing no sign of thoughtful design.",,ok
+8Ua6YU1D,10,Human,Human,Human-designed,True,3.0,2.0,1.0,1.0,2.0,3.0,"The puzzle demonstrates a specific, intentional interaction that a human designer would likely create for a clever solution.",,ok
+8Ua6YU1D,11,Human,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,2.0,The layout is very basic and lacks the cleverness or thematic design a human often builds into a puzzle.,,ok
+8Ua6YU1D,12,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,2.0,The puzzle is simple and teaches a fundamental concept: move one box completely before another.,,ok
+8Ua6YU1D,13,Human,AI,AI-generated,True,2.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely small and simple, looking more like a basic tutorial level or a randomly generated test case.",,ok
+8Ua6YU1D,14,Human,Human,Human-designed,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle's tightness implies a deliberate, non-obvious solution sequence, a hallmark of human puzzle crafting.",,ok
+8Ua6YU1D,15,Human,AI,AI-generated,True,2.0,1.0,1.0,1.0,1.0,2.0,"This appears to be a tutorial or introductory level, too simple for meaningful human design.",,ok
+8Ua6YU1D,16,Human,AI,AI-generated,True,3.0,1.0,1.0,5.0,1.0,1.0,The puzzle is unsolvable as presented because two boxes cannot fill four goals.,,ok
+8Ua6YU1D,17,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is trivial with no obstacles, tricks, or planning required; it feels more like a basic functional output.",,ok
+8Ua6YU1D,18,Human,Human,Human-designed,True,2.0,3.0,2.0,1.0,2.0,3.0,"The puzzle has a simple, focused design with a clear micro-puzzle centered around a small space, a human design trait.",,ok
+8Ua6YU1D,19,Human,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,3.0,"The puzzle is very small and relies on a specific sequence of moves, which feels like a classic, simple human-made tutorial level.",,ok
+8Ua6YU1D,20,Human,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is extremely simple and direct, serving as a tutorial for basic movement and pushing.",,ok
+aE7sjnta,1,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The level is extremely simple and feels like a tutorial, which is a common human design pattern.",,ok
+aE7sjnta,2,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The level's small size, basic layout, and trivial solution make it feel like a procedurally generated tutorial puzzle.",,ok
+aE7sjnta,3,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"This puzzle lacks any challenge or cleverness, making it feel more like an algorithm's simple output than a human creation.",,ok
+aE7sjnta,4,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and lacks any interesting design or challenge, feeling more procedural or foundational.",,ok
+aE7sjnta,5,AI,Human,Human-designed,True,2.0,4.0,2.0,1.0,2.0,4.0,"The puzzle's design feels deliberate, teaching the player a core concept about box ordering in a compact space.",,ok
+aE7sjnta,6,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle has four goals but only two boxes, which feels like a strange, non-human design choice.",,ok
+aE7sjnta,7,AI,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,3.0,"This feels like a tutorial level, designed with a clear, simple path to teach basic box interactions.",,ok
+aE7sjnta,8,AI,AI,AI-generated,True,3.0,1.0,1.0,5.0,1.0,1.0,"The puzzle has four goals but only two boxes, making it fundamentally broken and unsolvable as presented.",,ok
+aE7sjnta,9,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,The puzzle is extremely simple and lacks any interesting ideas or structure suggesting a creative human touch.,,ok
+aE7sjnta,10,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple with mirrored goal placements and a straightforward, uninspired solution path.",,ok
+aE7sjnta,11,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is solved in four trivial moves with no planning required, suggesting a very basic generative process.",,ok
+aE7sjnta,12,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is overly simple, symmetrical, and lacks any discernible clever idea or challenge, feeling procedurally generated.",,ok
+aE7sjnta,13,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple with more goals than boxes, which feels like a procedural generation artifact.",,ok
+aE7sjnta,14,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is very simple and likely serves as a tutorial, a common trait of human-designed level progressions.",,ok
+aE7sjnta,15,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle has a simple layout with an obvious, direct solution that required no thoughtful planning.",,ok
+aE7sjnta,16,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is designed as a simple tutorial, teaching the player basic box movement without any tricks.",,ok
+aE7sjnta,17,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,The puzzle is trivial and lacks any cleverness or intentional design; it's a minimal setup.,,ok
+aE7sjnta,18,AI,AI,AI-generated,True,2.0,2.0,2.0,3.0,1.0,2.0,"The puzzle's solution path is straightforward and lacks any ingenious or surprising steps, feeling mechanically generated.",,ok
+aE7sjnta,19,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,This puzzle is basic and solved in a few moves without any real planning.,,ok
+aE7sjnta,20,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is solved with four straightforward pushes, presenting no challenge or clever interactions.",,ok
+bhRr4CCv,1,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and symmetrical, lacking any interesting challenge or clever design elements.",,ok
+bhRr4CCv,2,Human,AI,AI-generated,True,3.0,1.0,1.0,5.0,1.0,1.0,"The puzzle is immediately unsolvable as some boxes start directly against walls, a simple error a human would catch.",,ok
+bhRr4CCv,3,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,3.0,"The puzzle has a simple, highly symmetrical layout, which is a common characteristic of early-stage or simple AI-generated levels.",,ok
+bhRr4CCv,4,Human,Human,Human-designed,True,1.0,3.0,4.0,3.0,2.0,4.0,The puzzle's symmetric goal placement and central box cluster suggest intentional aesthetic design choices common in human puzzles.,,ok
+bhRr4CCv,5,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle's solution is trivial, with each box simply being pushed directly onto a goal without any obstruction.",,ok
+bhRr4CCv,6,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,4.0,5.0,"The puzzle has a clear thematic concept: using a single box to satisfy two goals, which is a classic human design pattern. The symmetrical layout, while simple, feels deliberate and aesthetically pleasing rather than random or purely functional.",,ok
+bhRr4CCv,7,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,The level's perfect north-south symmetry and straightforward solution feel intentionally designed for an elegant puzzle experience.,,ok
+bhRr4CCv,8,Human,AI,AI-generated,True,3.0,1.0,1.0,4.0,1.0,2.0,"The puzzle's simple, symmetrical layout and straightforward goal placement look like a basic, procedurally generated level.",,ok
+bhRr4CCv,9,Human,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,4.0,"The level introduces a simple idea in two symmetrical pairs, which is a classic human design pattern.",,ok
+bhRr4CCv,10,Human,AI,AI-generated,True,2.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple with a symmetrical layout and a direct, unchallenging solution path.",,ok
+bhRr4CCv,11,Human,AI,AI-generated,True,3.0,4.0,1.0,1.0,4.0,4.0,"The level uses a very simple 'complete one part to unlock the next' mechanic, which feels procedural.",,ok
+bhRr4CCv,12,Human,AI,AI-generated,True,3.0,1.0,1.0,5.0,1.0,1.0,The puzzle is unsolvable; there are nine goals but only four boxes to place on them.,,ok
+bhRr4CCv,13,Human,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,3.0,"The puzzle's simple, symmetric layout and straightforward solve path feel like a classic, intentionally designed introductory level.",,ok
+bhRr4CCv,14,Human,Human,Human-designed,True,2.0,3.0,3.0,2.0,2.0,4.0,"The level design is symmetrical and feels intentionally crafted to introduce a core idea, which suggests human thought.",,ok
+bhRr4CCv,15,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,4.0,The level feels intentionally symmetrical and has a clear progression that a human designer would favor for clarity.,,ok
+bhRr4CCv,16,Human,AI,AI-generated,True,1.0,3.0,3.0,2.0,1.0,2.0,"The puzzle's simple, almost symmetrical layout and clustered goals feel very mechanical rather than creatively placed by a human.",,ok
+bhRr4CCv,17,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,5.0,"The level is symmetrical and elegant, with a clear sequence of moves, which is typical of human design.",,ok
+bhRr4CCv,18,Human,AI,AI-generated,True,3.0,1.0,1.0,5.0,1.0,1.0,"The puzzle is trivially broken, with a single move leading to an unsolvable state, suggesting a lack of human testing.",,ok
+bhRr4CCv,19,Human,Human,Human-designed,True,2.0,4.0,3.0,1.0,2.0,4.0,"The puzzle's symmetric layout and use of a central hub feels very deliberate and intentional, suggesting human design.",,ok
+bhRr4CCv,20,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is overly simplistic and symmetrical, lacking any real challenge or creative thought.",,ok
+cHhvQJlr,1,AI,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,4.0,"The puzzle is a small, focused test of shuffling boxes, a common human design pattern.",,ok
+cHhvQJlr,2,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and lacks any challenging interactions, feeling like a basic tutorial level generator output.",,ok
+cHhvQJlr,3,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,3.0,4.0,"This puzzle feels like it was designed around a single, specific trick involving shuffling boxes in a tight space.",,ok
+cHhvQJlr,4,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The solution is straightforward and requires no complex planning, just pushing boxes to the nearest goals.",,ok
+cHhvQJlr,5,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is a classic, simple Sokoban setup focusing on fundamental box manipulation, typical of early human-made tutorial levels.",,ok
+cHhvQJlr,6,AI,Human,Human-designed,True,3.0,5.0,2.0,1.0,3.0,5.0,"It requires a non-obvious, specific sequence of moves that feels like a classic, hand-crafted puzzle.",,ok
+cHhvQJlr,7,AI,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,2.0,The puzzle is extremely simple and lacks any sort of clever trick or thematic design.,,ok
+cHhvQJlr,8,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,1.0,"The puzzle is trivially easy and solved with only a few obvious moves, suggesting a simple procedural generation.",,ok
+cHhvQJlr,9,AI,AI,AI-generated,True,3.0,3.0,2.0,1.0,1.0,2.0,"The level's small size, simple L-shape, and straightforward solution path feel like a basic, uninspired configuration.",,ok
+cHhvQJlr,10,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and feels more like a mechanical task than a tricky, human-made challenge.",,ok
+cHhvQJlr,11,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,The puzzle is extremely simple and feels more like a tutorial-level mechanic demonstration than a designed challenge.,,ok
+cHhvQJlr,12,AI,Human,Human-designed,True,3.0,4.0,2.0,1.0,1.0,4.0,"The puzzle logic feels very deliberate, requiring a specific sequence for a tight fit, typical of human design.",,ok
+cHhvQJlr,13,AI,Human,Human-designed,True,3.0,4.0,2.0,1.0,1.0,3.0,"The puzzle has a simple, focused design with a clear, single path, which feels intentional and human-crafted.",,ok
+cHhvQJlr,14,AI,Human,Human-designed,True,3.0,4.0,1.0,1.0,1.0,4.0,The structure feels handcrafted as a tutorial; it teaches moving boxes to clear paths.,,ok
+cHhvQJlr,15,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is symmetrical, very simple, and lacks any interesting interactions or challenges.",,ok
+cHhvQJlr,16,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, with a direct solution and no complex interactions or misdirection involved.",,ok
+cHhvQJlr,17,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is very basic, a common trait in early-stage or simple AI-generated content designed for solvability.",,ok
+cHhvQJlr,18,AI,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"The puzzle is a simple, common pattern focused on teaching fundamental box manipulation and ordering.",,ok
+cHhvQJlr,19,AI,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"The puzzle's small scale and straightforward solution path feel like a classic, intentionally designed introductory level.",,ok
+cHhvQJlr,20,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"The puzzle is very simple and compact, teaching the basic concept of using one box to maneuver others.",,ok
+cTxMstwv,1,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,The puzzle lacks any meaningful challenge; each box is just pushed directly onto an adjacent goal.,,ok
+cTxMstwv,2,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, lacking any creative or challenging elements, like something a basic algorithm might generate.",,ok
+cTxMstwv,3,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is trivial, symmetrical, and lacks any semblance of a challenge, appearing more like a basic test case.",,ok
+cTxMstwv,4,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,1.0,"The puzzle is trivially simple, requiring only three pushes, suggesting an AI generating a basic test case.",,ok
+cTxMstwv,5,AI,Human,Human-designed,True,3.0,5.0,4.0,2.0,5.0,5.0,"The level requires understanding a specific trick about box ordering, which feels like a deliberate human teachable moment.",,ok
+cTxMstwv,6,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle has a simple, introductory feel, a small symmetrical layout, and is a well-known, classic design.",,ok
+cTxMstwv,7,AI,Human,Human-designed,True,1.0,3.0,3.0,1.0,2.0,4.0,"The puzzle exhibits a clear sense of symmetry and intentional design, typical of human creators focusing on aesthetics.",,ok
+cTxMstwv,8,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and symmetrical, lacking any interesting challenge or design flair a human would include.",,ok
+cTxMstwv,9,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,1.0,"The puzzle lacks any challenge or cleverness, feeling like a basic, uninspired configuration possibly created for tutorial purposes.",,ok
+cTxMstwv,10,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely basic with a direct, symmetrical solution and no opportunity for player error.",,ok
+cTxMstwv,11,AI,Human,Human-designed,True,2.0,3.0,4.0,2.0,2.0,4.0,The puzzle's symmetric layout and clear structure suggest deliberate human design for aesthetic and conceptual reasons.,,ok
+cTxMstwv,12,AI,AI,AI-generated,True,2.0,2.0,3.0,4.0,1.0,1.0,"The layout is basic, with boxes and goals in straightforward rows, which is common in AI-generated puzzles.",,ok
+cTxMstwv,13,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and symmetrical, lacking any creative challenge or clever design elements.",,ok
+cTxMstwv,14,AI,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,2.0,"It's a very simple, symmetrical puzzle structured like four identical, tiny sub-puzzles pushed together.",,ok
+cTxMstwv,15,AI,AI,AI-generated,True,3.0,1.0,1.0,3.0,1.0,1.0,"The puzzle is fundamentally unsolvable from the initial state, which suggests a lack of human oversight.",,ok
+cTxMstwv,16,AI,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"The puzzle has a very structured, symmetrical, and almost tutorial-like appearance often found in human-made levels.",,ok
+cTxMstwv,17,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,The puzzle's extreme simplicity and direct solution path suggest it was randomly generated rather than thoughtfully designed.,,ok
+cTxMstwv,18,AI,Human,Human-designed,True,1.0,3.0,1.0,1.0,1.0,3.0,"The level seems too simple and straightforward, likely serving as a very basic tutorial puzzle designed by a human.",,ok
+cTxMstwv,19,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle lacks any meaningful challenge or design, resembling a basic tutorial or a non-puzzle output.",,ok
+cTxMstwv,20,AI,Human,Human-designed,True,1.0,2.0,1.0,1.0,1.0,3.0,"This feels more like an introductory level or a tutorial than a complex puzzle, which humans often design.",,ok
+extLxWet,1,AI,AI,AI-generated,True,3.0,3.0,1.0,1.0,1.0,2.0,"The puzzle is simple, symmetrical, and lacks any intricate or creative design elements that suggest human touch.",,ok
+extLxWet,2,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"This puzzle feels very formulaic, lacking the creative misdirection or 'aha' moment typical of human design.",,ok
+extLxWet,3,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"The puzzle has a simple, clean, and symmetrical aesthetic, lacking the usual complexity or awkwardness of AI-generated levels.",,ok
+extLxWet,4,AI,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,3.0,"The puzzle is a simple test of ordering but has a clear, discoverable solution path typical of human design.",,ok
+extLxWet,5,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,2.0,5.0,"The layout is clearly a smiley face, a deliberate aesthetic choice unlikely to be produced by an AI.",,ok
+extLxWet,6,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple with a predictable solution, lacking the intentionality and subtle tricks of a human-designed level.",,ok
+extLxWet,7,AI,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle has a simple, accessible solution and a focused design that feels intentionally crafted for a player.",,ok
+extLxWet,8,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle's simple, almost symmetrical layout and straightforward solution path feel mechanical and uninspired.",,ok
+extLxWet,9,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"The puzzle layout strongly resembles a smiley or frowny face, a classic human design trait.",,ok
+extLxWet,10,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is trivial, consisting of just pushing each box directly to its nearest goal without any obstacles or planning required.",,ok
+extLxWet,11,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,The puzzle is highly symmetrical and the solution is a very direct sequence with no gimmicks.,,ok
+extLxWet,12,AI,AI,AI-generated,True,3.0,3.0,2.0,1.0,1.0,3.0,"The puzzle has a simple, symmetrical layout and lacks any complex, tricky interactions typical of human design.",,ok
+extLxWet,13,AI,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,3.0,"This feels like a straightforward introductory puzzle, focusing on basic sequential box placement without complex tricks.",,ok
+extLxWet,14,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,The puzzle lacks distinctive design elements and feels like a basic permutation of boxes and goals.,,ok
+extLxWet,15,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"The puzzle is very straightforward and symmetrical, feeling like a tutorial level created by a person.",,ok
+extLxWet,16,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is simple and very symmetrical, lacking a distinct human touch or clever misdirection. It feels like a basic tutorial level.",,ok
+extLxWet,17,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle has a simple, somewhat bland layout and a very straightforward solution path lacking human design flair.",,ok
+extLxWet,18,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"This is a classic, almost archetypal tutorial layout with a simple, clear, and didactic solution path.",,ok
+extLxWet,19,AI,AI,AI-generated,True,3.0,3.0,1.0,1.0,1.0,3.0,The level's symmetrical layout and straightforward solution path strongly suggest an algorithmically generated puzzle.,,ok
+extLxWet,20,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is symmetrical, basic, and follows a straightforward solution path without any memorable tricks.",,ok
+f8sbFI0a,1,Human,Human,Human-designed,True,2.0,4.0,3.0,2.0,3.0,4.0,"The puzzle has a clear flow and a single, elegant solution path, which feels intentional.",,ok
+f8sbFI0a,2,Human,Human,Human-designed,True,1.0,3.0,1.0,1.0,1.0,4.0,"This feels like a simple tutorial level, designed with a clean, straightforward path to teach basic box pushing.",,ok
+f8sbFI0a,3,Human,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,3.0,"The puzzle has a clear, sequential solution path where each move sets up the next, feeling very deliberate.",,ok
+f8sbFI0a,4,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and lacks any interesting interactions, resembling a basic training level an AI might generate.",,ok
+f8sbFI0a,5,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is a simple, symmetrical, tutorial-like problem with no complex or confusing elements whatsoever.",,ok
+f8sbFI0a,6,Human,Human,Human-designed,True,3.0,1.0,1.0,1.0,1.0,2.0,"The level is very simple, symmetrical, and seems designed as an easy tutorial, which is a common human design pattern.",,ok
+f8sbFI0a,7,Human,Human,Human-designed,True,1.0,2.0,2.0,4.0,1.0,2.0,"The puzzle has a simple layout with what looks like an obvious trap, which is a common human design choice.",,ok
+f8sbFI0a,8,Human,Human,Human-designed,True,2.0,4.0,3.0,1.0,2.0,4.0,"This puzzle feels intentional, focusing on a single, compact challenge without any strange or unnecessary elements.",,ok
+f8sbFI0a,9,Human,Human,Human-designed,True,2.0,4.0,2.0,1.0,1.0,3.0,"The puzzle's small scale and clear, direct solution path feel like a classic, intentionally designed tutorial level.",,ok
+f8sbFI0a,10,Human,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,4.0,The structure is very clean and seems designed to teach a basic box-reordering concept.,,ok
+f8sbFI0a,11,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle solution is very direct and short, with no deceptive paths or required planning.",,ok
+f8sbFI0a,12,Human,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,3.0,"The puzzle has a straightforward and compact design that focuses on a single, clean sequence of moves.",,ok
+f8sbFI0a,13,Human,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,3.0,"The puzzle has a simple, direct solution path requiring minimal backtracking, suggesting deliberate human design for a straightforward challenge.",,ok
+f8sbFI0a,14,Human,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,3.0,"The level lacks any clever tricks or sub-puzzles, following a very direct and functional solution path.",,ok
+f8sbFI0a,15,Human,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,4.0,"The level design is symmetrical and clean, which is often a characteristic of human-made introductory puzzles.",,ok
+f8sbFI0a,16,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle has a single, clear theme and a very focused, intentional solution path, typical of human design.",,ok
+f8sbFI0a,17,Human,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,3.0,The puzzle feels like a straightforward tutorial level designed to teach a simple unlocking mechanic.,,ok
+f8sbFI0a,18,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is very straightforward with an obvious, direct solution and lacks any clever design elements often found in human-made puzzles.",,ok
+f8sbFI0a,19,Human,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,3.0,The puzzle's solution is straightforward and lacks any specific human touch or clever trick.,,ok
+f8sbFI0a,20,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,This puzzle is extremely simple and functions as more of a brief tutorial than a complex challenge.,,ok
+H77pn4iQ,1,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,3.0,"The puzzle is divided into distinct sections, requiring a logical sequence that feels handcrafted and intentional for the player's experience.",,ok
+H77pn4iQ,2,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,3.0,"The puzzle's layout feels very purposeful, forcing me to solve for specific boxes in a certain order.",,ok
+H77pn4iQ,3,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,4.0,3.0,"The puzzle hinges on a clever, multi-step sequence to get boxes onto the right-side goals.",,ok
+H77pn4iQ,4,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"It featured a very clear, sequential solving path where each box placement felt like solving a mini-puzzle.",,ok
+H77pn4iQ,5,AI,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,3.0,"The puzzle's solution relied on a sequential, thoughtful process rather than brute force, suggesting deliberate design.",,ok
+H77pn4iQ,6,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle requires solving sections in a specific order, which suggests deliberate human design for a guided experience.",,ok
+H77pn4iQ,7,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,The disconnected layout and straightforward solution path feel more like an algorithmically generated puzzle than a handcrafted one.,,ok
+H77pn4iQ,8,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"The puzzle is neatly divided into three smaller, mostly separate problems, suggesting a thoughtful, human-centric design approach.",,ok
+H77pn4iQ,9,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,3.0,"The level is built around interdependent sub-problems, requiring a specific solve order common in human design.",,ok
+H77pn4iQ,10,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,3.0,3.0,"It involves a central theme of box ordering and path clearing, feeling more crafted than randomly generated.",,ok
+H77pn4iQ,11,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"The puzzle has a clear flow and sequence, where each box push enables the next, suggesting thoughtful design.",,ok
+H77pn4iQ,12,AI,AI,AI-generated,True,1.0,3.0,1.0,1.0,1.0,2.0,"The level is composed of separate, simple vignettes rather than an interconnected, holistic puzzle design.",,ok
+H77pn4iQ,13,AI,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,The puzzle has a logical flow and a clear structure that feels intentional and guides the solver's decisions.,,ok
+H77pn4iQ,14,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,3.0,4.0,"The puzzle involves several clear sub-goals and a structured sequence, signs of deliberate human design.",,ok
+H77pn4iQ,15,AI,Human,Human-designed,True,2.0,4.0,3.0,1.0,2.0,4.0,"The puzzle has a clear flow and a logical sequence of solving different sections, which feels intentional.",,ok
+H77pn4iQ,16,AI,AI,AI-generated,True,2.0,3.0,2.0,1.0,1.0,2.0,The layout feels random and lacks a central theme or clever mechanic typically found in human designs.,,ok
+H77pn4iQ,17,AI,Human,Human-designed,True,2.0,3.0,2.0,1.0,2.0,3.0,"The puzzle's solution reveals a logical, sequential path that feels intentionally crafted for a player's satisfaction.",,ok
+H77pn4iQ,18,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,3.0,3.0,"The puzzle requires a specific, non-obvious sequence to solve, suggesting intentional design for a clever solution path.",,ok
+H77pn4iQ,19,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle is segmented, requiring the player to solve different areas in a logical order, which feels deliberate and handcrafted.",,ok
+H77pn4iQ,20,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle lacks a clear, guiding structure or a central theme, feeling more like a randomly generated assortment of obstacles.",,ok
+HjLVlKx4,1,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle focuses on a single, elegant choke point, a common characteristic of focused human puzzle design.",,ok
+HjLVlKx4,2,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"The puzzle focuses on a single, clear idea: fitting boxes into a small room, which feels like intentional design.",,ok
+HjLVlKx4,3,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"The puzzle is compact and focuses on a single, tight sequence, which is typical of human design.",,ok
+HjLVlKx4,4,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle's elegant symmetry and a clear critical path suggest deliberate, thoughtful human design for a specific experience.",,ok
+HjLVlKx4,5,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,The puzzle is a simple arrangement of boxes without any interesting interactions or a clever critical path.,,ok
+HjLVlKx4,6,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle's layout and solution are extremely straightforward, with no complex interactions or intentional misdirection.",,ok
+HjLVlKx4,7,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle feels crafted with a specific solve path in mind, requiring logical steps rather than brute force.",,ok
+HjLVlKx4,8,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"The puzzle requires precise box ordering into a tight alcove, a classic human-designed Sokoban challenge.",,ok
+HjLVlKx4,9,Human,AI,AI-generated,True,1.0,3.0,2.0,1.0,1.0,3.0,"The puzzle is small, quite open, and lacks any distinctive 'human' tricks, feeling more like a basic functional challenge.",,ok
+HjLVlKx4,10,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,3.0,4.0,"The level requires a specific sequence of box placements, indicating a planned solution characteristic of human design.",,ok
+HjLVlKx4,11,Human,AI,AI-generated,True,2.0,2.0,2.0,1.0,1.0,2.0,"The puzzle lacks a core idea or clever trick, feeling more like a simple arrangement of pieces.",,ok
+HjLVlKx4,12,Human,AI,AI-generated,True,3.0,3.0,1.0,1.0,1.0,2.0,"The puzzle is simple with two pairs of boxes and goals, lacking a distinct, creative design philosophy.",,ok
+HjLVlKx4,13,Human,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is symmetrical and lacks any challenging interactions or specific sequencing, feeling more like a random valid arrangement.",,ok
+HjLVlKx4,14,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,3.0,"The puzzle is a simple, focused challenge on ordering, a classic human design trick.",,ok
+HjLVlKx4,15,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,3.0,"The puzzle requires specific, non-obvious shuffling in a tight space, indicating deliberate, human-centric design.",,ok
+HjLVlKx4,16,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"The puzzle has a straightforward logical flow, requiring the player to move boxes in a specific, clean order.",,ok
+HjLVlKx4,17,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle has a simple, focused design with a clear intended solution path, which feels intentional and human-like.",,ok
+HjLVlKx4,18,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, symmetrical, and solves with direct, uninspired pushes, suggesting a lack of human creative design.",,ok
+HjLVlKx4,19,Human,Human,Human-designed,True,1.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is far too simple and serves as an introductory example, which is a human design choice.",,ok
+HjLVlKx4,20,Human,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,3.0,"The puzzle has a simple, intentional design that provides a straightforward challenge without unnecessary complexity.",,ok
+ij6onaGt,1,AI,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,The puzzle's layout and straightforward solution path are very typical of early-stage human-designed levels.,,ok
+ij6onaGt,2,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle's sections feel isolated and lack an overarching, clever theme connecting them.",,ok
+ij6onaGt,3,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is a simple box-pushing exercise without a clear clever trick, suggesting an AI's straightforward design.",,ok
+ij6onaGt,4,AI,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,3.0,The puzzle is simple and uses standard Sokoban ideas without unusual constraints or excessive complexity often seen in AI generation.,,ok
+ij6onaGt,5,AI,AI,AI-generated,True,2.0,3.0,2.0,1.0,1.0,2.0,"The puzzle's simple, almost symmetrical layout and direct solution path feel more functional than artistic.",,ok
+ij6onaGt,6,AI,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"This puzzle feels very classic and intentional in its design, lacking the quirks of an AI-generated level.",,ok
+ij6onaGt,7,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,3.0,"The puzzle involves tight maneuvering and a specific order of operations, which feels intentionally crafted by a human.",,ok
+ij6onaGt,8,AI,Human,Human-designed,True,3.0,3.0,2.0,1.0,2.0,3.0,"The puzzle's solution relies on realizing a specific box shuffle is required, which feels like a classic human design pattern.",,ok
+ij6onaGt,9,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"It feels like four simple, independent sub-puzzles in one room, which suggests a procedural generation approach.",,ok
+ij6onaGt,10,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is highly symmetrical and lacks a distinct trick or central idea, feeling more like a tutorial level.",,ok
+ij6onaGt,11,AI,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"The puzzle's simple concept and reliance on careful step-by-step logic feel very much like a classic, handcrafted level.",,ok
+ij6onaGt,12,AI,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,The puzzle is designed to be a straightforward but thoughtful challenge with clear steps for a human player.,,ok
+ij6onaGt,13,AI,AI,AI-generated,True,3.0,3.0,2.0,1.0,1.0,2.0,"The puzzle's layout feels very utilitarian and lacks a distinct, clever design theme or a satisfying 'aha' moment.",,ok
+ij6onaGt,14,AI,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,2.0,The level's almost symmetrical layout and simple solution path feel computationally generated rather than cleverly designed.,,ok
+ij6onaGt,15,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,3.0,3.0,"It requires clever box shuffling to move from one section to another, a common human puzzle design pattern.",,ok
+ij6onaGt,16,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"It's a very simple, classic-style puzzle with a direct solution path and no extraneous elements or complex logic.",,ok
+ij6onaGt,17,AI,Human,Human-designed,True,3.0,4.0,4.0,2.0,2.0,3.0,"The puzzle has a deliberate flow and requires recognizing the specific, non-obvious order for the boxes.",,ok
+ij6onaGt,18,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is trivial, consisting of four independent sections that can be solved in any order and without thought.",,ok
+ij6onaGt,19,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle's perfect symmetry and the simple, repetitive solution path are characteristic of an algorithm exploring basic designs.",,ok
+ij6onaGt,20,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is solved with direct pushes, lacking any complex interactions or clever sub-puzzles.",,ok
+iJNJxWfZ,1,Human,Human,Human-designed,True,3.0,5.0,2.0,1.0,3.0,4.0,"The puzzle has a simple, focused idea and a very clear, satisfying solution path, suggesting human design.",,ok
+iJNJxWfZ,2,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The level is compact and symmetrical, focusing on a single, clear box-shuffling idea rather than sprawling complexity.",,ok
+iJNJxWfZ,3,Human,AI,AI-generated,True,1.0,3.0,1.0,1.0,1.0,2.0,The puzzle is highly symmetrical and lacks any discernible clever twist or intentional 'Aha!' moment typical of human design.,,ok
+iJNJxWfZ,4,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,5.0,"The puzzle is symmetrical, fair, and has a clear, elegant solution path without any strange or awkward elements.",,ok
+iJNJxWfZ,5,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle's simple, symmetric layout and clear intended solving path feel deliberately crafted for a focused challenge.",,ok
+iJNJxWfZ,6,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,3.0,5.0,"The puzzle has a compact, symmetrical design and requires the boxes to be moved in a specific interdependent sequence.",,ok
+iJNJxWfZ,7,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,5.0,"The puzzle is a simple, symmetrical, and elegant interaction, which is a hallmark of human design.",,ok
+iJNJxWfZ,8,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,4.0,4.0,The puzzle's solution relies on trapping one box to push the final two onto their goals.,,ok
+iJNJxWfZ,9,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,5.0,"The puzzle leverages a symmetric layout to create interdependent challenges for each quadrant, a common human design pattern.",,ok
+iJNJxWfZ,10,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,3.0,5.0,The puzzle's simple elegance and the clever but fair misdirection of the fourth goal strongly suggest human design.,,ok
+iJNJxWfZ,11,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle lacks a central concept or interlocking moves, feeling more like a basic arrangement of elements.",,ok
+iJNJxWfZ,12,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle has a simple, clean layout and a straightforward but satisfying solution path, which feels intentional.",,ok
+iJNJxWfZ,13,Human,AI,AI-generated,True,2.0,3.0,2.0,1.0,1.0,2.0,"The puzzle has a simple symmetrical layout and a direct, though constrained, solution path which feels very functional.",,ok
+iJNJxWfZ,14,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle's simple, symmetrical layout and straightforward but ordered solution feel intentional and crafted for a clean solving experience.",,ok
+iJNJxWfZ,15,Human,Human,Human-designed,True,3.0,5.0,3.0,1.0,3.0,5.0,"The puzzle's solution relied on a compact, aesthetically pleasing layout and an ordered sequence, suggesting a human designer's touch.",,ok
+iJNJxWfZ,16,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,2.0,4.0,It feels like a tutorial puzzle teaching the player how to maneuver boxes in a tight space.,,ok
+iJNJxWfZ,17,Human,Human,Human-designed,True,2.0,4.0,3.0,1.0,2.0,4.0,"The puzzle's symmetric layout and logical, flowing solution path feel like intentional human design rather than procedural generation.",,ok
+iJNJxWfZ,18,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,4.0,"The puzzle uses a classic, compact design with a specific move order, feeling like a deliberate human creation.",,ok
+iJNJxWfZ,19,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,5.0,"The puzzle's aesthetics, and the reliance on a single, non-obvious critical path strongly points to a human designer.",,ok
+iJNJxWfZ,20,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,5.0,"The puzzle uses a simple, symmetrical layout and a very clear solution path, which feels like intentional, elegant human design.",,ok
+Iz5BqRyu,1,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is trivial, with each box having an independent and obvious path to a goal, which is a common characteristic of simpler AI-generated levels.",,ok
+Iz5BqRyu,2,AI,AI,AI-generated,True,3.0,3.0,2.0,1.0,1.0,2.0,"The puzzle has a simple, almost random-looking structure, lacking the typical cleverness or flow of a human design.",,ok
+Iz5BqRyu,3,AI,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is very basic and follows a simple, linear path without any complex interactions or tricks.",,ok
+Iz5BqRyu,4,AI,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle is neatly divided into two solvable sections, suggesting a deliberate human design process.",,ok
+Iz5BqRyu,5,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,3.0,4.0,"The puzzle requires specific, sequential box placements that create a clear critical path, suggesting deliberate human design.",,ok
+Iz5BqRyu,6,AI,AI,AI-generated,True,3.0,3.0,1.0,1.0,1.0,2.0,The puzzle's layout feels slightly arbitrary and lacks the intentional 'aha!' moments common in human design.,,ok
+Iz5BqRyu,7,AI,AI,AI-generated,True,1.0,3.0,2.0,1.0,1.0,2.0,The puzzle's solution felt more mechanical and less about a clever central idea or aesthetic.,,ok
+Iz5BqRyu,8,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,3.0,"The puzzle requires precise sequencing and foresight, typical of human design to create a specific challenge path.",,ok
+Iz5BqRyu,9,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,3.0,"The level requires specific sequences, hinting at a human's thought process in its design.",,ok
+Iz5BqRyu,10,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle has a simple, symmetrical aesthetic and a trivial solution path that requires minimal forward thinking.",,ok
+Iz5BqRyu,11,AI,AI,AI-generated,True,1.0,3.0,2.0,1.0,1.0,2.0,The level's asymmetry and straightforward solution feel more algorithmic than handcrafted for a specific player experience.,,ok
+Iz5BqRyu,12,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,3.0,4.0,"The puzzle required staging a box temporarily, which is a nuanced strategy often seen in human-made levels.",,ok
+Iz5BqRyu,13,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle's design feels crafted, with specific box placements creating a a focused, logical challenge about order.",,ok
+Iz5BqRyu,14,AI,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle is composed of three interconnected sub-problems that must be solved in a specific, satisfying order.",,ok
+Iz5BqRyu,15,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle's solution path is simple and direct, requiring no clever tricks or deep foresight like human-made puzzles.",,ok
+Iz5BqRyu,16,AI,AI,AI-generated,True,2.0,3.0,2.0,1.0,1.0,3.0,"The puzzle's solution path is direct and lacks the intricate, misleading paths often designed by human creators.",,ok
+Iz5BqRyu,17,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"The puzzle demonstrates a clear, intentional design with specific box ordering, which feels handcrafted.",,ok
+Iz5BqRyu,18,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,3.0,"The level is split into three distinct mini-puzzles that require a precise order, suggesting careful human planning.",,ok
+Iz5BqRyu,19,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,The puzzle requires no complex planning; each box is moved directly to its goal without interference from others.,,ok
+Iz5BqRyu,20,AI,Human,Human-designed,True,2.0,3.0,2.0,1.0,1.0,2.0,"The puzzle's small scale and simple constraints feel like a person designed it for a clean, logical solution.",,ok
+LUiVjpMm,1,AI,AI,AI-generated,True,3.0,1.0,1.0,5.0,1.0,1.0,"The puzzle is unsolvable from the very first intended move, a classic sign of poor design.",,ok
+LUiVjpMm,2,AI,AI,AI-generated,True,3.0,1.0,2.0,2.0,1.0,2.0,"It's a very symmetrical and straightforward shuffling task, lacking a core 'aha' moment often found in human levels.",,ok
+LUiVjpMm,3,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle focuses on a single, clear idea: extracting specific boxes from a symmetric formation, a common human design pattern.",,ok
+LUiVjpMm,4,AI,AI,AI-generated,True,3.0,1.0,1.0,4.0,2.0,1.0,"The puzzle presents a complex, seemingly unsolvable layout but is solved by pushing just one box.",,ok
+LUiVjpMm,5,AI,AI,AI-generated,True,2.0,3.0,4.0,3.0,1.0,2.0,"The layout is a simple geometric shape, and the solution path is a repetitive, almost algorithmic process of box placement.",,ok
+LUiVjpMm,6,AI,AI,AI-generated,True,3.0,1.0,5.0,5.0,1.0,1.0,The puzzle appears unsolvable as presented; the player cannot reach the boxes which are completely enclosed by walls.,,ok
+LUiVjpMm,7,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,2.0,"The puzzle's simple, symmetric layout and straightforward logic feel handcrafted and intended as a basic tutorial-like challenge.",,ok
+LUiVjpMm,8,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is too simple and lacks any creative challenge; it feels like a basic tutorial level. The layout is symmetrical and purely functional, missing the cleverness expected of a human designer.",,ok
+LUiVjpMm,9,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"This feels less like a puzzle and more like a basic task with no challenge, which suggests an AI exploring minimal layouts.",,ok
+LUiVjpMm,10,AI,Human,Human-designed,True,3.0,3.0,4.0,3.0,1.0,3.0,"The puzzle's symmetry and the straightforward yet tricky solution feel deliberate, like a classic human-made challenge.",,ok
+LUiVjpMm,11,AI,Human,Human-designed,True,3.0,5.0,2.0,1.0,5.0,4.0,This puzzle is built around one central trick: trapping yourself to change the player's movement constraints.,,ok
+LUiVjpMm,12,AI,AI,AI-generated,True,2.0,1.0,1.0,1.0,1.0,2.0,"Since the puzzle is not solved in the video, its quality cannot be properly assessed.",,ok
+LUiVjpMm,13,AI,AI,AI-generated,True,3.0,1.0,1.0,4.0,1.0,1.0,"The puzzle is unsolvable from the very first move, making it seem like a flawed or random generation.",,ok
+LUiVjpMm,14,AI,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,2.0,"The level design is a perfect square of boxes, lacking the clever asymmetry often found in human-designed puzzles.",,ok
+LUiVjpMm,15,AI,AI,AI-generated,True,3.0,4.0,3.0,2.0,4.0,3.0,"The puzzle's core concept is a packing problem, which has a very formulaic and computational feel to it.",,ok
+LUiVjpMm,16,AI,AI,AI-generated,True,3.0,1.0,1.0,5.0,1.0,1.0,The puzzle is fundamentally unsolvable as presented; the goals are blocked by boxes with no way to move them.,,ok
+LUiVjpMm,17,AI,Human,Human-designed,True,3.0,1.0,1.0,1.0,1.0,2.0,This feels like a tutorial level; it's designed to teach the basic mechanic without any difficulty.,,ok
+LUiVjpMm,18,AI,AI,AI-generated,True,2.0,3.0,2.0,1.0,1.0,2.0,"The puzzle is highly symmetrical and the solution is a very repetitive, almost algorithmic process of moving boxes.",,ok
+LUiVjpMm,19,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely basic and lacks any semblance of challenge or creative design, suggesting algorithmic generation.",,ok
+LUiVjpMm,20,AI,Human,Human-designed,True,3.0,2.0,2.0,3.0,1.0,4.0,"The very symmetrical, almost decorative, layout of the boxes feels like a deliberate human touch for aesthetic effect.",,ok
+oHSLE5UO,1,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,2.0,The puzzle's straightforward solution and lack of any complexity suggest it was designed to teach basic mechanics.,,ok
+oHSLE5UO,2,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,The level is extremely simple and feels more like a tutorial step than a thoughtful puzzle.,,ok
+oHSLE5UO,3,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is solved in two straightforward pushes with no thought, indicating a lack of deliberate design.",,ok
+oHSLE5UO,4,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is basic and functional but lacks any clever design or intentional challenge, feeling randomly generated.",,ok
+oHSLE5UO,5,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,1.0,The puzzle is extremely simple and lacks any discernible design intention or challenge.,,ok
+oHSLE5UO,6,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"This puzzle is extremely simple with more goals than boxes, making the solution obvious and lacking any intentional design.",,ok
+oHSLE5UO,7,AI,AI,AI-generated,True,2.0,1.0,1.0,1.0,1.0,2.0,"The puzzle's simple, almost trivial, nature suggests a lack of intentional human design or puzzle crafting.",,ok
+oHSLE5UO,8,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,1.0,"The puzzle has four goals but only two boxes, making half the goals redundant and feeling algorithmically generated.",,ok
+oHSLE5UO,9,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,The puzzle's simplicity and direct solution path suggest it's a tutorial level created by a human.,,ok
+oHSLE5UO,10,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, with a direct and obvious solution, suggesting it's more randomly generated than thoughtfully designed.",,ok
+oHSLE5UO,11,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and lacks any interesting mechanics or thoughtful design, resembling a basic generated layout.",,ok
+oHSLE5UO,12,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple with an obvious solution, lacking any discernible challenge or interesting mechanic.",,ok
+oHSLE5UO,13,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,It feels more like a tutorial level or a random generation than a thoughtful puzzle.,,ok
+oHSLE5UO,14,AI,AI,AI-generated,True,3.0,1.0,1.0,5.0,1.0,1.0,"The puzzle is fundamentally broken with four goals and only two boxes, making a solution impossible.",,ok
+oHSLE5UO,15,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is trivial, requiring only two direct pushes to solve, suggesting automated or random generation.",,ok
+oHSLE5UO,16,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,1.0,"The puzzle is trivial, lacking any form of challenge, cleverness, or deliberate structure seen in human design.",,ok
+oHSLE5UO,17,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is clearly tutorial-like, teaching a basic box separation mechanic without any complex steps or tricks.",,ok
+oHSLE5UO,18,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is a trivial three-move solution with no misdirection, planning, or interesting layout needed.",,ok
+oHSLE5UO,19,AI,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, almost like a randomly generated tutorial with no clever design elements.",,ok
+oHSLE5UO,20,AI,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is extremely simple, serving as a basic introduction, which suggests intentional human design for a tutorial.",,ok
+QUT4qGl2,1,Human,AI,AI-generated,True,3.0,1.0,2.0,1.0,1.0,2.0,"The puzzle has a simple, symmetrical layout that feels more like a basic AI-generated starting point than a crafted level.",,ok
+QUT4qGl2,2,Human,Human,Human-designed,True,2.0,3.0,3.0,2.0,1.0,4.0,"The puzzle is a classic, compact design focused on a single, clear idea without any wasted space.",,ok
+QUT4qGl2,3,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is incredibly simple, with goals immediately next to the boxes in an open space.",,ok
+QUT4qGl2,4,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,3.0,"The puzzle is extremely simple and symmetrical, feeling more like a tutorial introduction than a designed challenge.",,ok
+QUT4qGl2,5,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is extremely simple and symmetrical, suggesting it might be an introductory or tutorial-style level. Its simplicity feels more like a basic output from an algorithm than a crafted human challenge.",,ok
+QUT4qGl2,6,Human,AI,AI-generated,True,2.0,3.0,2.0,1.0,1.0,3.0,The puzzle lacks a distinct 'aha' moment and is a straightforward box-shuffling exercise.,,ok
+QUT4qGl2,7,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"The level feels like a tutorial, with a symmetrical layout and a very straightforward solution path.",,ok
+QUT4qGl2,8,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is symmetrical and solved with simple, direct pushes, indicating a lack of human design intent.",,ok
+QUT4qGl2,9,Human,AI,AI-generated,True,1.0,3.0,2.0,1.0,1.0,3.0,"The puzzle lacks a clear thematic design and feels more like a mechanically focused, symmetric challenge.",,ok
+QUT4qGl2,10,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle's extreme simplicity, with a direct and obvious solution path, suggests it's a basic training level.",,ok
+QUT4qGl2,11,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, symmetrical, and lacks any clever tricks or interlocking dependencies typical of human design.",,ok
+QUT4qGl2,12,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,4.0,"The puzzle requires thinking ahead and has a specific, non-obvious solution path, showing intentional design.",,ok
+QUT4qGl2,13,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and symmetrical, feeling more like a basic 'task complete' check than a designed challenge.",,ok
+QUT4qGl2,14,Human,Human,Human-designed,True,2.0,4.0,3.0,2.0,2.0,4.0,The puzzle has a classic design that focuses on a single core problem: move order matters greatly.,,ok
+QUT4qGl2,15,Human,Human,Human-designed,True,3.0,4.0,4.0,2.0,3.0,5.0,"The puzzle is a compact, symmetrical, and fair but tricky micro-puzzle, typical of thoughtful human design.",,ok
+QUT4qGl2,16,Human,AI,AI-generated,True,1.0,1.0,1.0,1.0,1.0,3.0,"The puzzle's solution path was trivial, lacking any interesting interactions or human-like design nuance.",,ok
+QUT4qGl2,17,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, almost like a tutorial, which can be typical for basic AI-generated levels.",,ok
+QUT4qGl2,18,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is completely straightforward, with no required thinking, making it feel like a tutorial or randomly generated non-puzzle.",,ok
+QUT4qGl2,19,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, symmetrical, and lacks any real challenge or creative spark. It feels like a basic 'Hello, World!' puzzle.",,ok
+QUT4qGl2,20,Human,Human,Human-designed,True,3.0,4.0,2.0,2.0,1.0,4.0,"The puzzle is a classic, compact design teaching a core Sokoban concept about ordering pushes in tight spaces.",,ok
+QV6Qfb7T,1,AI,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"The puzzle has a straightforward, logical path that feels intentionally crafted for a smooth solving experience.",,ok
+QV6Qfb7T,2,AI,Human,Human-designed,True,2.0,4.0,2.0,1.0,2.0,3.0,The puzzle's solution involves a classic Sokoban technique: getting boxes past each other in a sequential way.,,ok
+QV6Qfb7T,3,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,The puzzle's P-shaped layout and the symmetrical goal placement suggest a human's deliberate and thematic design.,,ok
+QV6Qfb7T,4,AI,Human,Human-designed,True,2.0,4.0,2.0,1.0,2.0,3.0,"The puzzle requires specific ordering of box pushes, suggesting intentional design for a particular solving experience.",,ok
+QV6Qfb7T,5,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,4.0,"The puzzle's simple, symmetrical 'P' shape and minimal layout feels intentionally crafted for a focused challenge.",,ok
+QV6Qfb7T,6,AI,Human,Human-designed,True,3.0,4.0,4.0,2.0,3.0,4.0,The level's P-shape creates a clear flow and intentional constraints that feel handcrafted for a specific solution.,,ok
+QV6Qfb7T,7,AI,AI,AI-generated,True,2.0,3.0,2.0,1.0,1.0,2.0,"The level design feels somewhat uninspired and functional, without any clear thematic or clever aesthetic touches.",,ok
+QV6Qfb7T,8,AI,AI,AI-generated,True,2.0,3.0,4.0,2.0,2.0,2.0,The puzzle's P-shaped layout with awkward dead ends suggests procedural generation rather than careful human crafting.,,ok
+QV6Qfb7T,9,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is fragmented into three independent mini-tasks that don't interact, suggesting a computer-generated layout.",,ok
+QV6Qfb7T,10,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,3.0,4.0,"The puzzle requires a specific order of operations and has a clear 'aha' moment, indicating thoughtful human design.",,ok
+QV6Qfb7T,11,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle requires planning in specific sequences, especially when placing the boxes on the left, which feels intentionally choreographed.",,ok
+QV6Qfb7T,12,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle's asymmetry and the specific sequence required to solve it suggest deliberate, thoughtful human design.",,ok
+QV6Qfb7T,13,AI,Human,Human-designed,True,3.0,3.0,3.0,1.0,2.0,3.0,"The puzzle has a clear logical flow, requiring specific boxes to be moved as temporary placeholders.",,ok
+QV6Qfb7T,14,AI,Human,Human-designed,True,2.0,4.0,3.0,1.0,2.0,4.0,"The puzzle uses a small, constrained space effectively, requiring a specific order of moves that feels deliberate and planned.",,ok
+QV6Qfb7T,15,AI,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"The puzzle's simple P-shape and straightforward, multi-stage solution suggest thoughtful human design aimed at teaching mechanics.",,ok
+QV6Qfb7T,16,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle feels like three mini-puzzles in one room, lacking a central, unifying clever idea.",,ok
+QV6Qfb7T,17,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,3.0,4.0,"The puzzle's solution involves using one of the goals as temporary box storage, a common human design pattern.",,ok
+QV6Qfb7T,18,AI,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,4.0,"The puzzle's P-shaped layout and methodical solution path show intentional design, lacking AI's usual chaotic feel.",,ok
+QV6Qfb7T,19,AI,Human,Human-designed,True,2.0,4.0,3.0,1.0,2.0,4.0,"The puzzle's solution path feels organized and intentional, especially the way boxes must be ordered.",,ok
+QV6Qfb7T,20,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The level is shaped like a 'P', which is a human-centric choice, and the solution is logical.",,ok
+ROciIZDL,1,Human,Human,Human-designed,True,3.0,4.0,4.0,2.0,3.0,4.0,"This puzzle requires very specific ordering of moves, especially using previously placed boxes as temporary walls, a common human design trick.",,ok
+ROciIZDL,2,Human,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,2.0,"The puzzle lacks any real challenge or clever design, feeling like a random placement of boxes and goals.",,ok
+ROciIZDL,3,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle consists of several nearly identical, independent mini-problems with no interaction between them.",,ok
+ROciIZDL,4,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, with each box located directly next to its corresponding goal. It lacks any real challenge or creative design, suggesting an algorithmic rather than human origin.",,ok
+ROciIZDL,5,Human,AI,AI-generated,True,3.0,3.0,2.0,1.0,1.0,2.0,"The puzzle has multiple independent subproblems, a common trait in AI-generated levels that lack a cohesive flow.",,ok
+ROciIZDL,6,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,3.0,4.0,"The puzzle uses subtle traps and dependencies that feel handcrafted for a satisfying, non-trivial player experience.",,ok
+ROciIZDL,7,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,1.0,The large open space and lack of intricate interactions between boxes make it feel algorithmically generated for solvability.,,ok
+ROciIZDL,8,Human,Human,Human-designed,True,3.0,4.0,4.0,1.0,2.0,3.0,"The puzzle's solution felt structured, like it was designed to be solved in a specific, methodical way.",,ok
+ROciIZDL,9,Human,Human,Human-designed,True,3.0,5.0,4.0,1.0,4.0,4.0,"The puzzle has a satisfying, thematic flow and relies on a key insight, which feels intentionally designed.",,ok
+ROciIZDL,10,Human,Human,Human-designed,True,3.0,5.0,4.0,1.0,3.0,4.0,"The puzzle has a very specific, elegant solution path that feels deliberately designed by a person.",,ok
+ROciIZDL,11,Human,Human,Human-designed,True,2.0,3.0,4.0,3.0,2.0,4.0,"The puzzle's layout feels very deliberate, with symmetric placement of goals and box groupings.",,ok
+ROciIZDL,12,Human,AI,AI-generated,True,2.0,3.0,4.0,2.0,2.0,2.0,"The puzzle's solution felt more like a sequential series of micro-puzzles rather than a cohesive, elegant whole.",,ok
+ROciIZDL,13,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is composed of repetitive 2x1 box-goal pairs, lacking the unique structure often found in human design.",,ok
+ROciIZDL,14,Human,AI,AI-generated,True,2.0,3.0,4.0,2.0,2.0,2.0,"The level's shape felt random, and the solution involved a sequence of utilitarian pushes without a central theme.",,ok
+ROciIZDL,15,Human,AI,AI-generated,True,2.0,3.0,3.0,2.0,1.0,2.0,The layout is functional but lacks a distinct theme or clever interactive element characteristic of human design.,,ok
+ROciIZDL,16,Human,Human,Human-designed,True,3.0,5.0,3.0,1.0,3.0,4.0,The puzzle has a clear sequential path that feels handcrafted and guides the player with subtle complexity.,,ok
+ROciIZDL,17,Human,Human,Human-designed,True,3.0,5.0,4.0,1.0,4.0,4.0,"The puzzle is broken into small, interconnected challenges that must be solved in a specific order.",,ok
+ROciIZDL,18,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle has a clear, symmetrical structure and a focused central challenge, which feels authored and intentional.",,ok
+ROciIZDL,19,Human,Human,Human-designed,True,3.0,5.0,4.0,1.0,4.0,4.0,The puzzle requires multi-step planning and understanding how solved boxes will change the accessible space later.,,ok
+ROciIZDL,20,Human,AI,AI-generated,True,1.0,3.0,2.0,1.0,1.0,2.0,"The level felt like a collection of separate, smaller puzzles rather than one cohesive challenge.",,ok
+t7mUz3Qe,1,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,1.0,5.0,"The puzzle's simple, symmetrical design feels deliberate and typical of introductory human-made levels.",,ok
+t7mUz3Qe,2,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"The puzzle is extremely simple and symmetrical, serving as a basic introduction to Sokoban mechanics.",,ok
+t7mUz3Qe,3,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,1.0,4.0,"The puzzle is a classic, symmetrical design focused on a common Sokoban trap, which feels characteristic of human puzzle design.",,ok
+t7mUz3Qe,4,Human,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,The puzzle is a simple shuffling task with a completely symmetrical box and goal layout.,,ok
+t7mUz3Qe,5,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,The puzzle is symmetrical and serves as a very basic introduction to Sokoban's fundamental movement rules.,,ok
+t7mUz3Qe,6,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is incredibly simple and symmetrical, a common trait in early-stage or basic procedural generation.",,ok
+t7mUz3Qe,7,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,1.0,5.0,"The puzzle has a simple, symmetrical aesthetic and a straightforward, elegant solution path, which feels intentional.",,ok
+t7mUz3Qe,8,Human,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,4.0,"The level's symmetrical box and goal placement feels like a classic, intentionally designed introductory puzzle.",,ok
+t7mUz3Qe,9,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"The puzzle uses a simple, symmetrical layout that feels like a classic, introductory human-made level.",,ok
+t7mUz3Qe,10,Human,AI,AI-generated,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is a basic, symmetrical layout that feels like a simple parameter-based generation rather than a crafted design.",,ok
+t7mUz3Qe,11,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,4.0,"The puzzle is highly symmetrical and introductory, which is a classic human design pattern for teaching game mechanics.",,ok
+t7mUz3Qe,12,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is extremely simple, symmetric, and lacks any interesting twists, suggesting algorithmic rather than creative design.",,ok
+t7mUz3Qe,13,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,1.0,3.0,"The level uses a classic, symmetrical layout that feels like a standard tutorial puzzle made by a person.",,ok
+t7mUz3Qe,14,Human,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle has a simple, symmetrical layout and an obvious solution, typical of introductory levels designed by humans.",,ok
+t7mUz3Qe,15,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is a simple, symmetrical, and classic introductory layout designed to teach core Sokoban concepts.",,ok
+t7mUz3Qe,16,Human,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,2.0,The puzzle's layout is symmetrical and lacks any specific theme or unique challenge.,,ok
+t7mUz3Qe,17,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,5.0,"Its symmetrical layout and straightforward solution path feel like a classic, intentionally simple tutorial level.",,ok
+t7mUz3Qe,18,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is overly symmetrical and simple, with boxes starting on goals, suggesting algorithm-based generation over human creativity.",,ok
+t7mUz3Qe,19,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and symmetrical, involving basic box shuffling without any complex interactions or foresight needed, which feels procedural.",,ok
+t7mUz3Qe,20,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,5.0,"It's a classic, four-box symmetrical layout designed to teach a basic concept without overwhelming complexity or randomness.",,ok
+TIXMBKaj,1,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,2.0,3.0,"The puzzle has a specific, non-obvious order of operations needed to solve it, which feels intentional.",,ok
+TIXMBKaj,2,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"The structure requires a specific, non-obvious order of operations which feels intentionally designed for a satisfying solution path.",,ok
+TIXMBKaj,3,Human,Human,Human-designed,True,2.0,3.0,3.0,2.0,2.0,3.0,"The puzzle requires specific, non-obvious sequencing to avoid deadlocks, which suggests intentional human design.",,ok
+TIXMBKaj,4,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,3.0,4.0,"It requires sequential thinking and using boxes as placeholders, indicating a deliberate design with a specific clever solution.",,ok
+TIXMBKaj,5,Human,AI,AI-generated,True,1.0,3.0,3.0,2.0,1.0,2.0,"It feels like a simple pathfinding puzzle with constraints, which is something an AI could easily generate and solve.",,ok
+TIXMBKaj,6,Human,Human,Human-designed,True,2.0,3.0,3.0,2.0,1.0,2.0,"The puzzle's core mechanic is a sequential shuffling process, which feels like a classic, intentionally designed problem.",,ok
+TIXMBKaj,7,Human,Human,Human-designed,True,3.0,4.0,4.0,2.0,2.0,4.0,"The puzzle has a tight, flowing solution path that feels deliberately crafted for a satisfying, challenging experience.",,ok
+TIXMBKaj,8,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle has a logical, sequential solution path where solving for one box opens up the next move.",,ok
+TIXMBKaj,9,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,3.0,4.0,The puzzle relies on a specific sequence of moving boxes out of the way to solve other boxes.,,ok
+TIXMBKaj,10,Human,Human,Human-designed,True,2.0,4.0,2.0,1.0,2.0,4.0,"The puzzle is neatly divided into two solvable sections, suggesting a human designer's structured approach.",,ok
+TIXMBKaj,11,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,3.0,4.0,"The puzzle's solution path feels intentionally sequenced, requiring specific box shuffles that feel crafted for a thoughtful experience.",,ok
+TIXMBKaj,12,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle is compact and requires a specific sequence of moves, which feels handcrafted for a satisfying player experience.",,ok
+TIXMBKaj,13,Human,Human,Human-designed,True,3.0,4.0,4.0,2.0,3.0,4.0,"The solution requires moving boxes out of the way to place others, which suggests intentional human design.",,ok
+TIXMBKaj,14,Human,Human,Human-designed,True,2.0,3.0,2.0,2.0,1.0,3.0,"The puzzle feels like a focused tutorial on shuffling boxes in a tight corridor, a very human-centric design pattern.",,ok
+TIXMBKaj,15,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,3.0,4.0,"The puzzle requires sequential thinking, moving some boxes to temporary spots to solve others first.",,ok
+TIXMBKaj,16,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle requires specific, sequential box placements that feel intentionally designed for a satisfying solve path.",,ok
+TIXMBKaj,17,Human,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is a basic sequence of moving boxes out of the way to place others, with no real depth.",,ok
+TIXMBKaj,18,Human,Human,Human-designed,True,3.0,4.0,3.0,2.0,3.0,4.0,"The puzzle has a clear flow and a single intended path that feels crafted, not randomly generated.",,ok
+TIXMBKaj,19,Human,Human,Human-designed,True,2.0,4.0,3.0,1.0,2.0,3.0,The puzzle has a clear sequential path that feels like a human designer guided the player through steps.,,ok
+TIXMBKaj,20,Human,Human,Human-designed,True,3.0,4.0,4.0,2.0,3.0,3.0,"It featured a clever, specific sequence requiring foresight, not just brute force, which suggests deliberate human design.",,ok
+UeeTjy5b,1,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is symmetrical and very simple, designed to teach the basic push mechanic effectively.",,ok
+UeeTjy5b,2,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and symmetrical, lacking any creative challenge or human-designed trickiness.",,ok
+UeeTjy5b,3,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, almost a non-puzzle, lacking any intentional design or challenge.",,ok
+UeeTjy5b,4,AI,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is a straightforward, classic Sokoban tutorial-style problem, lacking the complexity often seen in AI generation.",,ok
+UeeTjy5b,5,AI,Human,Human-designed,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is overly simple, feeling more like a tutorial or introductory level made by a human.",,ok
+UeeTjy5b,6,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is extremely simple and symmetrical, typical of an introductory level created by a human developer to teach game mechanics.",,ok
+UeeTjy5b,7,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,The puzzle's straightforward design teaches the core game loop without any complex thought required.,,ok
+UeeTjy5b,8,AI,AI,AI-generated,True,1.0,1.0,1.0,1.0,1.0,2.0,"The puzzle lacks any intentional design or challenge, making it seem like a procedural, almost meaningless, configuration.",,ok
+UeeTjy5b,9,AI,Human,Human-designed,True,2.0,2.0,1.0,1.0,1.0,3.0,"This puzzle feels like a classic, straightforward introductory level designed to teach the game's core mechanics to a player.",,ok
+UeeTjy5b,10,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is a trivial, symmetric layout that feels more like a tutorial than a real challenge.",,ok
+UeeTjy5b,11,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is minimal and solved in three easy moves, lacking any real challenge or creative thought.",,ok
+UeeTjy5b,12,AI,AI,AI-generated,True,1.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is extremely simple and purely introductory, lacking any distinct human-like design signature.",,ok
+UeeTjy5b,13,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,"It's a straightforward introductory puzzle with symmetrical goals, designed to teach the core game mechanics.",,ok
+UeeTjy5b,14,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is symmetric and very simple, typical of a human-made tutorial or 'My First Sokoban' level.",,ok
+UeeTjy5b,15,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,The puzzle is a basic introduction to Sokoban mechanics and is too simple to require an AI for generation.,,ok
+UeeTjy5b,16,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"This puzzle is extremely simple and lacks any real challenge or thoughtful design, resembling a trivial output from a generator.",,ok
+UeeTjy5b,17,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely basic and lacks any clever design or challenge, suggesting it's algorithmically generated.",,ok
+UeeTjy5b,18,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, lacking any clever design or challenge that would suggest human authorship.",,ok
+UeeTjy5b,19,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is extremely simple and symmetrical, typical of an introductory or tutorial level created by a human designer.",,ok
+UeeTjy5b,20,AI,Human,Human-designed,True,2.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is extremely basic, likely serving as a tutorial, which suggests human intent.",,ok
+UTSKBMio,1,AI,Human,Human-designed,True,2.0,4.0,2.0,1.0,2.0,4.0,"The puzzle has a simple, focused design with a clear intended solution path, which feels intentional and human-crafted.",,ok
+UTSKBMio,2,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,It's a trivial puzzle with no interlocking parts or clever tricks; it just involves pushing boxes straight onto adjacent goals.,,ok
+UTSKBMio,3,AI,AI,AI-generated,True,2.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and lacks any creative or challenging elements, feeling more like a basic functional level.",,ok
+UTSKBMio,4,AI,AI,AI-generated,True,1.0,3.0,2.0,2.0,1.0,2.0,The puzzle is basic and functional but lacks the cleverness or unique theme often seen in human designs.,,ok
+UTSKBMio,5,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and lacks any challenging interactions, feeling more like a trivial, machine-generated task.",,ok
+UTSKBMio,6,AI,Human,Human-designed,True,1.0,3.0,1.0,1.0,1.0,2.0,"The puzzle is simple and has a straightforward solution path, typical of an introductory or easy human-made level.",,ok
+UTSKBMio,7,AI,AI,AI-generated,True,3.0,1.0,1.0,5.0,1.0,1.0,The top-left goal is inaccessible because the player cannot get behind any box to push it there.,,ok
+UTSKBMio,8,AI,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,4.0,"The puzzle's solution path feels deliberately crafted for a specific, tight sequence rather than being random or procedural.",,ok
+UTSKBMio,9,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,2.0,"The level feels like a tutorial, designed to teach the basic push mechanic.",,ok
+UTSKBMio,10,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,The level feels generic and lacks a distinct design style; the box and goal placements are very straightforward.,,ok
+UTSKBMio,11,AI,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"It's a very small, focused puzzle room requiring a non-obvious but logical and satisfying solution path.",,ok
+UTSKBMio,12,AI,AI,AI-generated,True,1.0,3.0,2.0,1.0,1.0,2.0,"The puzzle felt like a very basic, textbook series of moves without a signature human touch or clever trick.",,ok
+UTSKBMio,13,AI,AI,AI-generated,True,2.0,1.0,1.0,1.0,1.0,2.0,The puzzle is extremely simple and feels more like a tutorial or a randomly generated small configuration than a designed challenge.,,ok
+UTSKBMio,14,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,1.0,"The level is extremely simple, almost like a tutorial, lacking any clever design or meaningful challenge.",,ok
+UTSKBMio,15,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,The puzzle is extremely simple and feels like a basic tutorial level with no challenge.,,ok
+UTSKBMio,16,AI,AI,AI-generated,True,2.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is trivial with no decisions to make, suggesting a lack of intentional design challenge.",,ok
+UTSKBMio,17,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is trivial, almost like a tutorial, with no complexity or creative thought required to solve it.",,ok
+UTSKBMio,18,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,1.0,"The puzzle required almost no planning, with each box simply being pushed directly onto the nearest goal.",,ok
+UTSKBMio,19,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,2.0,"The puzzle has a simple, uninspired layout and a direct, linear solution path. It lacks any clever tricks, misdirection, or interesting interactions typically found in human-designed levels.",,ok
+UTSKBMio,20,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is trivial, lacks any clever interactions, and can be solved almost by random pushing.",,ok
+wSCVt298,1,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,The puzzle's extreme simplicity and straightforward solution path strongly suggest it's designed as a tutorial for new players.,,ok
+wSCVt298,2,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is extremely simple and direct, serving as a tutorial, which is a common human design pattern.",,ok
+wSCVt298,3,AI,AI,AI-generated,True,1.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is simplistic, symmetrical, and lacks any clever tricks or required planning. It feels procedural.",,ok
+wSCVt298,4,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The solution is trivial, requiring direct pushes without any interesting interactions or planning.",,ok
+wSCVt298,5,AI,,,True,2.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is very straightforward and serves as a simple introduction, typical of a human designer's tutorial.",,ok
+wSCVt298,6,AI,AI,AI-generated,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is a straightforward, symmetrical tutorial-level challenge with no clever tricks or human design flair.",,ok
+wSCVt298,7,AI,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle is a basic tutorial level, designed to teach the core mechanics, which is a common human design pattern.",,ok
+wSCVt298,8,AI,AI,AI-generated,True,2.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, almost like a tutorial, lacking the intentionality of a human-designed challenge.",,ok
+wSCVt298,9,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is too simple and linear, suggesting it's intentionally designed to be a tutorial, not a challenge.",,ok
+wSCVt298,10,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is very basic; each box has an independent, straightforward path with no intertwined logic.",,ok
+wSCVt298,11,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,The puzzle is a basic introductory level designed to teach fundamental movement.,,ok
+wSCVt298,12,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,The lack of any interesting constraints or puzzle elements suggests an algorithm generating a very basic level.,,ok
+wSCVt298,13,AI,Human,Human-designed,True,1.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, likely designed as an introductory or tutorial level.",,ok
+wSCVt298,14,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle lacks any interesting design, cleverness, or deliberate challenge that a human would typically include.",,ok
+wSCVt298,15,AI,Human,Human-designed,True,2.0,1.0,1.0,2.0,1.0,2.0,The puzzle is extremely simple; it feels intentionally designed to teach players about unsolvable corner traps rather than posing a real challenge.,,ok
+wSCVt298,16,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,"The puzzle is a straightforward introductory level, designed to teach the basic pushing mechanic without any challenge.",,ok
+wSCVt298,17,AI,AI,AI-generated,True,2.0,1.0,1.0,1.0,1.0,2.0,The level's trivial difficulty and minimal layout suggest algorithmic generation rather than intentional human design.,,ok
+wSCVt298,18,AI,AI,AI-generated,True,2.0,2.0,1.0,1.0,1.0,2.0,"The puzzle is very straightforward and lacks any deceptive tricks or complex interactions, feeling more like a basic generated case.",,ok
+wSCVt298,19,AI,Human,Human-designed,True,3.0,2.0,1.0,1.0,1.0,3.0,"This puzzle is extremely basic, likely designed to teach the core mechanics, which is a human design approach.",,ok
+wSCVt298,20,AI,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and feels like a tutorial or introductory level, lacking any distinct human touch.",,ok
+Z0SxyjXq,1,Human,AI,AI-generated,True,2.0,3.0,3.0,2.0,1.0,3.0,"The puzzle prioritizes symmetrical aesthetics over a compelling starting point, a common trait inProcedural Content Generation.",,ok
+Z0SxyjXq,2,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,2.0,The puzzle feels like an introductory level designed to teach basic Sokoban principles without much difficulty.,,ok
+Z0SxyjXq,3,Human,AI,AI-generated,True,3.0,1.0,1.0,2.0,1.0,3.0,"The puzzle solved itself instantly with no player interaction, which feels like a glitch or artifact, not intentional design.",,ok
+Z0SxyjXq,4,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple, with a direct solution path that feels like a basic tutorial level.",,ok
+Z0SxyjXq,5,Human,AI,AI-generated,True,2.0,3.0,4.0,3.0,2.0,2.0,The puzzle's solution felt more like a brute-force sequence rather than a single elegant 'aha' moment.,,ok
+Z0SxyjXq,6,Human,AI,AI-generated,True,3.0,1.0,5.0,5.0,1.0,1.0,"The puzzle is not solvable due to locked boxes and inaccessible goals, suggesting an AI's flawed level generation logic rather than intentional human design.",,ok
+Z0SxyjXq,7,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,2.0,4.0,"This is a classic-style puzzle with a specific, elegant solution path that feels deliberately crafted for an aha-moment.",,ok
+Z0SxyjXq,8,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle has a simple, thematic 'T' shape for the boxes, a design choice often seen in human-made tutorial or early-game levels.",,ok
+Z0SxyjXq,9,Human,Human,Human-designed,True,3.0,3.0,1.0,1.0,1.0,3.0,"The puzzle's simple, symmetrical layout and straightforward solution path feel like an introductory level crafted by a human designer.",,ok
+Z0SxyjXq,10,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle is extremely simple and lacks any challenging interactions, which are typical traits of human design.",,ok
+Z0SxyjXq,11,Human,Human,Human-designed,True,3.0,3.0,2.0,1.0,2.0,4.0,"The puzzle has a simple, focused design built around one core idea and a visually balanced, symmetric layout.",,ok
+Z0SxyjXq,12,Human,Human,Human-designed,True,3.0,4.0,4.0,2.0,2.0,4.0,"The puzzle has a pleasing symmetrical layout and features a very specific, deliberate solving sequence.",,ok
+Z0SxyjXq,13,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"The puzzle has a simple, focused design with a clear, tight solution path that feels deliberately crafted.",,ok
+Z0SxyjXq,14,Human,AI,AI-generated,True,2.0,3.0,1.0,1.0,1.0,2.0,The puzzle's simple layout and direct solution path feel more like a basic-level generation than a human's intricate design.,,ok
+Z0SxyjXq,15,Human,AI,AI-generated,True,1.0,3.0,1.0,1.0,1.0,3.0,"It's a very simple design with a symmetrical layout and no complex interactions, typical of introductory or basic AI puzzles.",,ok
+Z0SxyjXq,16,Human,Human,Human-designed,True,3.0,4.0,3.0,1.0,2.0,3.0,"The level requires a specific, sequential solution that feels like an intentional sequence designed by a human to be discovered.",,ok
+Z0SxyjXq,17,Human,Human,Human-designed,True,3.0,3.0,4.0,2.0,2.0,3.0,"The puzzle has a tight, deliberate design that requires foresight, a common trait in human-made challenges.",,ok
+Z0SxyjXq,18,Human,AI,AI-generated,True,3.0,1.0,1.0,1.0,1.0,2.0,"The puzzle has a simple, overly symmetrical layout and lacks any complex interactions or clever misdirection typical of human design.",,ok
+Z0SxyjXq,19,Human,AI,AI-generated,True,3.0,3.0,4.0,3.0,2.0,1.0,"The puzzle's structure, especially the tight spacing and the non-obvious final moves, feels computationally optimized rather than human-made.",,ok
+Z0SxyjXq,20,Human,Human,Human-designed,True,3.0,4.0,2.0,1.0,3.0,3.0,"The puzzle's core trick involves an extra box, a classic human design element for adding a specific, intended challenge.",,ok
