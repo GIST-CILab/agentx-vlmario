@@ -38,6 +38,44 @@ def parse_args() -> tuple[argparse.Namespace, object]:
     parser.add_argument("--top-p", type=float, default=1.0)
     parser.add_argument("--concurrency", type=int, default=4)
 
+    # ---- Ablation / reuse options -------------------------------------- #
+    parser.add_argument(
+        "--blind",
+        action="store_true",
+        help=(
+            "Blind mode (v2 ablation): drop creator-belief / confidence / reasoning "
+            "from BOTH the prompt and the JSON output. Only the 5 experience metrics "
+            "(+ a brief observation) are produced, removing the self-formed belief "
+            "that drives the halo bias."
+        ),
+    )
+    parser.add_argument(
+        "--eval-steps-file",
+        default=None,
+        help=(
+            "Reuse a previously-generated evaluation_steps_*.json instead of "
+            "calling the LLM to generate Auto-CoT steps again."
+        ),
+    )
+    parser.add_argument(
+        "--video-source-dir",
+        default=None,
+        help=(
+            "Fallback directory to reuse rendered .mp4 (and .txt) files from. "
+            "Used when a map's video is missing in --output-dir but already exists "
+            "in this source dir (e.g. results/v1.3/procedural_mario)."
+        ),
+    )
+    parser.add_argument(
+        "--play-only",
+        action="store_true",
+        help=(
+            "Skip Auto-CoT step generation and LLM video evaluation; only render "
+            "playthrough videos (and save per-map .txt) under --output-dir. "
+            "Ignores --model, --criteria-file, --num-runs, etc."
+        ),
+    )
+
     game.add_arguments(parser)
 
     return parser.parse_args(), game

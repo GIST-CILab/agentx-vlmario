@@ -35,7 +35,7 @@ CHAR_MAP = {
     "@": 2,
     "+": 2,
     "$": 3,
-    "*": 3,
+    "*": 5,
     ".": 4,
 }
 
@@ -115,9 +115,14 @@ def _map_text_to_content(map_text: str) -> np.ndarray:
 
 
 def _write_video(frames: list[Image.Image], video_path: Path, fps: int = 3) -> None:
-    with imageio.get_writer(video_path, fps=fps, codec="libx264", macro_block_size=None) as writer:
+    if not frames:
+        raise ValueError("No frames to write.")
+
+    out = str(video_path.resolve())
+    # pathlib.Path 를 그대로 넘기면 플러그인이 tiff 로 잡히는 환경이 있음 (반드시 str).
+    with imageio.get_writer(out, fps=int(fps), codec="libx264", macro_block_size=None) as writer:
         for frame in frames:
-            writer.append_data(np.asarray(frame.convert("RGB")))
+            writer.append_data(np.asarray(frame.convert("RGB"), dtype=np.uint8))
 
     if not video_path.exists() or video_path.stat().st_size == 0:
         raise RuntimeError(f"Video was not created: {video_path}")

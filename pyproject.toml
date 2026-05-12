@@ -15,6 +15,7 @@ dependencies = [
     "imageio>=2.37.3",
     "imageio-ffmpeg>=0.6.0",
     "litellm>=1.0.0",
+    "matplotlib>=3.9.0",
     "loguru>=0.7.0",
     "nest-asyncio>=1.6.0",
     "pillow>=12.2.0",

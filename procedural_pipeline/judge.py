@@ -135,10 +135,11 @@ def evaluate_video_multi(
     concurrency: int = 1,
     on_run=None,
     max_refill_rounds: int = 2,
+    blind: bool = False,
 ) -> dict:
     profile = resolve_game_profile(game_profile)
     video_data_url = encode_video_to_data_url(video_path)
-    prompt = build_prompt(criteria, profile, evaluation_steps_text)
+    prompt = build_prompt(criteria, profile, evaluation_steps_text, blind=blind)
 
     runs: list[dict] = [None] * num_runs  # type: ignore[list-item]
 
@@ -195,6 +196,7 @@ def evaluate_video_multi(
         "num_parsed": len(parsed_list),
         "aggregated_judgment": aggregated,
         "runs": runs,
+        "blind": blind,
     }
 
 
@@ -308,7 +310,19 @@ def build_payload(
     }
 
 
-def build_prompt(criteria: dict, game_profile, evaluation_steps_text: str | None = None) -> str:
+def build_prompt(
+    criteria: dict,
+    game_profile,
+    evaluation_steps_text: str | None = None,
+    blind: bool = False,
+) -> str:
+    """Build the evaluation prompt.
+
+    When blind=True, the prompt asks ONLY for the 5 experience metrics +
+    a brief observation. Creator-belief and confidence questions are removed
+    entirely (input AND output) so the LLM cannot anchor its scores on a
+    self-formed belief about authorship. This is the "v2 blind" ablation.
+    """
     profile = resolve_game_profile(game_profile)
     experience = criteria["experience_metrics"]["metrics"]
     perception = criteria["perception_metrics"]["metrics"]
@@ -330,6 +344,35 @@ def build_prompt(criteria: dict, game_profile, evaluation_steps_text: str | None
             evaluation_steps_text,
             "",
         ])
+
+    if blind:
+        lines.extend([
+            "Answer in this exact order:",
+            "0. Briefly observe what happens in the video.",
+            f"1. Rate your experience with the {profile['subject_noun']}.",
+            "",
+            "Step 0. Observation:",
+            "- Write 1 or 2 short sentences describing what happens in the video.",
+            "",
+            "Step 1. Experience ratings from 1 to 5 with short reasons:",
+            f"- Empathize with the player in the video and imagine the feelings you would have while {profile['verb']}.",
+            "- Use the full 1 to 5 scale when appropriate.",
+        ])
+        for item in experience:
+            lines.append(f"- {item['name']}: {item['survey_item']} ({item['description']})")
+        lines.extend([
+            "",
+            "Return JSON in this exact field order:",
+            "{",
+            '  "step0_observation": "",',
+            '  "enjoyment": {"score": null, "reason": ""},',
+            '  "difficulty": {"score": null, "reason": ""},',
+            '  "frustration": {"score": null, "reason": ""},',
+            '  "novelty": {"score": null, "reason": ""},',
+            '  "aesthetics": {"score": null, "reason": ""}',
+            "}",
+        ])
+        return "\n".join(lines)
 
     lines.extend([
         "Answer in this exact order:",
