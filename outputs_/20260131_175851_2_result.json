@@ -1,0 +1,30 @@
+{
+  "domain": "mario",
+  "created_at": "2026-01-31T18:02:26.923862+00:00",
+  "score": 3.0,
+  "max_score": 20.0,
+  "task_rewards": {
+    "composition": 2,
+    "composition_reason": "The map contains a starting point, platforms, enemies, and item blocks. However, it is critically missing a goal, such as a flagpole, within the visible area, rendering the level fundamentally incomplete.",
+    "probability": 1,
+    "probability_reason": "The map severely violates the logical constraints of Super Mario Bros. It features pipes floating in mid-air without any support and includes a snake-like platform asset that does not exist in the original game.",
+    "completeness": 2,
+    "completeness_reason": "The placement of enemies and pits requires only the most basic reactions from the player. The level's sparse and straightforward layout offers virtually no opportunity for strategic decision-making.",
+    "aesthetics": 1,
+    "aesthetics_reason": "The level is visually barren, with long, empty stretches of ground and a random, disconnected placement of elements. The inclusion of a non-standard game asset is jarring and contributes to a poor overall aesthetic.",
+    "originality": 2,
+    "originality_reason": "Aside from the out-of-place snake platform, the map's design relies on extremely common and uninspired elements like flat ground and simple gaps. It demonstrates a significant lack of creative or unique ideas.",
+    "fairness": 7,
+    "fairness_reason": "All hazards, including enemies and pits, are clearly visible and predictable. The level is free of any sudden or unfair obstacles.",
+    "fun": 1,
+    "fun_reason": "The map appears monotonous due to its empty, repetitive design and lack of engaging challenges. The illogical elements and absence of a clear goal make for a confusing and unenjoyable experience.",
+    "difficulty": 1,
+    "difficulty_reason": "The challenges presented are trivial, consisting of simple jumps over small gaps and single, slow-moving enemies. The overall difficulty is extremely low."
+  },
+  "time_used": 0.0,
+  "role": "agent",
+  "map_index": 2,
+  "map": "-------------------------------------------------------------------------------------------------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------------------------------------------------------------------------\n------------------------------------------------------------------------------------------------------------------------------------------------------F------------\n------------------------------------------------------------------------------------------------------------------------------------------------------X------------\n-----------------------------------------------------------------------------------------------------------------------------------------------------#X------------\n----------------------------------------------------------------------------------------------------------------------------------------------------##X------------\n--------------------------------------------------------------------------------------------------o--o--o-------------------------------------------###X-----------\n-----------------------------------------------?--S--Q--------------------------%%%%%%%%%-------------------k----------------------------------------####X---------\n-------------------------------------------------------------------------------------------------------------------------------------------------#####X------------\n--M----------------------g------------------t-------------------------------------------------------------------------------------E---------------######X----------\n-------------------------------------------t------------------------r---------------------------------------------------t-----------------------#######X-----------\nXXXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXXX--XXXXXXXXXXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXXXXXXXXXX-----------t-------XXXXXXXXXXXXXXXXX########XXXXXXXX-\nXXXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXXX--XXXXXXXXXXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXXXXXXXXXX-----------t-------XXXXXXXXXXXXXXXXX#########XXXXXXXX",
+  "video_base64": null,
+  "explain": "This is a short, linear map composed of long, flat ground segments separated by pits. The level features basic enemies like Koopa Troopas and standard item blocks. Notably, it includes elements that are not native to the original Super Mario Bros., such as a long, snake-like platform, and illogical structures like floating pipes. The visible portion of the map lacks a clear endpoint or goal."
+}

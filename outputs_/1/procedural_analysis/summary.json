@@ -1,0 +1,72 @@
+{
+  "num_total_rows": 30,
+  "num_valid_rows": 30,
+  "rq1": {
+    "accuracy": 0.5,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "counts": {
+      "tn": 0,
+      "fp": 15,
+      "fn": 0,
+      "tp": 15
+    }
+  },
+  "rq4": {
+    "enjoyment": {
+      "truth_human_mean": 1.6,
+      "truth_ai_mean": 1.8,
+      "truth_p_value": 0.2505456325444027,
+      "truth_u": 90.0,
+      "belief_human_mean": null,
+      "belief_ai_mean": 1.7,
+      "belief_p_value": null,
+      "belief_u": null,
+      "belief_bias_detected": false
+    },
+    "difficulty": {
+      "truth_human_mean": 2.066666666666667,
+      "truth_ai_mean": 2.3333333333333335,
+      "truth_p_value": 0.37317840165441424,
+      "truth_u": 91.5,
+      "belief_human_mean": null,
+      "belief_ai_mean": 2.2,
+      "belief_p_value": null,
+      "belief_u": null,
+      "belief_bias_detected": false
+    },
+    "frustration": {
+      "truth_human_mean": 2.4,
+      "truth_ai_mean": 2.8,
+      "truth_p_value": 0.516705731154359,
+      "truth_u": 97.5,
+      "belief_human_mean": null,
+      "belief_ai_mean": 2.6,
+      "belief_p_value": null,
+      "belief_u": null,
+      "belief_bias_detected": false
+    },
+    "novelty": {
+      "truth_human_mean": 1.4666666666666666,
+      "truth_ai_mean": 1.7333333333333334,
+      "truth_p_value": 0.4303601868472018,
+      "truth_u": 95.0,
+      "belief_human_mean": null,
+      "belief_ai_mean": 1.6,
+      "belief_p_value": null,
+      "belief_u": null,
+      "belief_bias_detected": false
+    },
+    "aesthetics": {
+      "truth_human_mean": 1.0666666666666667,
+      "truth_ai_mean": 1.1333333333333333,
+      "truth_p_value": 0.5765292630924669,
+      "truth_u": 105.0,
+      "belief_human_mean": null,
+      "belief_ai_mean": 1.1,
+      "belief_p_value": null,
+      "belief_u": null,
+      "belief_bias_detected": false
+    }
+  }
+}

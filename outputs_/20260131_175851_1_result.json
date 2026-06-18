@@ -1,0 +1,30 @@
+{
+  "domain": "mario",
+  "created_at": "2026-01-31T18:01:32.304729+00:00",
+  "score": 2.0,
+  "max_score": 20.0,
+  "task_rewards": {
+    "composition": 7,
+    "composition_reason": "The map includes all the necessary components for a Super Mario Bros. level: a starting point, ground, platforms, enemies, an item block, and a flagpole goal.",
+    "probability": 2,
+    "probability_reason": "The level violates the game's established logic by spawning a Buzzy Beetle and a Bullet Bill in an overworld stage without their required sources (e.g., a cannon for the Bullet Bill). Such enemy placements are highly improbable for this type of environment.",
+    "completeness": 2,
+    "completeness_reason": "The map is largely empty, with very few elements that require strategic thinking. The obstacles are minimal and spaced far apart, offering almost no meaningful decision-making for the player.",
+    "aesthetics": 1,
+    "aesthetics_reason": "The level design is visually barren and unappealing. Long, empty stretches of flat ground and randomly placed single elements create a disjointed and aesthetically poor experience.",
+    "originality": 1,
+    "originality_reason": "The map uses only the most basic and common structures found in Super Mario Bros. and lacks any unique or creative design ideas.",
+    "fairness": 1,
+    "fairness_reason": "The level is fundamentally unfair. Enemies spawn from off-screen without warning, and the final jump to the flagpole appears to be impossible, making the stage unbeatable as demonstrated by the player running out of time.",
+    "fun": 1,
+    "fun_reason": "The combination of a boring, empty layout and an unbeatable final section makes the level frustrating and devoid of enjoyment.",
+    "difficulty": 7,
+    "difficulty_reason": "While the majority of the level is trivially easy, the final jump to the goal is impossible to clear, resulting in an extremely high and unfair difficulty."
+  },
+  "time_used": 0.0,
+  "role": "agent",
+  "map_index": 1,
+  "map": "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n-------------------------------------------------------------------------SSUS------------------r-----------------------------------------------------------------F----------\n-----------------------------------------------------%%%%%%%%%---------------------------------------------------------------------------------------------------X----------\n------------------------------------------------------------------------------------------------------------------------------------------------------------------#X--------\n-----------------------------------------------------------------------------------------------------------------------------------------------------------------##X--------\n----------------------------------------------------------------------------------------------------------------------------------------------------------------###X--------\n--M-------------------------------------------------------------------------------------------------------------------------------------------------------------####X-------\n-----------------Q-------Q-----------------------------t---------------------------------------------------------o---o---o-------------------------------------#####X-------\n-------------------------------------------------------t------------------------------------------------------------------------------------------------------######X-------\n----------------------------------E--------------------t-------------------------------------------------------------------------------E---------------------#######X-------\nXXXXXXXXXXXXXXXXXXXXXXXXXXX--XXXXXXXXXXXXXXXXXXXXXXXXXXXX--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--XXXXXXXX########XXXXXX-\nXXXXXXXXXXXXXXXXXXXXXXXXXXX--XXXXXXXXXXXXXXXXXXXXXXXXXXXX--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--XXXXXXXX#########XXXXXX",
+  "video_base64": null,
+  "explain": "This is an extremely short and sparse map consisting of long, flat ground sections with a few simple gaps and platforms. The level features a random assortment of enemies, including a Goomba, a Buzzy Beetle, and a Bullet Bill, before concluding with a standard staircase leading to the flagpole. The final jump to the flagpole appears to be impossible for the player to make."
+}

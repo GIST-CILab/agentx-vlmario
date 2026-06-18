@@ -1,0 +1,67 @@
+{
+  "game_profile": {
+    "game_name": "Sokoban",
+    "subject_noun": "level",
+    "verb": "playing",
+    "observation_cue": "the layout, box and goal placement, and how the player pushes boxes onto targets"
+  },
+  "model": "google/gemini-2.5-pro",
+  "prompt": "You are designing a standardized evaluation protocol for gameplay videos of Sokoban levels.\nA reviewer will watch a short video of a player playing the level and rate it against the criteria below on a 1-5 Likert scale.\n\nEvaluation Criteria:\n- fun: It was fun to play.\n- challenging: It was very challenging.\n- frustrating: I felt frustrated while playing it.\n- surprising: It had surprises or unexpected elements.\n- design: The layout felt well-designed and high-quality.\n- Scale: 1=Strongly disagree, 2=Somewhat disagree, 3=Neither agree nor disagree, 4=Somewhat agree, 5=Strongly agree.\n\nEvaluation Steps:\nGenerate a concise numbered chain-of-thoughts (4-6 steps) that the reviewer should follow to evaluate the video against ALL five criteria above. The steps must be objective, game-agnostic within this genre, and applicable to any level. Focus on the layout, box and goal placement, and how the player pushes boxes onto targets.\n\nReturn strict JSON only:\n{\"evaluation_steps\": [\"1. ...\", \"2. ...\", \"3. ...\", \"4. ...\"]}",
+  "raw_response_text": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1778597652-NBzz5oRG93ejNHviN7vL\",\"object\":\"chat.completion\",\"created\":1778597652,\"model\":\"google/gemini-2.5-pro\",\"provider\":\"Google\",\"system_fingerprint\":null,\"service_tier\":\"standard\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"STOP\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"evaluation_steps\\\": [\\n    \\\"1. Initial layout analysis: Observe the starting positions of the player, boxes, and goals. Evaluate the initial complexity, symmetry, and aesthetic appeal of the level's architecture (design).\\\",\\n    \\\"2. Observe early game-play: Watch the player make their first few moves. Note if the initial box pushes are straightforward or immediately present complex interdependencies or potential deadlocks (challenging, fun).\\\",\\n    \\\"3. Analyze mid-game problem-solving: Focus on sequences where the player repositions multiple boxes. Look for tight corridors, difficult box arrangements, and irreversible moves. Note moments where the player pauses, backtracks, or undoes moves, which can indicate points of frustration or challenge (challenging, frustrating).\\\",\\n    \\\"4. Identify 'aha!' moments and bottlenecks: Pinpoint key moves or sub-problems that unlock large parts of the puzzle. Assess if these moments feel clever and rewarding or like tedious, unavoidable chores. Note if any puzzle mechanics are revealed in a novel way (surprising, fun, design).\\\",\\n    \\\"5. Review the endgame solution: Examine the final box placements. Evaluate how the boxes must be coordinated to reach their goals without trapping others. Consider the overall efficiency and elegance of the solution path demonstrated by the player (design, challenging).\\\",\\n    \\\"6. Synthesize overall impression: Based on the entire video, consolidate your observations to rate all five criteria. Did the puzzle's difficulty feel earned and fair (challenging, design)? Was the process of solving it engaging (fun)? Were there moments of insight (surprising) or roadblocks (frustrating)?\\\"\\n  ]\\n}\",\"refusal\":null}}],\"usage\":{\"prompt_tokens\":252,\"completion_tokens\":422,\"total_tokens\":674,\"cost\":0.004535,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.004535,\"upstream_inference_prompt_cost\":0.000315,\"upstream_inference_completions_cost\":0.00422},\"completion_tokens_details\":{\"reasoning_tokens\":71,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "raw_response_json": {
+    "id": "gen-1778597652-NBzz5oRG93ejNHviN7vL",
+    "object": "chat.completion",
+    "created": 1778597652,
+    "model": "google/gemini-2.5-pro",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "standard",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"evaluation_steps\": [\n    \"1. Initial layout analysis: Observe the starting positions of the player, boxes, and goals. Evaluate the initial complexity, symmetry, and aesthetic appeal of the level's architecture (design).\",\n    \"2. Observe early game-play: Watch the player make their first few moves. Note if the initial box pushes are straightforward or immediately present complex interdependencies or potential deadlocks (challenging, fun).\",\n    \"3. Analyze mid-game problem-solving: Focus on sequences where the player repositions multiple boxes. Look for tight corridors, difficult box arrangements, and irreversible moves. Note moments where the player pauses, backtracks, or undoes moves, which can indicate points of frustration or challenge (challenging, frustrating).\",\n    \"4. Identify 'aha!' moments and bottlenecks: Pinpoint key moves or sub-problems that unlock large parts of the puzzle. Assess if these moments feel clever and rewarding or like tedious, unavoidable chores. Note if any puzzle mechanics are revealed in a novel way (surprising, fun, design).\",\n    \"5. Review the endgame solution: Examine the final box placements. Evaluate how the boxes must be coordinated to reach their goals without trapping others. Consider the overall efficiency and elegance of the solution path demonstrated by the player (design, challenging).\",\n    \"6. Synthesize overall impression: Based on the entire video, consolidate your observations to rate all five criteria. Did the puzzle's difficulty feel earned and fair (challenging, design)? Was the process of solving it engaging (fun)? Were there moments of insight (surprising) or roadblocks (frustrating)?\"\n  ]\n}",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 422,
+      "total_tokens": 674,
+      "cost": 0.004535,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004535,
+        "upstream_inference_prompt_cost": 0.000315,
+        "upstream_inference_completions_cost": 0.00422
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 71,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "parsed": {
+    "evaluation_steps": [
+      "1. Initial layout analysis: Observe the starting positions of the player, boxes, and goals. Evaluate the initial complexity, symmetry, and aesthetic appeal of the level's architecture (design).",
+      "2. Observe early game-play: Watch the player make their first few moves. Note if the initial box pushes are straightforward or immediately present complex interdependencies or potential deadlocks (challenging, fun).",
+      "3. Analyze mid-game problem-solving: Focus on sequences where the player repositions multiple boxes. Look for tight corridors, difficult box arrangements, and irreversible moves. Note moments where the player pauses, backtracks, or undoes moves, which can indicate points of frustration or challenge (challenging, frustrating).",
+      "4. Identify 'aha!' moments and bottlenecks: Pinpoint key moves or sub-problems that unlock large parts of the puzzle. Assess if these moments feel clever and rewarding or like tedious, unavoidable chores. Note if any puzzle mechanics are revealed in a novel way (surprising, fun, design).",
+      "5. Review the endgame solution: Examine the final box placements. Evaluate how the boxes must be coordinated to reach their goals without trapping others. Consider the overall efficiency and elegance of the solution path demonstrated by the player (design, challenging).",
+      "6. Synthesize overall impression: Based on the entire video, consolidate your observations to rate all five criteria. Did the puzzle's difficulty feel earned and fair (challenging, design)? Was the process of solving it engaging (fun)? Were there moments of insight (surprising) or roadblocks (frustrating)?"
+    ]
+  },
+  "text": "1. Initial layout analysis: Observe the starting positions of the player, boxes, and goals. Evaluate the initial complexity, symmetry, and aesthetic appeal of the level's architecture (design).\n2. Observe early game-play: Watch the player make their first few moves. Note if the initial box pushes are straightforward or immediately present complex interdependencies or potential deadlocks (challenging, fun).\n3. Analyze mid-game problem-solving: Focus on sequences where the player repositions multiple boxes. Look for tight corridors, difficult box arrangements, and irreversible moves. Note moments where the player pauses, backtracks, or undoes moves, which can indicate points of frustration or challenge (challenging, frustrating).\n4. Identify 'aha!' moments and bottlenecks: Pinpoint key moves or sub-problems that unlock large parts of the puzzle. Assess if these moments feel clever and rewarding or like tedious, unavoidable chores. Note if any puzzle mechanics are revealed in a novel way (surprising, fun, design).\n5. Review the endgame solution: Examine the final box placements. Evaluate how the boxes must be coordinated to reach their goals without trapping others. Consider the overall efficiency and elegance of the solution path demonstrated by the player (design, challenging).\n6. Synthesize overall impression: Based on the entire video, consolidate your observations to rate all five criteria. Did the puzzle's difficulty feel earned and fair (challenging, design)? Was the process of solving it engaging (fun)? Were there moments of insight (surprising) or roadblocks (frustrating)?"
+}

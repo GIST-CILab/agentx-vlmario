@@ -1,0 +1,30 @@
+{
+  "domain": "mario",
+  "created_at": "2026-01-15T15:39:09.206842+00:00",
+  "score": 10.0,
+  "max_score": 20.0,
+  "task_rewards": {
+    "composition": 7,
+    "composition_reason": "The map includes all the fundamental elements of a Super Mario Bros. level, such as a starting point, ground, platforms, enemies (Goomba, Bullet Bills), and item blocks.",
+    "probability": 2,
+    "probability_reason": "The level features several structures that violate the physical and logical rules of the original Super Mario Bros., such as floating pipes used as stairs and mid-air Bullet Bill cannons without any support.",
+    "completeness": 3,
+    "completeness_reason": "The map's components are placed in isolation, offering minimal strategic depth. Obstacles like the floating cannons and pipe stairs are presented as standalone challenges that do not interact with other elements, leading to simple, one-dimensional decision-making.",
+    "aesthetics": 2,
+    "aesthetics_reason": "The level lacks a cohesive theme, appearing as a disjointed collection of unrelated structures. The awkward spacing and illogical placement of elements like floating cannons create a visually unbalanced and unappealing design.",
+    "originality": 4,
+    "originality_reason": "The map introduces unconventional ideas like using floating pipes as stairs and placing Bullet Bill cannons in mid-air. While these concepts deviate from standard designs, they are not developed into meaningful or coherent gameplay mechanics.",
+    "fairness": 7,
+    "fairness_reason": "All obstacles and enemies are presented with sufficient warning, and there are no hidden traps or unpredictable hazards. The player has adequate space and time to navigate every challenge safely.",
+    "fun": 2,
+    "fun_reason": "The map's fragmented design and lack of challenge result in a monotonous experience. The simple, isolated obstacles fail to create an engaging or rewarding gameplay loop.",
+    "difficulty": 1,
+    "difficulty_reason": "The level presents minimal challenge, with basic enemy placements and simple platforming sections that require little skill to overcome. Hazards like the Bullet Bill cannons are easily bypassed."
+  },
+  "time_used": 0.0,
+  "role": "agent",
+  "map_index": 2,
+  "map": "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n----------------------%%%-------%%%-------%%%---------------------------------------------------------------------------------------------------------------------------#---------------\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------##------------\n-------------------------------------------------------------------------------------------------------------------------------------------------------------------------###------------\n---------------------------------------------------------------------------------------C-L-C--------------------------------------------------------------------------####--------------\n-----------------------------------------------------------------t----------------------XXXXX------------------------------*-------------------------------------------#####--------F---\n---------?----------------o-o-o---------------------------------t---------------------------------------------------------*------------------------------------------######-------X-----\nM---------------------------------------------------g-------------t----------k---------t--------------------------------------------------------------------------------#######------XX-\nXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXt---------------------t-------XXXXXXXXXXXXXXXXXX-------------------------------XXXXXXXXXXXXXXXXXXXXXXXX########-----XXX\nXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX----------------------------XXXXXXXXXXXXXXXXXX-------------------------------XXXXXXXXXXXXXXXXXXXXXXXX#########----XXXX-\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-",
+  "video_base64": null,
+  "explain": "This map is a linear course composed of several distinct and disconnected segments. It begins with basic ground platforming, followed by sections featuring floating platforms, stairs made of small pipes, unsupported Bullet Bill cannons in mid-air, and a final block structure. The level's design feels fragmented, with long empty spaces separating each unique challenge."
+}

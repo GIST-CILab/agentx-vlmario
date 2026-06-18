@@ -1,0 +1,42 @@
+{
+  "figure": "Figure 2",
+  "experiment": "01_creator_judgment",
+  "note": "Experiment 2 does not ask for creator belief, so creator-detection confusion uses experiment 1.",
+  "sources": {
+    "mario": {
+      "results_csv": "C:\\Users\\6000\\Projects\\AgentX\\tutorial\\outputs\\procedural_experiments\\01_creator_judgment\\mario\\results_20260513-003359.csv",
+      "maps_file": "C:\\Users\\6000\\Projects\\AgentX\\tutorial\\procedural_pipeline\\resources\\mario\\maps.json",
+      "num_rows": 30
+    },
+    "sokoban": {
+      "results_csv": "C:\\Users\\6000\\Projects\\AgentX\\tutorial\\outputs\\procedural_experiments\\01_creator_judgment\\sokoban\\results_20260513-003359.csv",
+      "maps_file": "C:\\Users\\6000\\Projects\\AgentX\\tutorial\\procedural_pipeline\\resources\\sokoban\\map.json",
+      "num_rows": 30
+    }
+  },
+  "num_rows": 60,
+  "num_valid_rows": 60,
+  "matrix": {
+    "AI": {
+      "AI": 15,
+      "Human": 15
+    },
+    "Human": {
+      "AI": 13,
+      "Human": 17
+    }
+  },
+  "counts": {
+    "TP": 15,
+    "TN": 17,
+    "FP": 13,
+    "FN": 15
+  },
+  "rates": {
+    "accuracy": 0.5333333333333333,
+    "ADSR": 0.5,
+    "FPR": 0.43333333333333335,
+    "FNR": 0.5,
+    "human_correct_rate": 0.5666666666666667
+  }
+}

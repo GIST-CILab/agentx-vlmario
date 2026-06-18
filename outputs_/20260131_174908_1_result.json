@@ -1,0 +1,30 @@
+{
+  "domain": "mario",
+  "created_at": "2026-01-31T17:50:28.534403+00:00",
+  "score": 7.0,
+  "max_score": 20.0,
+  "task_rewards": {
+    "composition": 7,
+    "composition_reason": "The map includes all the fundamental elements of a Super Mario Bros. level: a starting point, platforms, enemies, and item blocks. It appears to be a complete, playable stage.",
+    "probability": 2,
+    "probability_reason": "The level contains several structures that violate the logical and physical constraints of the original Super Mario Bros. Notably, an L-shaped pipe juts out from the side of a platform, which is inconsistent with the game's design rules.",
+    "completeness": 3,
+    "completeness_reason": "While enemies and gaps require basic player input, the level is dominated by long, empty stretches of flat ground that offer no strategic choices or challenges. The sparse placement of obstacles fails to create engaging gameplay scenarios.",
+    "aesthetics": 2,
+    "aesthetics_reason": "The map is visually unappealing due to its repetitive and empty design. The extensive use of long, flat platforms with minimal variation creates a monotonous and uninspired aesthetic.",
+    "originality": 1,
+    "originality_reason": "The level design is extremely generic and relies on the most basic Super Mario Bros. tropes, such as long flat platforms and simple enemy placements. It lacks any creative ideas, unique structures, or novel gameplay concepts.",
+    "fairness": 7,
+    "fairness_reason": "The map is entirely fair. All enemies and obstacles are clearly visible, giving the player sufficient time to react. There are no blind jumps, hidden traps, or unpredictable hazards.",
+    "fun": 2,
+    "fun_reason": "The level appears tedious and unenjoyable due to its monotonous design. The long, empty sections require the player to simply run forward without any engaging challenges, leading to a boring gameplay experience.",
+    "difficulty": 1,
+    "difficulty_reason": "The level presents almost no challenge. Enemies are few and far between, platforming sections are trivial, and the overall design is extremely easy to navigate."
+  },
+  "time_used": 0.0,
+  "role": "agent",
+  "map_index": 1,
+  "map": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------\n---------------------------------------------------------------------------------------------------------------------------------------------------------------------\n---------------------------------------------------------------------------------------------------------------------------------------------------------------------\n--------------??S??------------------------------------------------------------------------------------------o-o-o---------------------C?L---------------------------\n-----------------------------------------------------------------------------------------------------------%%%%%%%%%-------------------XXXXX-------------------------\n--------------------------------------------------------------------------------------------------------------------------------------------r------------------------\n---------------------------------------------------------------------------------------------------------------------------------------------------------------------\n---------------------------------------------------------------------------------------------------------------------------------------------------------------------\n--------------------------#-----------------------tt-----------------------------------------------------------------------------------------------------------------\n-----------------------#--##----------------------tt-----------k-----------tt----------------------------------------------------------------------------#-----------\nM---------g----------#-####-----g----------------tt-----------k-----------tt------------------------------------------------------------------------#--##---F--------\nXXXXXXXXXXXXXXXXXXXXX--XXXXXX--XXXXXXXXXXXXXXXXX--XX--XXXXXXXXXXXXXXXXXXXX--XX--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--######--XXXX----\nXXXXXXXXXXXXXXXXXXXXX--XXXXXX--XXXXXXXXXXXXXXXXX--XX--XXXXXXXXXXXXXXXXXXXX--XX--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--######--XXXX----\nXXXXXXXXXXXXXXXXXXXXX--XXXXXX--XXXXXXXXXXXXXXXXX--XX--XXXXXXXXXXXXXXXXXXXX--XX--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--######--XXXX----\nXXXXXXXXXXXXXXXXXXXXX--XXXXXX--XXXXXXXXXXXXXXXXX--XX--XXXXXXXXXXXXXXXXXXXX--XX--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--######--XXXX----",
+  "video_base64": null,
+  "explain": "This is a horizontal level primarily composed of long, flat ground segments separated by simple gaps. The player encounters basic enemies like Goombas, Koopa Troopas, and a single Koopa Paratroopa. The map's structure is very sparse, with significant empty spaces between obstacles and platforming challenges."
+}

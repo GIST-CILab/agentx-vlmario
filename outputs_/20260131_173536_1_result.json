@@ -1,0 +1,30 @@
+{
+  "domain": "mario",
+  "created_at": "2026-01-31T17:36:36.776338+00:00",
+  "score": 9.0,
+  "max_score": 20.0,
+  "task_rewards": {
+    "composition": 7,
+    "composition_reason": "The map includes all the fundamental components necessary for a complete Super Mario Bros. level: a starting point, platforms, enemies, item blocks, and a flagpole.",
+    "probability": 2,
+    "probability_reason": "The level contains a significant structural flaw: a pipe floating in mid-air without any support. This placement is physically impossible within the rules of the original Super Mario Bros., severely impacting the map's logical consistency.",
+    "completeness": 3,
+    "completeness_reason": "The map's elements are too sparse and isolated to create meaningful strategic choices. The challenges consist of simple, disconnected jumps and enemy encounters, offering very little depth or interaction between components.",
+    "aesthetics": 2,
+    "aesthetics_reason": "The level's layout is fragmented and visually unappealing. The large, empty spaces between platforms create a disjointed and barren feel, lacking any cohesive design or theme.",
+    "originality": 2,
+    "originality_reason": "The map relies entirely on standard platforming tropes (jumping over gaps) without introducing any novel concepts or creative arrangements of existing elements. The design is generic and uninspired.",
+    "fairness": 7,
+    "fairness_reason": "All obstacles, including gaps and enemies, are clearly visible and predictable. The level presents no unfair traps or blind jumps, ensuring a completely fair gameplay experience.",
+    "fun": 2,
+    "fun_reason": "The level is extremely short and lacks any engaging challenges or rewarding moments. Its simplistic and fragmented design makes for a dull and forgettable experience.",
+    "difficulty": 1,
+    "difficulty_reason": "The map presents a very low level of challenge. The enemies are easily avoidable, and the platforming sections require only basic jumps, making the overall difficulty minimal."
+  },
+  "time_used": 0.0,
+  "role": "agent",
+  "map_index": 1,
+  "map": "----------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------\n-----------------------------------------------ooooo------------------------------------------------------------\n------------S-Q-S----------------------------%%%%%%%%%-----------U----------------------------------------------\n----------------------------------------------------------------------------------------------------------------\n-------------------------------------E--------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------\n-----------------------t-----------------------------------------------------------------------------------F----\n-----------------------t-------------------t----------------------------------------------------------------#---\n-M---------E-----------------------------t------------------------k----------------------------------------##---\nXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--\nXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--\nXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--\nXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--",
+  "video_base64": null,
+  "explain": "This is a short, linear map composed of several disconnected ground platforms separated by large gaps. The player must navigate these gaps while dealing with basic enemies like a Goomba and a Koopa Troopa. The level includes a few interactive elements such as blocks, a mushroom platform with coins, and pipes, culminating in a standard flagpole finish."
+}

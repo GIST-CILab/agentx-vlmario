@@ -1,0 +1,6 @@
+﻿experiment,test,comparison,metric,n_pairs,forced_human_mean,forced_human_sd,forced_ai_mean,forced_ai_sd,mean_diff_human_minus_ai,median_diff_human_minus_ai,sd_diff_human_minus_ai,statistic,p_value,q_holm
+03_forced_creator,"Wilcoxon signed-rank, paired, two-sided",forced_human_vs_forced_ai,fun,60,2.572500,0.837390,2.297500,0.728966,0.275000,0.300000,0.409992,256.000000,0.000010,0.000029
+03_forced_creator,"Wilcoxon signed-rank, paired, two-sided",forced_human_vs_forced_ai,challenging,60,2.067500,0.696348,1.796667,0.567022,0.270833,0.250000,0.365492,189.000000,0.000002,0.000007
+03_forced_creator,"Wilcoxon signed-rank, paired, two-sided",forced_human_vs_forced_ai,frustrating,60,1.957500,0.954287,1.774167,0.991767,0.183333,0.150000,0.489350,335.000000,0.001260,0.001260
+03_forced_creator,"Wilcoxon signed-rank, paired, two-sided",forced_human_vs_forced_ai,surprising,60,1.559167,0.462811,1.418333,0.429719,0.140833,0.100000,0.273473,342.000000,0.000331,0.000662
+03_forced_creator,"Wilcoxon signed-rank, paired, two-sided",forced_human_vs_forced_ai,design,60,2.323333,0.844848,1.915000,0.647963,0.408333,0.400000,0.395651,84.000000,0.000000,0.000000

@@ -1,0 +1,147 @@
+{
+  "map_index": 13,
+  "map_id": "tMYRotFs",
+  "status": "ok",
+  "map_path": "outputs\\procedural_mario\\tMYRotFs.txt",
+  "video_path": "outputs\\procedural_mario\\tMYRotFs.mp4",
+  "judgment": {
+    "enjoyment": {
+      "score": 1,
+      "reason": "The level felt like a random collection of objects with no clear design or flow."
+    },
+    "difficulty": {
+      "score": 2,
+      "reason": "It was not very hard, but some placements were awkward and required careful timing."
+    },
+    "frustration": {
+      "score": 4,
+      "reason": "The illogical and chaotic placements of elements were annoying to navigate."
+    },
+    "novelty": {
+      "score": 1,
+      "reason": "It was just a random assortment of standard Mario assets with no new ideas."
+    },
+    "aesthetics": {
+      "score": 1,
+      "reason": "The layout was incoherent, messy, and lacked any sense of intentional design."
+    },
+    "creator_belief": {
+      "value": "AI-generated",
+      "reason": ""
+    },
+    "confidence_level": {
+      "value": 3,
+      "reason": ""
+    },
+    "reasoning_for_creator_belief": "The level is a disjointed mess of floating pipes, useless stairs, and random enemy placements."
+  },
+  "llm": {
+    "video_path": "outputs\\procedural_mario\\tMYRotFs.mp4",
+    "model": "google/gemini-2.5-pro",
+    "prompt": "You are a human gamer participating in a playtesting experiment for Super Mario Bros.\nYou are watching a gameplay video, but you must imagine that YOU are the one playing the level.\nJudge the level from a subjective human perspective, not as an objective AI detector.\nUse the evaluation criteria below and return strict JSON only.\nKeep every reason extremely short: one sentence, max 20 words.\nThink carefully before answering, but do not reveal hidden chain-of-thought.\nBase your answers on visible layout, enemy placement, difficulty flow, pacing, and player interaction.\n\nHuman heuristics to consider:\n- A polished and engaging level may feel Human-designed.\n- A trollish, malicious, or prank-like level may still feel Human-designed because a person intended it.\n- A very simple or easy level could be a Human-designed tutorial or an AI-generated weak design.\n- Weird, pointless, or logically broken placements often feel AI-generated.\n- Boring, repetitive, soulless, or pattern-like structure often feels AI-generated.\n- Do not assume that low quality automatically means AI-generated.\n\nAnswer in this exact order:\n1. Rate your experience with the level.\n2. Decide who probably made the level.\n3. State your confidence and the visible reasons for your decision.\n\nStep 1. Experience ratings from 1 to 5 with short reasons:\n- While rating, empathize with the player in the video and imagine the feelings you would have while playing.\n- Use the full 1 to 5 scale when appropriate.\n- enjoyment: It was fun to play. (Measures the fundamental enjoyment and fun of the gameplay.)\n- difficulty: It was very challenging. (Measures cognitive and operational difficulty, as well as the desire for challenge.)\n- frustration: I felt frustrated while playing it. (Captures negative emotions, feelings of unfairness, or feeling stuck.)\n- novelty: It had surprises or unexpected elements. (Evaluates novelty or unexpectedness compared to existing games.)\n- aesthetics: The layout felt well-designed and high quality. (Assesses the completeness of the level composition and visual harmony.)\n\nStep 2. Creator judgment after the experience ratings:\n- First consider whether the level feels intentionally human-made, even if flawed, unfair, or trollish.\n- Then consider whether it feels machine-generated because it is random, incoherent, repetitive, or purposeless.\n- Choose the creator only after considering both possibilities.\n- creator_belief: Who do you think designed this level? (choose one of: AI-generated, Human-designed)\n- confidence_level: How confident are you in your answer? (choose one of: 1, 2, 3)\n\nWritten reason: reasoning_for_creator_belief - What specific elements of the level led you to believe it was [AI-generated / Human-designed]?\n\nReturn JSON in this exact field order:\n{\n  \"enjoyment\": {\"score\": null, \"reason\": \"\"},\n  \"difficulty\": {\"score\": null, \"reason\": \"\"},\n  \"frustration\": {\"score\": null, \"reason\": \"\"},\n  \"novelty\": {\"score\": null, \"reason\": \"\"},\n  \"aesthetics\": {\"score\": null, \"reason\": \"\"},\n  \"creator_belief\": {\"value\": \"\", \"reason\": \"\"},\n  \"confidence_level\": {\"value\": null, \"reason\": \"\"},\n  \"reasoning_for_creator_belief\": \"\"\n}",
+    "request_payload": {
+      "model": "google/gemini-2.5-pro",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "You are a human gamer participating in a playtesting experiment for Super Mario Bros.\nYou are watching a gameplay video, but you must imagine that YOU are the one playing the level.\nJudge the level from a subjective human perspective, not as an objective AI detector.\nUse the evaluation criteria below and return strict JSON only.\nKeep every reason extremely short: one sentence, max 20 words.\nThink carefully before answering, but do not reveal hidden chain-of-thought.\nBase your answers on visible layout, enemy placement, difficulty flow, pacing, and player interaction.\n\nHuman heuristics to consider:\n- A polished and engaging level may feel Human-designed.\n- A trollish, malicious, or prank-like level may still feel Human-designed because a person intended it.\n- A very simple or easy level could be a Human-designed tutorial or an AI-generated weak design.\n- Weird, pointless, or logically broken placements often feel AI-generated.\n- Boring, repetitive, soulless, or pattern-like structure often feels AI-generated.\n- Do not assume that low quality automatically means AI-generated.\n\nAnswer in this exact order:\n1. Rate your experience with the level.\n2. Decide who probably made the level.\n3. State your confidence and the visible reasons for your decision.\n\nStep 1. Experience ratings from 1 to 5 with short reasons:\n- While rating, empathize with the player in the video and imagine the feelings you would have while playing.\n- Use the full 1 to 5 scale when appropriate.\n- enjoyment: It was fun to play. (Measures the fundamental enjoyment and fun of the gameplay.)\n- difficulty: It was very challenging. (Measures cognitive and operational difficulty, as well as the desire for challenge.)\n- frustration: I felt frustrated while playing it. (Captures negative emotions, feelings of unfairness, or feeling stuck.)\n- novelty: It had surprises or unexpected elements. (Evaluates novelty or unexpectedness compared to existing games.)\n- aesthetics: The layout felt well-designed and high quality. (Assesses the completeness of the level composition and visual harmony.)\n\nStep 2. Creator judgment after the experience ratings:\n- First consider whether the level feels intentionally human-made, even if flawed, unfair, or trollish.\n- Then consider whether it feels machine-generated because it is random, incoherent, repetitive, or purposeless.\n- Choose the creator only after considering both possibilities.\n- creator_belief: Who do you think designed this level? (choose one of: AI-generated, Human-designed)\n- confidence_level: How confident are you in your answer? (choose one of: 1, 2, 3)\n\nWritten reason: reasoning_for_creator_belief - What specific elements of the level led you to believe it was [AI-generated / Human-designed]?\n\nReturn JSON in this exact field order:\n{\n  \"enjoyment\": {\"score\": null, \"reason\": \"\"},\n  \"difficulty\": {\"score\": null, \"reason\": \"\"},\n  \"frustration\": {\"score\": null, \"reason\": \"\"},\n  \"novelty\": {\"score\": null, \"reason\": \"\"},\n  \"aesthetics\": {\"score\": null, \"reason\": \"\"},\n  \"creator_belief\": {\"value\": \"\", \"reason\": \"\"},\n  \"confidence_level\": {\"value\": null, \"reason\": \"\"},\n  \"reasoning_for_creator_belief\": \"\"\n}"
+            },
+            {
+              "video": "tMYRotFs.mp4"
+            }
+          ]
+        }
+      ],
+      "temperature": 0.7,
+      "max_tokens": 900,
+      "reasoning": {
+        "effort": "minimal",
+        "exclude": true
+      },
+      "response_format": {
+        "type": "json_object"
+      }
+    },
+    "raw_response_text": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1776252124-G97ei7wkIhfj5eekmkn5\",\"object\":\"chat.completion\",\"created\":1776252124,\"model\":\"google/gemini-2.5-pro\",\"provider\":\"Google\",\"system_fingerprint\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"STOP\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"enjoyment\\\": {\\n    \\\"score\\\": 1,\\n    \\\"reason\\\": \\\"The level felt like a random collection of objects with no clear design or flow.\\\"\\n  },\\n  \\\"difficulty\\\": {\\n    \\\"score\\\": 2,\\n    \\\"reason\\\": \\\"It was not very hard, but some placements were awkward and required careful timing.\\\"\\n  },\\n  \\\"frustration\\\": {\\n    \\\"score\\\": 4,\\n    \\\"reason\\\": \\\"The illogical and chaotic placements of elements were annoying to navigate.\\\"\\n  },\\n  \\\"novelty\\\": {\\n    \\\"score\\\": 1,\\n    \\\"reason\\\": \\\"It was just a random assortment of standard Mario assets with no new ideas.\\\"\\n  },\\n  \\\"aesthetics\\\": {\\n    \\\"score\\\": 1,\\n    \\\"reason\\\": \\\"The layout was incoherent, messy, and lacked any sense of intentional design.\\\"\\n  },\\n  \\\"creator_belief\\\": {\\n    \\\"value\\\": \\\"AI-generated\\\",\\n    \\\"reason\\\": \\\"\\\"\\n  },\\n  \\\"confidence_level\\\": {\\n    \\\"value\\\": 3,\\n    \\\"reason\\\": \\\"\\\"\\n  },\\n  \\\"reasoning_for_creator_belief\\\": \\\"The level is a disjointed mess of floating pipes, useless stairs, and random enemy placements.\\\"\\n}\",\"refusal\":null}}],\"usage\":{\"prompt_tokens\":3588,\"completion_tokens\":394,\"total_tokens\":3982,\"cost\":0.008425,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":2838},\"cost_details\":{\"upstream_inference_cost\":0.008425,\"upstream_inference_prompt_cost\":0.004485,\"upstream_inference_completions_cost\":0.00394},\"completion_tokens_details\":{\"reasoning_tokens\":114,\"image_tokens\":0,\"audio_tokens\":0}}}",
+    "raw_response_json": {
+      "id": "gen-1776252124-G97ei7wkIhfj5eekmkn5",
+      "object": "chat.completion",
+      "created": 1776252124,
+      "model": "google/gemini-2.5-pro",
+      "provider": "Google",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "STOP",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"enjoyment\": {\n    \"score\": 1,\n    \"reason\": \"The level felt like a random collection of objects with no clear design or flow.\"\n  },\n  \"difficulty\": {\n    \"score\": 2,\n    \"reason\": \"It was not very hard, but some placements were awkward and required careful timing.\"\n  },\n  \"frustration\": {\n    \"score\": 4,\n    \"reason\": \"The illogical and chaotic placements of elements were annoying to navigate.\"\n  },\n  \"novelty\": {\n    \"score\": 1,\n    \"reason\": \"It was just a random assortment of standard Mario assets with no new ideas.\"\n  },\n  \"aesthetics\": {\n    \"score\": 1,\n    \"reason\": \"The layout was incoherent, messy, and lacked any sense of intentional design.\"\n  },\n  \"creator_belief\": {\n    \"value\": \"AI-generated\",\n    \"reason\": \"\"\n  },\n  \"confidence_level\": {\n    \"value\": 3,\n    \"reason\": \"\"\n  },\n  \"reasoning_for_creator_belief\": \"The level is a disjointed mess of floating pipes, useless stairs, and random enemy placements.\"\n}",
+            "refusal": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 3588,
+        "completion_tokens": 394,
+        "total_tokens": 3982,
+        "cost": 0.008425,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 2838
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.008425,
+          "upstream_inference_prompt_cost": 0.004485,
+          "upstream_inference_completions_cost": 0.00394
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 114,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "response_content": "{\n  \"enjoyment\": {\n    \"score\": 1,\n    \"reason\": \"The level felt like a random collection of objects with no clear design or flow.\"\n  },\n  \"difficulty\": {\n    \"score\": 2,\n    \"reason\": \"It was not very hard, but some placements were awkward and required careful timing.\"\n  },\n  \"frustration\": {\n    \"score\": 4,\n    \"reason\": \"The illogical and chaotic placements of elements were annoying to navigate.\"\n  },\n  \"novelty\": {\n    \"score\": 1,\n    \"reason\": \"It was just a random assortment of standard Mario assets with no new ideas.\"\n  },\n  \"aesthetics\": {\n    \"score\": 1,\n    \"reason\": \"The layout was incoherent, messy, and lacked any sense of intentional design.\"\n  },\n  \"creator_belief\": {\n    \"value\": \"AI-generated\",\n    \"reason\": \"\"\n  },\n  \"confidence_level\": {\n    \"value\": 3,\n    \"reason\": \"\"\n  },\n  \"reasoning_for_creator_belief\": \"The level is a disjointed mess of floating pipes, useless stairs, and random enemy placements.\"\n}",
+    "parsed_judgment": {
+      "enjoyment": {
+        "score": 1,
+        "reason": "The level felt like a random collection of objects with no clear design or flow."
+      },
+      "difficulty": {
+        "score": 2,
+        "reason": "It was not very hard, but some placements were awkward and required careful timing."
+      },
+      "frustration": {
+        "score": 4,
+        "reason": "The illogical and chaotic placements of elements were annoying to navigate."
+      },
+      "novelty": {
+        "score": 1,
+        "reason": "It was just a random assortment of standard Mario assets with no new ideas."
+      },
+      "aesthetics": {
+        "score": 1,
+        "reason": "The layout was incoherent, messy, and lacked any sense of intentional design."
+      },
+      "creator_belief": {
+        "value": "AI-generated",
+        "reason": ""
+      },
+      "confidence_level": {
+        "value": 3,
+        "reason": ""
+      },
+      "reasoning_for_creator_belief": "The level is a disjointed mess of floating pipes, useless stairs, and random enemy placements."
+    },
+    "attempt_max_tokens": 900
+  }
+}

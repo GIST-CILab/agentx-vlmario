@@ -1,0 +1,67 @@
+{
+  "game_profile": {
+    "game_name": "Sokoban",
+    "subject_noun": "puzzle",
+    "verb": "solving",
+    "observation_cue": "the layout, box and goal placement, and how the player pushes boxes onto targets"
+  },
+  "model": "google/gemini-2.5-pro",
+  "prompt": "You are designing a standardized evaluation protocol for gameplay videos of Sokoban puzzles.\nA reviewer will watch a short video of a player solving the puzzle and rate it against the criteria below on a 1-5 Likert scale.\n\nEvaluation Criteria:\n- enjoyment: It was satisfying to solve. (Measures the overall enjoyment and satisfaction of engaging with the puzzle.)\n- difficulty: It required careful planning. (Measures puzzle complexity, planning depth, and perceived challenge.)\n- frustration: I felt frustrated while solving it. (Captures negative emotions, dead ends, and feelings of unfairness or repetition.)\n- novelty: It had surprising or clever puzzle ideas. (Evaluates novelty, clever interactions, and unexpected puzzle structure.)\n- aesthetics: The puzzle layout felt elegant and well-designed. (Assesses the clarity, compactness, and visual/puzzle harmony of the level layout.)\n\nEvaluation Steps:\nGenerate a concise numbered chain-of-thoughts (4-6 steps) that the reviewer should follow to evaluate the video against ALL five criteria above. The steps must be objective, game-agnostic within this genre, and applicable to any puzzle. Focus on the layout, box and goal placement, and how the player pushes boxes onto targets.\n\nReturn strict JSON only:\n{\"evaluation_steps\": [\"1. ...\", \"2. ...\", \"3. ...\", \"4. ...\"]}",
+  "raw_response_text": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1776927582-ewEtQNkmrMzQP5OPP24W\",\"object\":\"chat.completion\",\"created\":1776927582,\"model\":\"google/gemini-2.5-pro\",\"provider\":\"Google\",\"system_fingerprint\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"STOP\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"evaluation_steps\\\": [\\n    \\\"1. Analyze the initial layout: Observe the starting positions of the player, boxes, and goals. Evaluate the overall compactness and clarity of the puzzle space (aesthetics).\\\",\\n    \\\"2. Observe the player's initial moves and planning phase: Note if the player hesitates or plans before moving, indicating the need for careful thought (difficulty). Identify any novel mechanisms or interactions apparent from the start (novelty).\\\",\\n    \\\"3. Trace the critical path and box movements: Follow the sequence of pushes. Identify key box placements that unlock other parts of the puzzle. A clear, ingenious sequence suggests higher enjoyment and aesthetics, while convoluted or tight squeezes may increase difficulty.\\\",\\n    \\\"4. Identify moments of player error or resets: Note any dead-end situations where a box is pushed into a corner or against a wall irreversibly. Frequent errors or backtracking suggest high difficulty and potential frustration.\\\",\\n    \\\"5. Evaluate the endgame and final box placements: Assess the satisfaction of placing the last few boxes. A clever sequence leading to the solution enhances enjoyment and reflects novelty, while a tedious cleanup phase might detract from it.\\\"\\n  ]\\n}\",\"refusal\":null}}],\"usage\":{\"prompt_tokens\":287,\"completion_tokens\":312,\"total_tokens\":599,\"cost\":0.00347875,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00347875,\"upstream_inference_prompt_cost\":0.00035875,\"upstream_inference_completions_cost\":0.00312},\"completion_tokens_details\":{\"reasoning_tokens\":66,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "raw_response_json": {
+    "id": "gen-1776927582-ewEtQNkmrMzQP5OPP24W",
+    "object": "chat.completion",
+    "created": 1776927582,
+    "model": "google/gemini-2.5-pro",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"evaluation_steps\": [\n    \"1. Analyze the initial layout: Observe the starting positions of the player, boxes, and goals. Evaluate the overall compactness and clarity of the puzzle space (aesthetics).\",\n    \"2. Observe the player's initial moves and planning phase: Note if the player hesitates or plans before moving, indicating the need for careful thought (difficulty). Identify any novel mechanisms or interactions apparent from the start (novelty).\",\n    \"3. Trace the critical path and box movements: Follow the sequence of pushes. Identify key box placements that unlock other parts of the puzzle. A clear, ingenious sequence suggests higher enjoyment and aesthetics, while convoluted or tight squeezes may increase difficulty.\",\n    \"4. Identify moments of player error or resets: Note any dead-end situations where a box is pushed into a corner or against a wall irreversibly. Frequent errors or backtracking suggest high difficulty and potential frustration.\",\n    \"5. Evaluate the endgame and final box placements: Assess the satisfaction of placing the last few boxes. A clever sequence leading to the solution enhances enjoyment and reflects novelty, while a tedious cleanup phase might detract from it.\"\n  ]\n}",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 287,
+      "completion_tokens": 312,
+      "total_tokens": 599,
+      "cost": 0.00347875,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00347875,
+        "upstream_inference_prompt_cost": 0.00035875,
+        "upstream_inference_completions_cost": 0.00312
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 66,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "parsed": {
+    "evaluation_steps": [
+      "1. Analyze the initial layout: Observe the starting positions of the player, boxes, and goals. Evaluate the overall compactness and clarity of the puzzle space (aesthetics).",
+      "2. Observe the player's initial moves and planning phase: Note if the player hesitates or plans before moving, indicating the need for careful thought (difficulty). Identify any novel mechanisms or interactions apparent from the start (novelty).",
+      "3. Trace the critical path and box movements: Follow the sequence of pushes. Identify key box placements that unlock other parts of the puzzle. A clear, ingenious sequence suggests higher enjoyment and aesthetics, while convoluted or tight squeezes may increase difficulty.",
+      "4. Identify moments of player error or resets: Note any dead-end situations where a box is pushed into a corner or against a wall irreversibly. Frequent errors or backtracking suggest high difficulty and potential frustration.",
+      "5. Evaluate the endgame and final box placements: Assess the satisfaction of placing the last few boxes. A clever sequence leading to the solution enhances enjoyment and reflects novelty, while a tedious cleanup phase might detract from it."
+    ]
+  },
+  "text": "1. Analyze the initial layout: Observe the starting positions of the player, boxes, and goals. Evaluate the overall compactness and clarity of the puzzle space (aesthetics).\n2. Observe the player's initial moves and planning phase: Note if the player hesitates or plans before moving, indicating the need for careful thought (difficulty). Identify any novel mechanisms or interactions apparent from the start (novelty).\n3. Trace the critical path and box movements: Follow the sequence of pushes. Identify key box placements that unlock other parts of the puzzle. A clear, ingenious sequence suggests higher enjoyment and aesthetics, while convoluted or tight squeezes may increase difficulty.\n4. Identify moments of player error or resets: Note any dead-end situations where a box is pushed into a corner or against a wall irreversibly. Frequent errors or backtracking suggest high difficulty and potential frustration.\n5. Evaluate the endgame and final box placements: Assess the satisfaction of placing the last few boxes. A clever sequence leading to the solution enhances enjoyment and reflects novelty, while a tedious cleanup phase might detract from it.",
+  "source_path": "results/v1.3/procedural_sokoban/evaluation_steps_20260423-155941.json",
+  "reused": true
+}

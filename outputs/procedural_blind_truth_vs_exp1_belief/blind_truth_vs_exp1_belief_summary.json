@@ -1,0 +1,177 @@
+{
+  "description": "Experiment 2 blind/no-creator ratings grouped by ground truth and by the creator belief observed in Experiment 1 for the same map.",
+  "sources": {
+    "experiment1": {
+      "mario": "outputs\\procedural_experiments\\01_creator_judgment\\mario\\results_20260513-003359.csv",
+      "sokoban": "outputs\\procedural_experiments\\01_creator_judgment\\sokoban\\results_20260513-003359.csv"
+    },
+    "blind": {
+      "mario": "outputs\\procedural_experiments\\02_no_creator\\mario\\results_20260513-003525.csv",
+      "sokoban": "outputs\\procedural_experiments\\02_no_creator\\sokoban\\results_20260513-005549.csv"
+    }
+  },
+  "num_blind_rows": 60,
+  "group_counts": {
+    "truth": {
+      "AI": 30,
+      "Human": 30
+    },
+    "experiment1_belief": {
+      "AI": 28,
+      "Human": 32
+    }
+  },
+  "test": "Mann-Whitney U, two-sided; q_holm is Holm-Bonferroni corrected across all 10 tests.",
+  "rows": [
+    {
+      "metric": "fun",
+      "title": "fun",
+      "grouping": "truth",
+      "ai_n": 30,
+      "ai_mean": 2.771666666666667,
+      "ai_sd": 0.7940167779575952,
+      "human_n": 30,
+      "human_mean": 2.683333333333333,
+      "human_sd": 0.8769395580687116,
+      "human_minus_ai": -0.08833333333333382,
+      "mann_whitney_u": 476.0,
+      "p_value": 0.7059298664950584,
+      "q_holm": 1.0
+    },
+    {
+      "metric": "fun",
+      "title": "fun",
+      "grouping": "experiment1_belief",
+      "ai_n": 28,
+      "ai_mean": 2.1732142857142858,
+      "ai_sd": 0.7278179135909718,
+      "human_n": 32,
+      "human_mean": 3.2125,
+      "human_sd": 0.5755782506146712,
+      "human_minus_ai": 1.0392857142857141,
+      "mann_whitney_u": 128.5,
+      "p_value": 2.236103906207829e-06,
+      "q_holm": 2.012493515587046e-05
+    },
+    {
+      "metric": "challenging",
+      "title": "challenging",
+      "grouping": "truth",
+      "ai_n": 30,
+      "ai_mean": 2.4233333333333333,
+      "ai_sd": 0.8804126514206899,
+      "human_n": 30,
+      "human_mean": 2.341666666666667,
+      "human_sd": 0.8133671323295668,
+      "human_minus_ai": -0.08166666666666655,
+      "mann_whitney_u": 477.5,
+      "p_value": 0.6896383055388973,
+      "q_holm": 1.0
+    },
+    {
+      "metric": "challenging",
+      "title": "challenging",
+      "grouping": "experiment1_belief",
+      "ai_n": 28,
+      "ai_mean": 2.3339285714285714,
+      "ai_sd": 0.9348255503161055,
+      "human_n": 32,
+      "human_mean": 2.425,
+      "human_sd": 0.7629526683835298,
+      "human_minus_ai": 0.09107142857142847,
+      "mann_whitney_u": 421.0,
+      "p_value": 0.6944490477948502,
+      "q_holm": 1.0
+    },
+    {
+      "metric": "frustrating",
+      "title": "frustrating",
+      "grouping": "truth",
+      "ai_n": 30,
+      "ai_mean": 2.115,
+      "ai_sd": 1.0189709142747554,
+      "human_n": 30,
+      "human_mean": 2.0783333333333336,
+      "human_sd": 1.0805237661409406,
+      "human_minus_ai": -0.036666666666666625,
+      "mann_whitney_u": 464.5,
+      "p_value": 0.8358665228982365,
+      "q_holm": 1.0
+    },
+    {
+      "metric": "frustrating",
+      "title": "frustrating",
+      "grouping": "experiment1_belief",
+      "ai_n": 28,
+      "ai_mean": 2.5928571428571425,
+      "ai_sd": 1.247197917534601,
+      "human_n": 32,
+      "human_mean": 1.6625,
+      "human_sd": 0.5407581297019118,
+      "human_minus_ai": -0.9303571428571424,
+      "mann_whitney_u": 634.5,
+      "p_value": 0.005802847840602011,
+      "q_holm": 0.046422782724816085
+    },
+    {
+      "metric": "surprising",
+      "title": "surprising",
+      "grouping": "truth",
+      "ai_n": 30,
+      "ai_mean": 1.88,
+      "ai_sd": 0.7697514153149122,
+      "human_n": 30,
+      "human_mean": 1.82,
+      "human_sd": 0.7456309524432173,
+      "human_minus_ai": -0.05999999999999983,
+      "mann_whitney_u": 478.0,
+      "p_value": 0.6840608585633217,
+      "q_holm": 1.0
+    },
+    {
+      "metric": "surprising",
+      "title": "surprising",
+      "grouping": "experiment1_belief",
+      "ai_n": 28,
+      "ai_mean": 2.105357142857143,
+      "ai_sd": 0.8135813926950902,
+      "human_n": 32,
+      "human_mean": 1.6265625,
+      "human_sd": 0.623851767830954,
+      "human_minus_ai": -0.47879464285714324,
+      "mann_whitney_u": 593.5,
+      "p_value": 0.03152323698591889,
+      "q_holm": 0.22066265890143225
+    },
+    {
+      "metric": "design",
+      "title": "design",
+      "grouping": "truth",
+      "ai_n": 30,
+      "ai_mean": 2.4477333333333333,
+      "ai_sd": 0.8061502783379584,
+      "human_n": 30,
+      "human_mean": 2.453333333333333,
+      "human_sd": 0.9390873534827654,
+      "human_minus_ai": 0.005599999999999827,
+      "mann_whitney_u": 457.0,
+      "p_value": 0.9233954348079624,
+      "q_holm": 1.0
+    },
+    {
+      "metric": "design",
+      "title": "design",
+      "grouping": "experiment1_belief",
+      "ai_n": 28,
+      "ai_mean": 1.858285714285714,
+      "ai_sd": 0.6614546739681304,
+      "human_n": 32,
+      "human_mean": 2.96875,
+      "human_sd": 0.6766556755291472,
+      "human_minus_ai": 1.110464285714286,
+      "mann_whitney_u": 112.5,
+      "p_value": 6.804476278208347e-07,
+      "q_holm": 6.804476278208347e-06
+    }
+  ]
+}

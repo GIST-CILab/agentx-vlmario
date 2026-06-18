@@ -1,0 +1,72 @@
+{
+  "num_total_rows": 30,
+  "num_valid_rows": 30,
+  "rq1": {
+    "accuracy": 0.5666666666666667,
+    "fpr": 0.8666666666666667,
+    "fnr": 0.0,
+    "counts": {
+      "tn": 2,
+      "fp": 13,
+      "fn": 0,
+      "tp": 15
+    }
+  },
+  "rq4": {
+    "enjoyment": {
+      "truth_human_mean": 1.7333333333333334,
+      "truth_ai_mean": 1.6,
+      "truth_p_value": 0.8380779398085934,
+      "truth_u": 107.5,
+      "belief_human_mean": 3.0,
+      "belief_ai_mean": 1.5714285714285714,
+      "belief_p_value": 0.025738513386335406,
+      "belief_u": 3.0,
+      "belief_bias_detected": true
+    },
+    "difficulty": {
+      "truth_human_mean": 1.4666666666666666,
+      "truth_ai_mean": 1.6,
+      "truth_p_value": 0.7608830748679498,
+      "truth_u": 105.5,
+      "belief_human_mean": 1.5,
+      "belief_ai_mean": 1.5357142857142858,
+      "belief_p_value": 0.9625745490542964,
+      "belief_u": 28.0,
+      "belief_bias_detected": false
+    },
+    "frustration": {
+      "truth_human_mean": 1.8,
+      "truth_ai_mean": 2.066666666666667,
+      "truth_p_value": 0.3124747859208568,
+      "truth_u": 90.5,
+      "belief_human_mean": 1.0,
+      "belief_ai_mean": 2.0,
+      "belief_p_value": 0.2788439031351557,
+      "belief_u": 16.0,
+      "belief_bias_detected": false
+    },
+    "novelty": {
+      "truth_human_mean": 1.2666666666666666,
+      "truth_ai_mean": 1.2,
+      "truth_p_value": 0.6920191508085584,
+      "truth_u": 105.0,
+      "belief_human_mean": 1.5,
+      "belief_ai_mean": 1.2142857142857142,
+      "belief_p_value": 0.39492854192778776,
+      "belief_u": 20.0,
+      "belief_bias_detected": false
+    },
+    "aesthetics": {
+      "truth_human_mean": 1.5333333333333334,
+      "truth_ai_mean": 1.2666666666666666,
+      "truth_p_value": 0.25723356133039044,
+      "truth_u": 90.0,
+      "belief_human_mean": 3.0,
+      "belief_ai_mean": 1.2857142857142858,
+      "belief_p_value": 0.006229034787604446,
+      "belief_u": 1.0,
+      "belief_bias_detected": true
+    }
+  }
+}

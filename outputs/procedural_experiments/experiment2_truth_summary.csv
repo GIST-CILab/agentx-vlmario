@@ -1,0 +1,6 @@
+﻿metric,truth_ai_n,truth_ai_mean,truth_ai_normalized_mean,truth_ai_std,truth_human_n,truth_human_mean,truth_human_normalized_mean,truth_human_std,human_minus_ai,normalized_human_minus_ai,paired_n,positive_diffs,negative_diffs,zero_diffs,test,p_value,q_holm,significance
+fun,30,2.771667,-0.114167,0.780671,30,2.683333,-0.158333,0.862200,-0.088333,-0.044167,,,,,"Mann-Whitney U, two-sided",0.705930,1.000000,n.s.
+challenging,30,2.423333,-0.288333,0.865615,30,2.341667,-0.329167,0.799696,-0.081667,-0.040833,,,,,"Mann-Whitney U, two-sided",0.689638,1.000000,n.s.
+frustrating,30,2.115000,-0.442500,1.001844,30,2.078333,-0.460833,1.062362,-0.036667,-0.018333,,,,,"Mann-Whitney U, two-sided",0.835867,1.000000,n.s.
+surprising,30,1.880000,-0.560000,0.756813,30,1.820000,-0.590000,0.733098,-0.060000,-0.030000,,,,,"Mann-Whitney U, two-sided",0.684061,1.000000,n.s.
+design,30,2.447733,-0.276133,0.792601,30,2.453333,-0.273333,0.923303,0.005600,0.002800,,,,,"Mann-Whitney U, two-sided",0.923395,1.000000,n.s.

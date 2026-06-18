@@ -1,0 +1,114 @@
+{
+    "description": "Player experience evaluation metrics for Super Mario Bros.-style maps.",
+    "experience_metrics": {
+    "description": "These items use a 5-point Likert scale (1: Strongly disagree ~ 5: Strongly agree)",
+        "metrics": [
+            {
+                "name": "fun",
+                "survey_item": "It was fun to play.",
+                "description": "Enjoyment / Fun: a fundamental measure of how much the participant enjoyed the level, aligned with positive affect.",
+                "scale": [
+                    {"range": [1, 1], "description": "Strongly disagree"},
+                    {"range": [2, 2], "description": "Somewhat disagree"},
+                    {"range": [3, 3], "description": "Neither agree nor disagree"},
+                    {"range": [4, 4], "description": "Somewhat agree"},
+                    {"range": [5, 5], "description": "Strongly agree"}
+                ]
+            },
+            {
+                "name": "challenging",
+                "survey_item": "It was very challenging.",
+                "description": "Difficulty / Challenge: measures the perceived challenge of the level, reflecting how difficult or easy it felt.",
+                "scale": [
+                    {"range": [1, 1], "description": "Strongly disagree"},
+                    {"range": [2, 2], "description": "Somewhat disagree"},
+                    {"range": [3, 3], "description": "Neither agree nor disagree"},
+                    {"range": [4, 4], "description": "Somewhat agree"},
+                    {"range": [5, 5], "description": "Strongly agree"}
+                ]
+            },
+            {
+                "name": "frustrating",
+                "survey_item": "I felt frustrated while playing it.",
+                "description": "Frustration / Negative Affect: captures negative experience when the level feels unfair, too difficult, unrewarding, or frustrating.",
+                "scale": [
+                    {"range": [1, 1], "description": "Strongly disagree"},
+                    {"range": [2, 2], "description": "Somewhat disagree"},
+                    {"range": [3, 3], "description": "Neither agree nor disagree"},
+                    {"range": [4, 4], "description": "Somewhat agree"},
+                    {"range": [5, 5], "description": "Strongly agree"}
+                ]
+            },
+            {
+                "name": "surprising",
+                "survey_item": "It had surprises or unexpected elements.",
+                "description": "Novelty / Surprise: measures how original, surprising, innovative, or unexpected the level felt.",
+                "scale": [
+                    {"range": [1, 1], "description": "Strongly disagree"},
+                    {"range": [2, 2], "description": "Somewhat disagree"},
+                    {"range": [3, 3], "description": "Neither agree nor disagree"},
+                    {"range": [4, 4], "description": "Somewhat agree"},
+                    {"range": [5, 5], "description": "Strongly agree"}
+                ]
+            },
+            {
+                "name": "design",
+                "survey_item": "The layout felt well-designed and high-quality.",
+                "description": "Aesthetics / Design Quality: asks the player to evaluate how well-designed and high-quality the layout and presentation felt.",
+                "scale": [
+                    {"range": [1, 1], "description": "Strongly disagree"},
+                    {"range": [2, 2], "description": "Somewhat disagree"},
+                    {"range": [3, 3], "description": "Neither agree nor disagree"},
+                    {"range": [4, 4], "description": "Somewhat agree"},
+                    {"range": [5, 5], "description": "Strongly agree"}
+                ]
+            }
+        ]
+    },
+    "perception_metrics": {
+        "description": "Measures the player's perception of the creator after completing the experience metrics.",
+        "metrics": [
+            {
+                "name": "creator_belief",
+                "survey_item": "Who do you think made this level?",
+                "type": "binary_choice",
+                "options": [
+                    {"value": "Human", "description": "Human"},
+                    {"value": "AI", "description": "AI"}
+                ]
+            },
+            {
+                "name": "confidence_level",
+                "survey_item": "How confident are you in your choice?",
+                "type": "3_point_scale",
+                "options": [
+                    {"value": 1, "description": "Not confident", "detail": "Not confident"},
+                    {"value": 2, "description": "Somewhat Confident", "detail": "Some confidence"},
+                    {"value": 3, "description": "Confident", "detail": "Very confident"}
+                ]
+            }
+        ]
+    },
+    "qualitative_reasoning": {
+        "description": "Open-ended question to understand the reasoning behind the numerical data.",
+        "metrics": [
+            {
+                "name": "reasoning_for_creator_belief",
+                "survey_item": "What did you base your decision on? What signs or indicators guided your decision?",
+                "type": "open_ended",
+                "analysis_cues": {
+                    "human_like_cues": [
+                        "Strategic placement",
+                        "Intentional shortcuts",
+                        "Mistake-like quirks (human error)"
+                    ],
+                    "ai_like_cues": [
+                        "Simple repetition",
+                        "Randomness",
+                        "Overly complex or simplistic design"
+                    ]
+                }
+            }
+        ]
+    }
+}

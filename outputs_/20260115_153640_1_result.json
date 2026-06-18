@@ -1,0 +1,30 @@
+{
+  "domain": "mario",
+  "created_at": "2026-01-15T15:37:37.356071+00:00",
+  "score": 2.0,
+  "max_score": 20.0,
+  "task_rewards": {
+    "composition": 1,
+    "composition_reason": "The map is critically incomplete as it lacks a goal, such as a flagpole or castle. It functions more as a fragment of a level rather than a self-contained stage.",
+    "probability": 5,
+    "probability_reason": "The elements present, such as the floating blocks and the ground platforms, are arranged in a manner consistent with the logical constraints of the original Super Mario Bros.",
+    "completeness": 1,
+    "completeness_reason": "The level design is too simplistic to influence any meaningful strategic decisions. The player's only action is a single, straightforward jump, offering no depth or variety in gameplay.",
+    "aesthetics": 1,
+    "aesthetics_reason": "The level is visually sparse and lacks any thematic coherence or interesting structural arrangements. The vast empty space contributes to a plain and unfinished appearance.",
+    "originality": 1,
+    "originality_reason": "The design consists of the most fundamental and common Mario trope—a simple gap jump—and introduces no novel concepts or creative structural ideas.",
+    "fairness": 7,
+    "fairness_reason": "The single obstacle is presented clearly and directly to the player. There are no hidden or unpredictable hazards, ensuring a completely fair challenge.",
+    "fun": 1,
+    "fun_reason": "Due to its extreme brevity and lack of challenge, the level fails to provide an engaging or enjoyable experience. The gameplay is over almost immediately.",
+    "difficulty": 1,
+    "difficulty_reason": "The level's difficulty is minimal, consisting of a single basic jump that requires very little skill to execute successfully."
+  },
+  "time_used": 0.0,
+  "role": "agent",
+  "map_index": 1,
+  "map": "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n--------------------------------%%%-o-%%%-----------------------------------------------------------------------------------------------------------------------------------------------\n------------------o-o-o-----------------------------------------------------------------------------------------------------------------------------------------------------------------\n-----------------Q-?-Q-------------------------------------------------------------------------------------------------------------------C-----------------------------#----------------\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------##----------------\n---------------------------------------------------------------------------------------------------------S-S-S-S-S---------------------------------------------------###----------------\n-------------------------------g------------------------------------------o-o-o------------------------S---------S--------------------------------------------------####----------------\n--------------------------------------------------------------------------t---t----------------------S-----r-----S-------------------------------------------------#####----------------\n--------------------------------------------------------------------------t---t--------------------S-------------S---------------------*--------------------------######----------------\n--------------------------------------------------------------------------t---t--------------------------------------------------------*-------------------------#######----------------\n--------------------------------------------------------------------------t---t--------------------------------------------------------*------------------------########--------F-------\nM--------------------------------------------------------------------------t---t-------------------------------------------------------------------------------#########-------X--------\nXXXXXXXXXXXXXXXXXXX----g----XXXXXXXXXXXXXXXXXXXXXXX------------------------t---t---------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-----------XXXXXXXXXXXXXXXXXXXXXXXX##########------XX-------\nXXXXXXXXXXXXXXXXXXX---------XXXXXXXXXXXXXXXXXXXXXXX------------------------t---t---------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-----------XXXXXXXXXXXXXXXXXXXXXXXX###########-----XXX------\nXXXXXXXXXXXXXXXXXXX---------XXXXXXXXXXXXXXXXXXXXXXX------------------------t---t---------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-----------XXXXXXXXXXXXXXXXXXXXXXXX############----XXXX-----",
+  "video_base64": null,
+  "explain": "This map presents an extremely brief and simple segment of a level. The player is required to jump over a single pit, where a Goomba awaits on the other side. A few question blocks and coins are positioned above the gap. The level does not have a visible conclusion or further challenges."
+}

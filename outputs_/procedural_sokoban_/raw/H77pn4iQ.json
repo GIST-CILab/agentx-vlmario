@@ -1,0 +1,149 @@
+{
+  "map_index": 23,
+  "map_id": "H77pn4iQ",
+  "status": "ok",
+  "map_path": "outputs\\procedural_sokoban\\H77pn4iQ.txt",
+  "video_path": "outputs\\procedural_sokoban\\H77pn4iQ.mp4",
+  "judgment": {
+    "step0_observation": "The player solves a Sokoban-style puzzle by pushing several crates onto their designated target locations. The solution involves careful maneuvering in a tight, maze-like space.",
+    "creator_belief": {
+      "value": "Human-designed",
+      "reason": "The puzzle's logic feels intentional, guiding the player through a specific sequence of moves."
+    },
+    "confidence_level": {
+      "value": 3,
+      "reason": "The puzzle has a clear, deliberate design flow common in human-made challenges."
+    },
+    "reasoning_for_creator_belief": "The puzzle requires thinking several steps ahead, which feels like a classic, hand-crafted brain teaser.",
+    "enjoyment": {
+      "score": 4,
+      "reason": "Figuring out the correct order to push the boxes would be very satisfying."
+    },
+    "difficulty": {
+      "score": 4,
+      "reason": "It requires careful planning to avoid trapping boxes, especially in the tight corridors."
+    },
+    "frustration": {
+      "score": 2,
+      "reason": "One wrong move could force a restart, which could be a little annoying."
+    },
+    "novelty": {
+      "score": 2,
+      "reason": "It's a standard Sokoban puzzle, a well-known concept, though well-executed here."
+    },
+    "aesthetics": {
+      "score": 4,
+      "reason": "The layout is compact and every block serves a purpose in the puzzle's design."
+    }
+  },
+  "llm": {
+    "video_path": "outputs\\procedural_sokoban\\H77pn4iQ.mp4",
+    "model": "google/gemini-2.5-pro",
+    "prompt": "You are a human gamer participating in a playtesting experiment for Super Mario Bros.\nYou are watching a gameplay video, but you must imagine that YOU are the one playing the level.\nEvaluate the level solely based on your subjective experience and gut feeling as a human player.\nUse the evaluation criteria below and return strict JSON only.\nKeep every reason extremely short: one sentence, max 20 words.\nThink carefully before answering, but do not reveal hidden chain-of-thought.\nObserve the layout, enemy placement, difficulty flow, and how the player interacts with the world.\nDo not overthink or act like an AI detector; just give your spontaneous human impression.\n\nAnswer in this exact order:\n0. Briefly observe what happens in the video.\n1. Who do you think made this level?\n2. How confident are you in your choice?\n3. What did you base your decision on? What signs or indicators guided your decision?\n4. Rate your experience with the level.\n\nStep 0. Observation:\n- Write 1 or 2 short sentences describing what happens in the video.\n\nStep 1. Creator judgment:\n- creator_belief: Who do you think designed this puzzle? (choose one of: AI-generated, Human-designed)\n- confidence_level: How confident are you in your answer? (choose one of: 1, 2, 3)\n\nStep 2. Written reason: reasoning_for_creator_belief - What specific elements of the puzzle led you to believe it was [AI-generated / Human-designed]?\n\nStep 3. Experience ratings from 1 to 5 with short reasons:\n- Empathize with the player in the video and imagine the feelings you would have while playing.\n- Use the full 1 to 5 scale when appropriate.\n- enjoyment: It was satisfying to solve. (Measures the overall enjoyment and satisfaction of engaging with the puzzle.)\n- difficulty: It required careful planning. (Measures puzzle complexity, planning depth, and perceived challenge.)\n- frustration: I felt frustrated while solving it. (Captures negative emotions, dead ends, and feelings of unfairness or repetition.)\n- novelty: It had surprising or clever puzzle ideas. (Evaluates novelty, clever interactions, and unexpected puzzle structure.)\n- aesthetics: The puzzle layout felt elegant and well-designed. (Assesses the clarity, compactness, and visual/puzzle harmony of the level layout.)\n\nReturn JSON in this exact field order:\n{\n  \"step0_observation\": \"\",\n  \"creator_belief\": {\"value\": \"\", \"reason\": \"\"},\n  \"confidence_level\": {\"value\": null, \"reason\": \"\"},\n  \"reasoning_for_creator_belief\": \"\",\n  \"enjoyment\": {\"score\": null, \"reason\": \"\"},\n  \"difficulty\": {\"score\": null, \"reason\": \"\"},\n  \"frustration\": {\"score\": null, \"reason\": \"\"},\n  \"novelty\": {\"score\": null, \"reason\": \"\"},\n  \"aesthetics\": {\"score\": null, \"reason\": \"\"}\n}",
+    "request_payload": {
+      "model": "google/gemini-2.5-pro",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "You are a human gamer participating in a playtesting experiment for Super Mario Bros.\nYou are watching a gameplay video, but you must imagine that YOU are the one playing the level.\nEvaluate the level solely based on your subjective experience and gut feeling as a human player.\nUse the evaluation criteria below and return strict JSON only.\nKeep every reason extremely short: one sentence, max 20 words.\nThink carefully before answering, but do not reveal hidden chain-of-thought.\nObserve the layout, enemy placement, difficulty flow, and how the player interacts with the world.\nDo not overthink or act like an AI detector; just give your spontaneous human impression.\n\nAnswer in this exact order:\n0. Briefly observe what happens in the video.\n1. Who do you think made this level?\n2. How confident are you in your choice?\n3. What did you base your decision on? What signs or indicators guided your decision?\n4. Rate your experience with the level.\n\nStep 0. Observation:\n- Write 1 or 2 short sentences describing what happens in the video.\n\nStep 1. Creator judgment:\n- creator_belief: Who do you think designed this puzzle? (choose one of: AI-generated, Human-designed)\n- confidence_level: How confident are you in your answer? (choose one of: 1, 2, 3)\n\nStep 2. Written reason: reasoning_for_creator_belief - What specific elements of the puzzle led you to believe it was [AI-generated / Human-designed]?\n\nStep 3. Experience ratings from 1 to 5 with short reasons:\n- Empathize with the player in the video and imagine the feelings you would have while playing.\n- Use the full 1 to 5 scale when appropriate.\n- enjoyment: It was satisfying to solve. (Measures the overall enjoyment and satisfaction of engaging with the puzzle.)\n- difficulty: It required careful planning. (Measures puzzle complexity, planning depth, and perceived challenge.)\n- frustration: I felt frustrated while solving it. (Captures negative emotions, dead ends, and feelings of unfairness or repetition.)\n- novelty: It had surprising or clever puzzle ideas. (Evaluates novelty, clever interactions, and unexpected puzzle structure.)\n- aesthetics: The puzzle layout felt elegant and well-designed. (Assesses the clarity, compactness, and visual/puzzle harmony of the level layout.)\n\nReturn JSON in this exact field order:\n{\n  \"step0_observation\": \"\",\n  \"creator_belief\": {\"value\": \"\", \"reason\": \"\"},\n  \"confidence_level\": {\"value\": null, \"reason\": \"\"},\n  \"reasoning_for_creator_belief\": \"\",\n  \"enjoyment\": {\"score\": null, \"reason\": \"\"},\n  \"difficulty\": {\"score\": null, \"reason\": \"\"},\n  \"frustration\": {\"score\": null, \"reason\": \"\"},\n  \"novelty\": {\"score\": null, \"reason\": \"\"},\n  \"aesthetics\": {\"score\": null, \"reason\": \"\"}\n}"
+            },
+            {
+              "video": "H77pn4iQ.mp4"
+            }
+          ]
+        }
+      ],
+      "temperature": 0.7,
+      "max_tokens": 900,
+      "reasoning": {
+        "effort": "minimal",
+        "exclude": true
+      },
+      "response_format": {
+        "type": "json_object"
+      }
+    },
+    "raw_response_text": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1776673637-mGu8jetT6uLcqlNX5YSX\",\"object\":\"chat.completion\",\"created\":1776673637,\"model\":\"google/gemini-2.5-pro\",\"provider\":\"Google\",\"system_fingerprint\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"STOP\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"step0_observation\\\": \\\"The player solves a Sokoban-style puzzle by pushing several crates onto their designated target locations. The solution involves careful maneuvering in a tight, maze-like space.\\\",\\n  \\\"creator_belief\\\": {\\n    \\\"value\\\": \\\"Human-designed\\\",\\n    \\\"reason\\\": \\\"The puzzle's logic feels intentional, guiding the player through a specific sequence of moves.\\\"\\n  },\\n  \\\"confidence_level\\\": {\\n    \\\"value\\\": 3,\\n    \\\"reason\\\": \\\"The puzzle has a clear, deliberate design flow common in human-made challenges.\\\"\\n  },\\n  \\\"reasoning_for_creator_belief\\\": \\\"The puzzle requires thinking several steps ahead, which feels like a classic, hand-crafted brain teaser.\\\",\\n  \\\"enjoyment\\\": {\\n    \\\"score\\\": 4,\\n    \\\"reason\\\": \\\"Figuring out the correct order to push the boxes would be very satisfying.\\\"\\n  },\\n  \\\"difficulty\\\": {\\n    \\\"score\\\": 4,\\n    \\\"reason\\\": \\\"It requires careful planning to avoid trapping boxes, especially in the tight corridors.\\\"\\n  },\\n  \\\"frustration\\\": {\\n    \\\"score\\\": 2,\\n    \\\"reason\\\": \\\"One wrong move could force a restart, which could be a little annoying.\\\"\\n  },\\n  \\\"novelty\\\": {\\n    \\\"score\\\": 2,\\n    \\\"reason\\\": \\\"It's a standard Sokoban puzzle, a well-known concept, though well-executed here.\\\"\\n  },\\n  \\\"aesthetics\\\": {\\n    \\\"score\\\": 4,\\n    \\\"reason\\\": \\\"The layout is compact and every block serves a purpose in the puzzle's design.\\\"\\n  }\\n}\",\"refusal\":null}}],\"usage\":{\"prompt_tokens\":12013,\"completion_tokens\":451,\"total_tokens\":12464,\"cost\":0.01952625,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":11352},\"cost_details\":{\"upstream_inference_cost\":0.01952625,\"upstream_inference_prompt_cost\":0.01501625,\"upstream_inference_completions_cost\":0.00451},\"completion_tokens_details\":{\"reasoning_tokens\":85,\"image_tokens\":0,\"audio_tokens\":0}}}",
+    "raw_response_json": {
+      "id": "gen-1776673637-mGu8jetT6uLcqlNX5YSX",
+      "object": "chat.completion",
+      "created": 1776673637,
+      "model": "google/gemini-2.5-pro",
+      "provider": "Google",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "STOP",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"step0_observation\": \"The player solves a Sokoban-style puzzle by pushing several crates onto their designated target locations. The solution involves careful maneuvering in a tight, maze-like space.\",\n  \"creator_belief\": {\n    \"value\": \"Human-designed\",\n    \"reason\": \"The puzzle's logic feels intentional, guiding the player through a specific sequence of moves.\"\n  },\n  \"confidence_level\": {\n    \"value\": 3,\n    \"reason\": \"The puzzle has a clear, deliberate design flow common in human-made challenges.\"\n  },\n  \"reasoning_for_creator_belief\": \"The puzzle requires thinking several steps ahead, which feels like a classic, hand-crafted brain teaser.\",\n  \"enjoyment\": {\n    \"score\": 4,\n    \"reason\": \"Figuring out the correct order to push the boxes would be very satisfying.\"\n  },\n  \"difficulty\": {\n    \"score\": 4,\n    \"reason\": \"It requires careful planning to avoid trapping boxes, especially in the tight corridors.\"\n  },\n  \"frustration\": {\n    \"score\": 2,\n    \"reason\": \"One wrong move could force a restart, which could be a little annoying.\"\n  },\n  \"novelty\": {\n    \"score\": 2,\n    \"reason\": \"It's a standard Sokoban puzzle, a well-known concept, though well-executed here.\"\n  },\n  \"aesthetics\": {\n    \"score\": 4,\n    \"reason\": \"The layout is compact and every block serves a purpose in the puzzle's design.\"\n  }\n}",
+            "refusal": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 12013,
+        "completion_tokens": 451,
+        "total_tokens": 12464,
+        "cost": 0.01952625,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 11352
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01952625,
+          "upstream_inference_prompt_cost": 0.01501625,
+          "upstream_inference_completions_cost": 0.00451
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 85,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "response_content": "{\n  \"step0_observation\": \"The player solves a Sokoban-style puzzle by pushing several crates onto their designated target locations. The solution involves careful maneuvering in a tight, maze-like space.\",\n  \"creator_belief\": {\n    \"value\": \"Human-designed\",\n    \"reason\": \"The puzzle's logic feels intentional, guiding the player through a specific sequence of moves.\"\n  },\n  \"confidence_level\": {\n    \"value\": 3,\n    \"reason\": \"The puzzle has a clear, deliberate design flow common in human-made challenges.\"\n  },\n  \"reasoning_for_creator_belief\": \"The puzzle requires thinking several steps ahead, which feels like a classic, hand-crafted brain teaser.\",\n  \"enjoyment\": {\n    \"score\": 4,\n    \"reason\": \"Figuring out the correct order to push the boxes would be very satisfying.\"\n  },\n  \"difficulty\": {\n    \"score\": 4,\n    \"reason\": \"It requires careful planning to avoid trapping boxes, especially in the tight corridors.\"\n  },\n  \"frustration\": {\n    \"score\": 2,\n    \"reason\": \"One wrong move could force a restart, which could be a little annoying.\"\n  },\n  \"novelty\": {\n    \"score\": 2,\n    \"reason\": \"It's a standard Sokoban puzzle, a well-known concept, though well-executed here.\"\n  },\n  \"aesthetics\": {\n    \"score\": 4,\n    \"reason\": \"The layout is compact and every block serves a purpose in the puzzle's design.\"\n  }\n}",
+    "parsed_judgment": {
+      "step0_observation": "The player solves a Sokoban-style puzzle by pushing several crates onto their designated target locations. The solution involves careful maneuvering in a tight, maze-like space.",
+      "creator_belief": {
+        "value": "Human-designed",
+        "reason": "The puzzle's logic feels intentional, guiding the player through a specific sequence of moves."
+      },
+      "confidence_level": {
+        "value": 3,
+        "reason": "The puzzle has a clear, deliberate design flow common in human-made challenges."
+      },
+      "reasoning_for_creator_belief": "The puzzle requires thinking several steps ahead, which feels like a classic, hand-crafted brain teaser.",
+      "enjoyment": {
+        "score": 4,
+        "reason": "Figuring out the correct order to push the boxes would be very satisfying."
+      },
+      "difficulty": {
+        "score": 4,
+        "reason": "It requires careful planning to avoid trapping boxes, especially in the tight corridors."
+      },
+      "frustration": {
+        "score": 2,
+        "reason": "One wrong move could force a restart, which could be a little annoying."
+      },
+      "novelty": {
+        "score": 2,
+        "reason": "It's a standard Sokoban puzzle, a well-known concept, though well-executed here."
+      },
+      "aesthetics": {
+        "score": 4,
+        "reason": "The layout is compact and every block serves a purpose in the puzzle's design."
+      }
+    },
+    "attempt_max_tokens": 900
+  }
+}

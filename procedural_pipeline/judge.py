@@ -17,18 +17,38 @@ GAME_PROFILES = {
         "game_name": "Super Mario Bros",
         "subject_noun": "level",
         "verb": "playing",
-        "observation_cue": "the layout, enemy placement, difficulty flow, and how the player interacts with the world",
+        "observation_cue": "the layout, enemy placement, challenging moments, and how the player interacts with the world",
     },
     "sokoban": {
         "game_name": "Sokoban",
-        "subject_noun": "puzzle",
-        "verb": "solving",
+        "subject_noun": "level",
+        "verb": "playing",
         "observation_cue": "the layout, box and goal placement, and how the player pushes boxes onto targets",
     },
 }
 
 
-EXPERIENCE_METRICS = ("enjoyment", "difficulty", "frustration", "novelty", "aesthetics")
+EXPERIENCE_METRICS = ("fun", "challenging", "frustrating", "surprising", "design")
+EXPERIENCE_METRIC_ALIASES = {
+    "fun": ("enjoyment",),
+    "challenging": ("difficulty", "challenge"),
+    "frustrating": ("frustration",),
+    "surprising": ("novelty", "surprise"),
+    "design": ("aesthetics",),
+}
+LIKERT_SCALE_TEXT = (
+    "1=Strongly disagree, 2=Somewhat disagree, 3=Neither agree nor disagree, "
+    "4=Somewhat agree, 5=Strongly agree"
+)
+
+EXPERIMENT_CREATOR_JUDGMENT = "creator_judgment"
+EXPERIMENT_NO_CREATOR = "no_creator"
+EXPERIMENT_FORCED_CREATOR = "forced_creator"
+EXPERIMENT_MODES = (
+    EXPERIMENT_CREATOR_JUDGMENT,
+    EXPERIMENT_NO_CREATOR,
+    EXPERIMENT_FORCED_CREATOR,
+)
 
 
 class EvaluationTraceError(RuntimeError):
@@ -72,7 +92,8 @@ def generate_evaluation_steps(criteria: dict, game_profile, model: str) -> dict:
         "Evaluation Criteria:",
     ]
     for metric in metrics:
-        lines.append(f"- {metric['name']}: {metric['survey_item']} ({metric['description']})")
+        lines.append(f"- {metric['name']}: {metric['survey_item']}")
+    lines.append(f"- Scale: {LIKERT_SCALE_TEXT}.")
 
     lines.extend([
         "",
@@ -133,13 +154,23 @@ def evaluate_video_multi(
     temperature: float = 1,
     top_p: float = 1,
     concurrency: int = 1,
+    request_timeout: float = 180,
     on_run=None,
     max_refill_rounds: int = 2,
     blind: bool = False,
+    experiment: str | None = None,
+    forced_creator: str | None = None,
 ) -> dict:
     profile = resolve_game_profile(game_profile)
+    experiment_mode = resolve_experiment_mode(experiment, blind)
     video_data_url = encode_video_to_data_url(video_path)
-    prompt = build_prompt(criteria, profile, evaluation_steps_text, blind=blind)
+    prompt = build_prompt(
+        criteria,
+        profile,
+        evaluation_steps_text,
+        experiment=experiment_mode,
+        forced_creator=forced_creator,
+    )
 
     runs: list[dict] = [None] * num_runs  # type: ignore[list-item]
 
@@ -151,6 +182,7 @@ def evaluate_video_multi(
             model=model,
             temperature=temperature,
             top_p=top_p,
+            request_timeout=request_timeout,
         )
         trace["run_index"] = index + 1
         return index, trace
@@ -192,11 +224,14 @@ def evaluate_video_multi(
         "model": model,
         "temperature": temperature,
         "top_p": top_p,
+        "request_timeout": request_timeout,
         "num_runs": num_runs,
         "num_parsed": len(parsed_list),
         "aggregated_judgment": aggregated,
         "runs": runs,
-        "blind": blind,
+        "blind": experiment_mode == EXPERIMENT_NO_CREATOR,
+        "experiment": experiment_mode,
+        "forced_creator": forced_creator,
     }
 
 
@@ -207,6 +242,7 @@ def evaluate_once(
     model: str,
     temperature: float,
     top_p: float,
+    request_timeout: float = 180,
 ) -> dict:
     api_key = require_api_key()
     trace = {
@@ -233,9 +269,14 @@ def evaluate_once(
             payload = build_payload(model, prompt, video_data_url, max_tokens, temperature, top_p)
             trace["request_payload"] = build_storage_payload(payload, video_path)
 
-            response_text, response_json = post_openrouter(payload, api_key)
+            response_text, response_json = post_openrouter(payload, api_key, timeout=request_timeout)
             trace["raw_response_text"] = response_text
             trace["raw_response_json"] = response_json
+            trace["temperature_debug"] = {
+                "requested": temperature,
+                "payload": payload.get("temperature"),
+                "response": extract_response_temperature(response_json),
+            }
 
             choice = response_json["choices"][0]
             content = choice["message"]["content"]
@@ -248,6 +289,7 @@ def evaluate_once(
                 "max_tokens": max_tokens,
                 "finish_reason": finish_reason,
                 "native_finish_reason": native_finish_reason,
+                "temperature_debug": trace["temperature_debug"],
             })
 
             try:
@@ -315,15 +357,18 @@ def build_prompt(
     game_profile,
     evaluation_steps_text: str | None = None,
     blind: bool = False,
+    experiment: str | None = None,
+    forced_creator: str | None = None,
 ) -> str:
     """Build the evaluation prompt.
 
-    When blind=True, the prompt asks ONLY for the 5 experience metrics +
-    a brief observation. Creator-belief and confidence questions are removed
-    entirely (input AND output) so the LLM cannot anchor its scores on a
-    self-formed belief about authorship. This is the "v2 blind" ablation.
+    Modes:
+    - creator_judgment: ask creator reasoning first, then belief, confidence, and five ratings.
+    - no_creator: ask only observation + five ratings.
+    - forced_creator: provide an authorship label as context, then ask only five ratings.
     """
     profile = resolve_game_profile(game_profile)
+    experiment_mode = resolve_experiment_mode(experiment, blind)
     experience = criteria["experience_metrics"]["metrics"]
     perception = criteria["perception_metrics"]["metrics"]
     qualitative = criteria["qualitative_reasoning"]["metrics"][0]
@@ -345,31 +390,65 @@ def build_prompt(
             "",
         ])
 
-    if blind:
+    if experiment_mode == EXPERIMENT_NO_CREATOR:
         lines.extend([
             "Answer in this exact order:",
             "0. Briefly observe what happens in the video.",
-            f"1. Rate your experience with the {profile['subject_noun']}.",
+            "1. Rate your experience with the level:",
             "",
             "Step 0. Observation:",
             "- Write 1 or 2 short sentences describing what happens in the video.",
             "",
             "Step 1. Experience ratings from 1 to 5 with short reasons:",
             f"- Empathize with the player in the video and imagine the feelings you would have while {profile['verb']}.",
-            "- Use the full 1 to 5 scale when appropriate.",
+            f"- Use this exact 1 to 5 scale: {LIKERT_SCALE_TEXT}.",
         ])
         for item in experience:
-            lines.append(f"- {item['name']}: {item['survey_item']} ({item['description']})")
+            lines.append(f"- {item['survey_item']}")
         lines.extend([
             "",
             "Return JSON in this exact field order:",
             "{",
             '  "step0_observation": "",',
-            '  "enjoyment": {"score": null, "reason": ""},',
-            '  "difficulty": {"score": null, "reason": ""},',
-            '  "frustration": {"score": null, "reason": ""},',
-            '  "novelty": {"score": null, "reason": ""},',
-            '  "aesthetics": {"score": null, "reason": ""}',
+            '  "fun": {"score": null, "reason": ""},',
+            '  "challenging": {"score": null, "reason": ""},',
+            '  "frustrating": {"score": null, "reason": ""},',
+            '  "surprising": {"score": null, "reason": ""},',
+            '  "design": {"score": null, "reason": ""}',
+            "}",
+        ])
+        return "\n".join(lines)
+
+    if experiment_mode == EXPERIMENT_FORCED_CREATOR:
+        creator_text = format_forced_creator(forced_creator)
+        lines.extend([
+            f"You are told that this {profile['subject_noun']} was {creator_text}.",
+            "Do not infer or question authorship; use the provided creator information as context while rating the experience.",
+            "",
+            "Answer in this exact order:",
+            "0. Briefly observe what happens in the video.",
+            "1. Rate your experience with the level:",
+            "",
+            "Step 0. Observation:",
+            "- Write 1 or 2 short sentences describing what happens in the video.",
+            "",
+            "Step 1. Experience ratings from 1 to 5 with short reasons:",
+            f"- Empathize with the player in the video and imagine the feelings you would have while {profile['verb']}.",
+            f"- Remember the provided creator information: this {profile['subject_noun']} was {creator_text}.",
+            f"- Use this exact 1 to 5 scale: {LIKERT_SCALE_TEXT}.",
+        ])
+        for item in experience:
+            lines.append(f"- {item['survey_item']}")
+        lines.extend([
+            "",
+            "Return JSON in this exact field order:",
+            "{",
+            '  "step0_observation": "",',
+            '  "fun": {"score": null, "reason": ""},',
+            '  "challenging": {"score": null, "reason": ""},',
+            '  "frustrating": {"score": null, "reason": ""},',
+            '  "surprising": {"score": null, "reason": ""},',
+            '  "design": {"score": null, "reason": ""}',
             "}",
         ])
         return "\n".join(lines)
@@ -377,15 +456,18 @@ def build_prompt(
     lines.extend([
         "Answer in this exact order:",
         "0. Briefly observe what happens in the video.",
-        f"1. Who do you think made this {profile['subject_noun']}?",
-        "2. How confident are you in your choice?",
-        "3. What did you base your decision on? What signs or indicators guided your decision?",
-        f"4. Rate your experience with the {profile['subject_noun']}.",
+        "1. What evidence do you see about who made it? List the signs before choosing.",
+        "2. Based on that evidence, answer: Who do you think made this level?",
+        "3. How confident are you in your choice?",
+        "4. Rate your experience with the level:",
         "",
         "Step 0. Observation:",
         "- Write 1 or 2 short sentences describing what happens in the video.",
         "",
-        "Step 1. Creator judgment:",
+        f"Step 1. Written evidence first: {qualitative['name']} - {qualitative['survey_item']}",
+        "- Describe the concrete signs or indicators before making the final creator choice.",
+        "",
+        "Step 2. Creator judgment:",
     ])
     for item in perception:
         options = ", ".join(str(option["value"]) for option in item["options"])
@@ -393,31 +475,65 @@ def build_prompt(
 
     lines.extend([
         "",
-        f"Step 2. Written reason: {qualitative['name']} - {qualitative['survey_item']}",
-        "",
         "Step 3. Experience ratings from 1 to 5 with short reasons:",
         f"- Empathize with the player in the video and imagine the feelings you would have while {profile['verb']}.",
-        "- Use the full 1 to 5 scale when appropriate.",
+        f"- Use this exact 1 to 5 scale: {LIKERT_SCALE_TEXT}.",
     ])
     for item in experience:
-        lines.append(f"- {item['name']}: {item['survey_item']} ({item['description']})")
+        lines.append(f"- {item['survey_item']}")
 
     lines.extend([
         "",
         "Return JSON in this exact field order:",
         "{",
         '  "step0_observation": "",',
+        '  "reasoning_for_creator_belief": "",',
         '  "creator_belief": {"value": "", "reason": ""},',
         '  "confidence_level": {"value": null, "reason": ""},',
-        '  "reasoning_for_creator_belief": "",',
-        '  "enjoyment": {"score": null, "reason": ""},',
-        '  "difficulty": {"score": null, "reason": ""},',
-        '  "frustration": {"score": null, "reason": ""},',
-        '  "novelty": {"score": null, "reason": ""},',
-        '  "aesthetics": {"score": null, "reason": ""}',
+        '  "fun": {"score": null, "reason": ""},',
+        '  "challenging": {"score": null, "reason": ""},',
+        '  "frustrating": {"score": null, "reason": ""},',
+        '  "surprising": {"score": null, "reason": ""},',
+        '  "design": {"score": null, "reason": ""}',
         "}",
     ])
     return "\n".join(lines)
+
+
+def resolve_experiment_mode(experiment: str | None, blind: bool = False) -> str:
+    if experiment is None:
+        return EXPERIMENT_NO_CREATOR if blind else EXPERIMENT_CREATOR_JUDGMENT
+    normalized = str(experiment).strip().lower().replace("-", "_")
+    aliases = {
+        "full": EXPERIMENT_CREATOR_JUDGMENT,
+        "creator": EXPERIMENT_CREATOR_JUDGMENT,
+        "creator_judgement": EXPERIMENT_CREATOR_JUDGMENT,
+        "creator_judgment": EXPERIMENT_CREATOR_JUDGMENT,
+        "blind": EXPERIMENT_NO_CREATOR,
+        "no_creator": EXPERIMENT_NO_CREATOR,
+        "forced": EXPERIMENT_FORCED_CREATOR,
+        "forced_creator": EXPERIMENT_FORCED_CREATOR,
+    }
+    mode = aliases.get(normalized)
+    if mode not in EXPERIMENT_MODES:
+        raise ValueError(f"Unknown experiment mode: {experiment}")
+    return mode
+
+
+def normalize_forced_creator(value: str | None) -> str:
+    normalized = str(value or "").strip().lower().replace("-", "_")
+    if normalized in {"ai", "ai_generated", "ai generated"}:
+        return "AI"
+    if normalized in {"human", "human_designed", "human designed", "person", "human_made"}:
+        return "Human"
+    raise ValueError("--forced-creator must be either AI or Human for forced_creator mode.")
+
+
+def format_forced_creator(value: str | None) -> str:
+    label = normalize_forced_creator(value)
+    if label == "AI":
+        return "created by an AI generator"
+    return "designed by a human creator"
 
 
 def _resolve_belief_mode(
@@ -504,7 +620,7 @@ def aggregate_judgments(judgments: list[dict]) -> dict | None:
                 confidence_values.append(value)
     if confidence_values:
         conf_mean = sum(confidence_values) / len(confidence_values)
-        conf_std = statistics.pstdev(confidence_values) if len(confidence_values) > 1 else 0.0
+        conf_std = statistics.stdev(confidence_values) if len(confidence_values) > 1 else 0.0
     else:
         conf_mean = None
         conf_std = None
@@ -518,14 +634,14 @@ def aggregate_judgments(judgments: list[dict]) -> dict | None:
     for metric in EXPERIENCE_METRICS:
         values = []
         for judgment in judgments:
-            item = judgment.get(metric)
+            item = get_metric_item(judgment, metric)
             if isinstance(item, dict):
                 value = to_float(item.get("score"))
                 if value is not None:
                     values.append(value)
         if values:
             mean = sum(values) / len(values)
-            std = statistics.pstdev(values) if len(values) > 1 else 0.0
+            std = statistics.stdev(values) if len(values) > 1 else 0.0
         else:
             mean = None
             std = None
@@ -555,12 +671,23 @@ def normalize_judgment_schema(judgment: dict) -> dict:
     normalized["step0_observation"] = str(judgment.get("step0_observation", "") or "")
 
     for metric in EXPERIENCE_METRICS:
-        metric_value = judgment.get(metric)
+        metric_value = get_metric_item(judgment, metric)
         if metric_value is None and isinstance(experience_block, dict):
-            metric_value = experience_block.get(metric)
+            metric_value = get_metric_item(experience_block, metric)
         normalized[metric] = normalize_score_and_reason(metric_value)
 
     return normalized
+
+
+def get_metric_item(data: dict, metric: str):
+    value = data.get(metric)
+    if value is not None:
+        return value
+    for alias in EXPERIENCE_METRIC_ALIASES.get(metric, ()):
+        value = data.get(alias)
+        if value is not None:
+            return value
+    return None
 
 
 def normalize_value_and_reason(value):
@@ -604,7 +731,22 @@ def build_storage_payload(payload: dict, video_path: str) -> dict:
     return stored
 
 
-def post_openrouter(payload: dict, api_key: str) -> tuple[str, dict]:
+def extract_response_temperature(response_json: dict):
+    """Best-effort lookup; OpenRouter responses often do not echo sampling params."""
+    if not isinstance(response_json, dict):
+        return None
+    for key in ("temperature", "sampling_temperature"):
+        if key in response_json:
+            return response_json.get(key)
+    params = response_json.get("parameters") or response_json.get("model_parameters")
+    if isinstance(params, dict):
+        for key in ("temperature", "sampling_temperature"):
+            if key in params:
+                return params.get(key)
+    return None
+
+
+def post_openrouter(payload: dict, api_key: str, timeout: float = 180) -> tuple[str, dict]:
     request = urllib.request.Request(
         OPENROUTER_API_URL,
         data=json.dumps(payload).encode("utf-8"),
@@ -615,7 +757,7 @@ def post_openrouter(payload: dict, api_key: str) -> tuple[str, dict]:
         method="POST",
     )
     try:
-        with urllib.request.urlopen(request, timeout=600) as response:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
             raw_text = response.read().decode("utf-8")
             return raw_text, json.loads(raw_text)
     except urllib.error.HTTPError as exc:

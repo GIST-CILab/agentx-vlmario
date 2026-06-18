@@ -6,9 +6,9 @@ import imageio.v2 as imageio
 import numpy as np
 from PIL import Image
 
+from procedural_pipeline.paths import project_path, package_resource
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-PCG_ROOT = PROJECT_ROOT / "third_party" / "pcg_benchmark"
+PCG_ROOT = project_path("third_party", "pcg_benchmark")
 if str(PCG_ROOT) not in sys.path:
     sys.path.insert(0, str(PCG_ROOT))
 
@@ -17,11 +17,11 @@ from pcg_benchmark.probs.sokoban.problem import SokobanProblem  # type: ignore[r
 
 KEY = "sokoban"
 
-DEFAULT_SOLVER_POWER = 500_000_000
+DEFAULT_SOLVER_POWER = 50_000
 
 DEFAULTS = {
-    "maps_file": "scenarios/sokoban/map.json",
-    "criteria_file": "scenarios/sokoban/evaluation.json",
+    "maps_file": str(package_resource("sokoban", "map.json")),
+    "criteria_file": str(package_resource("sokoban", "evaluation.json")),
     "output_dir": "outputs/procedural_sokoban",
     "profile_key": "sokoban",
 }

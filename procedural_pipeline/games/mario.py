@@ -2,12 +2,14 @@ import json
 import subprocess
 from pathlib import Path
 
+from procedural_pipeline.paths import package_resource
+
 
 KEY = "mario"
 
 DEFAULTS = {
-    "maps_file": "scenarios/mario/tools/maps.json",
-    "criteria_file": "scenarios/mario/evaluation.json",
+    "maps_file": str(package_resource("mario", "maps.json")),
+    "criteria_file": str(package_resource("mario", "evaluation.json")),
     "output_dir": "outputs/procedural_mario",
     "profile_key": "mario",
 }
@@ -21,6 +23,8 @@ TILE_REPLACEMENTS = str.maketrans({
 })
 
 ALLOWED_TILES = set("MF- X#SCLUD%|?@Q!12otT<>[]*BbEgGkKrRyY")
+MIN_ROWS = 16
+DEFAULT_WIDTH = 64
 
 
 def add_arguments(parser) -> None:
@@ -36,9 +40,10 @@ def normalize_map(map_text: str) -> str:
     replaced = map_text.translate(TILE_REPLACEMENTS)
     raw_lines = [line.rstrip("\r") for line in replaced.splitlines() if line.strip()]
     if not raw_lines:
-        raw_lines = ["-" * 64 for _ in range(14)]
+        raw_lines = ["-" * DEFAULT_WIDTH for _ in range(MIN_ROWS)]
 
     width = max(len(line) for line in raw_lines)
+    raw_lines = _pad_top_to_min_rows(raw_lines, width)
     grid = [list(line.ljust(width, "-")) for line in raw_lines]
     _normalize_enemies(grid)
 
@@ -50,6 +55,13 @@ def normalize_map(map_text: str) -> str:
     return "\n".join(lines)
 
 
+def _pad_top_to_min_rows(lines: list[str], width: int) -> list[str]:
+    if len(lines) >= MIN_ROWS:
+        return lines
+    top_padding = ["-" * width for _ in range(MIN_ROWS - len(lines))]
+    return top_padding + lines
+
+
 def render_map(map_text: str, map_id: str, output_dir: str, args) -> tuple[Path, Path]:
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -58,8 +70,8 @@ def render_map(map_text: str, map_id: str, output_dir: str, args) -> tuple[Path,
     video_path = out_dir / f"{map_id}.mp4"
     map_path.write_text(map_text, encoding="utf-8")
 
-    jar_path = Path("scenarios/mario/PlayAstar.jar")
-    assets_path = Path("scenarios/mario/img").resolve()
+    jar_path = package_resource("mario", "PlayAstar.jar")
+    assets_path = package_resource("mario", "img").resolve()
     cmd = [
         "java",
         "-Djava.awt.headless=true",

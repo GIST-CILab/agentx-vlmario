@@ -1,0 +1,72 @@
+{
+  "num_total_rows": 30,
+  "num_valid_rows": 30,
+  "rq1": {
+    "accuracy": 0.4666666666666667,
+    "fpr": 0.8,
+    "fnr": 0.26666666666666666,
+    "counts": {
+      "tn": 3,
+      "fp": 12,
+      "fn": 4,
+      "tp": 11
+    }
+  },
+  "rq4": {
+    "enjoyment": {
+      "truth_human_mean": 2.2,
+      "truth_ai_mean": 2.533333333333333,
+      "truth_p_value": 0.284414650720145,
+      "truth_u": 87.5,
+      "belief_human_mean": 3.7142857142857144,
+      "belief_ai_mean": 1.9565217391304348,
+      "belief_p_value": 0.0005929782243748667,
+      "belief_u": 13.5,
+      "belief_bias_detected": true
+    },
+    "difficulty": {
+      "truth_human_mean": 1.4,
+      "truth_ai_mean": 1.8,
+      "truth_p_value": 0.08833217851750604,
+      "truth_u": 75.0,
+      "belief_human_mean": 1.5714285714285714,
+      "belief_ai_mean": 1.608695652173913,
+      "belief_p_value": 0.9565751417690828,
+      "belief_u": 79.0,
+      "belief_bias_detected": false
+    },
+    "frustration": {
+      "truth_human_mean": 1.5333333333333334,
+      "truth_ai_mean": 1.3333333333333333,
+      "truth_p_value": 0.653562574291525,
+      "truth_u": 104.0,
+      "belief_human_mean": 1.0,
+      "belief_ai_mean": 1.565217391304348,
+      "belief_p_value": 0.11144460355552052,
+      "belief_u": 56.0,
+      "belief_bias_detected": false
+    },
+    "novelty": {
+      "truth_human_mean": 1.2,
+      "truth_ai_mean": 1.2,
+      "truth_p_value": 0.9761327835084888,
+      "truth_u": 112.5,
+      "belief_human_mean": 1.1428571428571428,
+      "belief_ai_mean": 1.2173913043478262,
+      "belief_p_value": 0.6972444075760068,
+      "belief_u": 74.5,
+      "belief_bias_detected": false
+    },
+    "aesthetics": {
+      "truth_human_mean": 2.0,
+      "truth_ai_mean": 2.3333333333333335,
+      "truth_p_value": 0.3493665087098902,
+      "truth_u": 91.5,
+      "belief_human_mean": 3.857142857142857,
+      "belief_ai_mean": 1.6521739130434783,
+      "belief_p_value": 9.13459985014081e-05,
+      "belief_u": 7.5,
+      "belief_bias_detected": true
+    }
+  }
+}

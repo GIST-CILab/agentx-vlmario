@@ -1,0 +1,6 @@
+﻿metric,forced_ai_n,forced_ai_mean,forced_ai_normalized_mean,forced_ai_std,no_creator_n,no_creator_mean,no_creator_normalized_mean,no_creator_std,forced_human_n,forced_human_mean,forced_human_normalized_mean,forced_human_std,human_minus_ai,normalized_human_minus_ai,paired_n,positive_diffs,negative_diffs,zero_diffs,test,p_value,q_holm,significance
+fun,60,2.297500,-0.351250,0.728966,60,2.727500,-0.136250,0.830582,60,2.572500,-0.213750,0.837390,0.275000,0.137500,60,45,11,4,"paired sign test, two-sided",0.000005,0.000016,***
+challenging,60,1.796667,-0.601667,0.567022,60,2.382500,-0.308750,0.841348,60,2.067500,-0.466250,0.696348,0.270833,0.135417,60,44,10,6,"paired sign test, two-sided",0.000003,0.000014,***
+frustrating,60,1.774167,-0.612917,0.991767,60,2.096667,-0.451667,1.041424,60,1.957500,-0.521250,0.954287,0.183333,0.091667,60,39,13,8,"paired sign test, two-sided",0.000410,0.000819,***
+surprising,60,1.418333,-0.790833,0.429719,60,1.850000,-0.575000,0.751947,60,1.559167,-0.720417,0.462811,0.140833,0.070417,60,38,17,5,"paired sign test, two-sided",0.006456,0.006456,**
+design,60,1.915000,-0.542500,0.647963,60,2.450533,-0.274733,0.867703,60,2.323333,-0.338333,0.844848,0.408333,0.204167,60,50,5,5,"paired sign test, two-sided",0.000000,0.000000,***

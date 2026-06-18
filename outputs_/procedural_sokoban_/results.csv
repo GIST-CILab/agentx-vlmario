@@ -1,0 +1,2 @@
+﻿map_index,map_id,status,map_path,video_path,creator_belief,confidence_level,reasoning_for_creator_belief,enjoyment,difficulty,frustration,novelty,aesthetics,error
+1,2v2qgbvC,ok,outputs\procedural_sokoban\2v2qgbvC.txt,outputs\procedural_sokoban\2v2qgbvC.mp4,Human-designed,3,"The puzzle is compact and requires foresight, which feels like a classic, hand-crafted Sokoban-style challenge.",4,3,1,2,4,

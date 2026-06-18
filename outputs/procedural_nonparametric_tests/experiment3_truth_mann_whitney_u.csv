@@ -1,0 +1,11 @@
+﻿experiment,test,forced_condition,grouping,metric,truth_ai_n,truth_ai_mean,truth_ai_sd,truth_human_n,truth_human_mean,truth_human_sd,truth_human_minus_ai,statistic,p_value,q_holm
+03_forced_creator,"Mann-Whitney U, two-sided",AI,truth,fun,30,2.260000,0.702385,30,2.335000,0.764757,0.075000,423.500000,0.700492,1.000000
+03_forced_creator,"Mann-Whitney U, two-sided",AI,truth,challenging,30,1.875000,0.597661,30,1.718333,0.533124,-0.156667,515.500000,0.336128,1.000000
+03_forced_creator,"Mann-Whitney U, two-sided",AI,truth,frustrating,30,1.771667,0.944100,30,1.776667,1.053462,0.005000,476.000000,0.705095,1.000000
+03_forced_creator,"Mann-Whitney U, two-sided",AI,truth,surprising,30,1.455000,0.446316,30,1.381667,0.416778,-0.073333,496.500000,0.495160,1.000000
+03_forced_creator,"Mann-Whitney U, two-sided",AI,truth,design,30,1.868333,0.606073,30,1.961667,0.694521,0.093333,413.000000,0.589213,1.000000
+03_forced_creator,"Mann-Whitney U, two-sided",Human,truth,fun,30,2.535000,0.860147,30,2.610000,0.826960,0.075000,425.000000,0.717019,1.000000
+03_forced_creator,"Mann-Whitney U, two-sided",Human,truth,challenging,30,2.093333,0.707074,30,2.041667,0.696554,-0.051667,465.000000,0.830067,1.000000
+03_forced_creator,"Mann-Whitney U, two-sided",Human,truth,frustrating,30,2.055000,0.986491,30,1.860000,0.927306,-0.195000,500.000000,0.463819,1.000000
+03_forced_creator,"Mann-Whitney U, two-sided",Human,truth,surprising,30,1.651667,0.476605,30,1.466667,0.436943,-0.185000,564.500000,0.091546,0.915455
+03_forced_creator,"Mann-Whitney U, two-sided",Human,truth,design,30,2.300000,0.847206,30,2.346667,0.856309,0.046667,439.500000,0.882401,1.000000

@@ -1,0 +1,11 @@
+﻿belief_group,metric,llm_mean,paper_mean,absolute_error,group_mae
+AI,fun,1.7,2.92,1.22,1.31
+AI,challenge,2.2,3.88,1.6799999999999997,1.31
+AI,frustration,2.6,3.6,1.0,1.31
+AI,surprise,1.6,2.65,1.0499999999999998,1.31
+AI,design,1.1,2.7,1.6,1.31
+Human,fun,,3.72,,
+Human,challenge,,3.65,,
+Human,frustration,,2.84,,
+Human,surprise,,2.62,,
+Human,design,,3.57,,

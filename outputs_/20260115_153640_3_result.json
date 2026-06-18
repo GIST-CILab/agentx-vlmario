@@ -1,0 +1,30 @@
+{
+  "domain": "mario",
+  "created_at": "2026-01-15T15:42:23.068552+00:00",
+  "score": 5.0,
+  "max_score": 20.0,
+  "task_rewards": {
+    "composition": 2,
+    "composition_reason": "The map includes a starting point, platforms, enemies, and item blocks. However, a final goal, such as a flagpole, is conspicuously absent from the visible portion of the level, making it fundamentally incomplete.",
+    "probability": 2,
+    "probability_reason": "While some elements like floating blocks are standard, the level contains several structures that violate the game's physical logic. The most glaring example is a segment of a pipe floating in mid-air above the main pipe, which is an impossible configuration in the original Super Mario Bros.",
+    "completeness": 3,
+    "completeness_reason": "The placement of enemies and blocks offers minimal strategic depth. The player must make basic jumps and decide whether to hit item blocks. However, the level's disjointed and illogical structure fails to create a cohesive experience that encourages meaningful decision-making.",
+    "aesthetics": 2,
+    "aesthetics_reason": "The map lacks any visual theme or coherence. The elements appear randomly placed with large empty spaces, creating a disjointed and aesthetically unappealing layout. The overall design feels empty and haphazard.",
+    "originality": 3,
+    "originality_reason": "The level features a highly unusual floating pipe structure. While this is technically original, it stems from a misunderstanding of the game's mechanics rather than creative design. The rest of the level uses common elements without any innovative twists.",
+    "fairness": 7,
+    "fairness_reason": "All obstacles and enemies are presented in a clear and straightforward manner. There are no hidden traps or sudden hazards, making the challenges entirely predictable and fair for the player.",
+    "fun": 1,
+    "fun_reason": "The level's sparse, disjointed, and illogical design makes it unlikely to be enjoyable. The lack of flow, challenge, and a clear objective results in a boring and unengaging gameplay experience.",
+    "difficulty": 1,
+    "difficulty_reason": "The map presents only the most basic obstacles, such as a single Goomba and simple jumps. The overall challenge is minimal, resulting in a very easy difficulty level."
+  },
+  "time_used": 0.0,
+  "role": "agent",
+  "map_index": 3,
+  "map": "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n----------------------------o-o-o----------------------------------------------------------------------------------------------------------------------------------------------------\n---------------------------%%%%%%%---------------------------------------------------------------------------------------------------------------------------------------------------\n-----------------?-U-?--------------------------------------------------------------------------------------------------------------------------------------------#------------------\n-------------------------------------------------------------------------------------------------------------------------------------------------------------------##----------------\n----------------------------------------------------------------------------------------------------------k-------------------------------------------------------###----------------\n----------------------------------------------------------t------------------------------------------XXXXXXXXXXX--------------------------------------------------####---------------\n-----------------g-----------------------------------------t-------------------------------------------------------------------------*---------------------------#####-------------F-\nM-------------------------------------%%%------------------t----------------S-S-S-S-S--------------------------------------------------*--------------------------######------------X\nXXXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXX-----------------t----------------XXXXXXXXXXXXXXXXXXXX---------------------------------------*-------------------------#######-----------XX\nXXXXXXXXXXXXXXXXXXXXX----XXXXXXXXXXXXXXXXX-----------------t----------------XXXXXXXXXXXXXXXXXXXX---------------------------------------------------------------########----------XXX-\n-----------------------------------------------------------t-------------------------------------------------------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-",
+  "video_base64": null,
+  "explain": "This map is a short, disjointed stage featuring a few basic elements like a Goomba, Buzzy Beetles, a small pit, and item blocks. The level is composed of sparse, disconnected platforms and includes structures that defy the game's logic, such as a floating pipe segment. A clear objective or end goal is not visible, suggesting the map is incomplete."
+}

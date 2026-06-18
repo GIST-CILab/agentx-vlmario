@@ -1,0 +1,67 @@
+{
+  "game_profile": {
+    "game_name": "Sokoban",
+    "subject_noun": "level",
+    "verb": "playing",
+    "observation_cue": "the layout, box and goal placement, and how the player pushes boxes onto targets"
+  },
+  "model": "google/gemini-2.5-pro",
+  "prompt": "You are designing a standardized evaluation protocol for gameplay videos of Sokoban levels.\nA reviewer will watch a short video of a player playing the level and rate it against the criteria below on a 1-5 Likert scale.\n\nEvaluation Criteria:\n- fun: It was fun to play.\n- challenging: It was very challenging.\n- frustrating: I felt frustrated while playing it.\n- surprising: It had surprises or unexpected elements.\n- design: The layout felt well-designed and high-quality.\n- Scale: 1=Strongly disagree, 2=Somewhat disagree, 3=Neither agree nor disagree, 4=Somewhat agree, 5=Strongly agree.\n\nEvaluation Steps:\nGenerate a concise numbered chain-of-thoughts (4-6 steps) that the reviewer should follow to evaluate the video against ALL five criteria above. The steps must be objective, game-agnostic within this genre, and applicable to any level. Focus on the layout, box and goal placement, and how the player pushes boxes onto targets.\n\nReturn strict JSON only:\n{\"evaluation_steps\": [\"1. ...\", \"2. ...\", \"3. ...\", \"4. ...\"]}",
+  "raw_response_text": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1778600032-T1XkP7A3xbVYMdIQ8eXO\",\"object\":\"chat.completion\",\"created\":1778600032,\"model\":\"google/gemini-2.5-pro\",\"provider\":\"Google\",\"system_fingerprint\":null,\"service_tier\":\"standard\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"STOP\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"evaluation_steps\\\": [\\n    \\\"1. Initial layout assessment: Analyze the initial placement of the player, boxes, and goals. Evaluate the clarity and apparent difficulty of the puzzle's starting state to form a first impression of its design.\\\",\\n    \\\"2. Observe player's opening moves: Watch how the player begins to solve the puzzle. Note if the initial box pushes are straightforward or immediately require complex, multi-step planning. This helps gauge the initial challenge and potential for frustration.\\\",\\n    \\\"3. Identify key puzzle mechanics and choke points: As the video progresses, identify areas where boxes can become permanently stuck or where intricate sequences of pushes are required. Assess if these moments create a satisfying challenge or feel like unfair traps, contributing to the 'frustrating' and 'challenging' scores.\\\",\\n    \\\"4. Look for clever or surprising interactions: Pay attention to any non-obvious solutions, emergent box interactions, or an 'aha!' moment where the player discovers a unique trick required to solve a section. This directly informs the 'surprising' rating.\\\",\\n    \\\"5. Evaluate the endgame and solution elegance: Observe the final sequence of moves as the last boxes are placed. A well-designed level often has an elegant or clean finish, whereas a poorly designed one might end with tedious, repetitive movements. This reflects on the overall 'design' and 'fun' qualities.\\\",\\n    \\\"6. Synthesize observations for final ratings: Consolidate the notes from all previous steps. Rate the level's overall 'fun' based on the balance of challenge and solvability, 'challenging' on the complexity of the observed solution, 'frustrating' on the prevalence of dead-ends, 'surprising' on the cleverness of its mechanics, and 'design' on the coherence and elegance of the entire puzzle layout.\\\"\\n  ]\\n}\",\"refusal\":null}}],\"usage\":{\"prompt_tokens\":252,\"completion_tokens\":452,\"total_tokens\":704,\"cost\":0.004835,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.004835,\"upstream_inference_prompt_cost\":0.000315,\"upstream_inference_completions_cost\":0.00452},\"completion_tokens_details\":{\"reasoning_tokens\":66,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "raw_response_json": {
+    "id": "gen-1778600032-T1XkP7A3xbVYMdIQ8eXO",
+    "object": "chat.completion",
+    "created": 1778600032,
+    "model": "google/gemini-2.5-pro",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "standard",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"evaluation_steps\": [\n    \"1. Initial layout assessment: Analyze the initial placement of the player, boxes, and goals. Evaluate the clarity and apparent difficulty of the puzzle's starting state to form a first impression of its design.\",\n    \"2. Observe player's opening moves: Watch how the player begins to solve the puzzle. Note if the initial box pushes are straightforward or immediately require complex, multi-step planning. This helps gauge the initial challenge and potential for frustration.\",\n    \"3. Identify key puzzle mechanics and choke points: As the video progresses, identify areas where boxes can become permanently stuck or where intricate sequences of pushes are required. Assess if these moments create a satisfying challenge or feel like unfair traps, contributing to the 'frustrating' and 'challenging' scores.\",\n    \"4. Look for clever or surprising interactions: Pay attention to any non-obvious solutions, emergent box interactions, or an 'aha!' moment where the player discovers a unique trick required to solve a section. This directly informs the 'surprising' rating.\",\n    \"5. Evaluate the endgame and solution elegance: Observe the final sequence of moves as the last boxes are placed. A well-designed level often has an elegant or clean finish, whereas a poorly designed one might end with tedious, repetitive movements. This reflects on the overall 'design' and 'fun' qualities.\",\n    \"6. Synthesize observations for final ratings: Consolidate the notes from all previous steps. Rate the level's overall 'fun' based on the balance of challenge and solvability, 'challenging' on the complexity of the observed solution, 'frustrating' on the prevalence of dead-ends, 'surprising' on the cleverness of its mechanics, and 'design' on the coherence and elegance of the entire puzzle layout.\"\n  ]\n}",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 452,
+      "total_tokens": 704,
+      "cost": 0.004835,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004835,
+        "upstream_inference_prompt_cost": 0.000315,
+        "upstream_inference_completions_cost": 0.00452
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 66,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "parsed": {
+    "evaluation_steps": [
+      "1. Initial layout assessment: Analyze the initial placement of the player, boxes, and goals. Evaluate the clarity and apparent difficulty of the puzzle's starting state to form a first impression of its design.",
+      "2. Observe player's opening moves: Watch how the player begins to solve the puzzle. Note if the initial box pushes are straightforward or immediately require complex, multi-step planning. This helps gauge the initial challenge and potential for frustration.",
+      "3. Identify key puzzle mechanics and choke points: As the video progresses, identify areas where boxes can become permanently stuck or where intricate sequences of pushes are required. Assess if these moments create a satisfying challenge or feel like unfair traps, contributing to the 'frustrating' and 'challenging' scores.",
+      "4. Look for clever or surprising interactions: Pay attention to any non-obvious solutions, emergent box interactions, or an 'aha!' moment where the player discovers a unique trick required to solve a section. This directly informs the 'surprising' rating.",
+      "5. Evaluate the endgame and solution elegance: Observe the final sequence of moves as the last boxes are placed. A well-designed level often has an elegant or clean finish, whereas a poorly designed one might end with tedious, repetitive movements. This reflects on the overall 'design' and 'fun' qualities.",
+      "6. Synthesize observations for final ratings: Consolidate the notes from all previous steps. Rate the level's overall 'fun' based on the balance of challenge and solvability, 'challenging' on the complexity of the observed solution, 'frustrating' on the prevalence of dead-ends, 'surprising' on the cleverness of its mechanics, and 'design' on the coherence and elegance of the entire puzzle layout."
+    ]
+  },
+  "text": "1. Initial layout assessment: Analyze the initial placement of the player, boxes, and goals. Evaluate the clarity and apparent difficulty of the puzzle's starting state to form a first impression of its design.\n2. Observe player's opening moves: Watch how the player begins to solve the puzzle. Note if the initial box pushes are straightforward or immediately require complex, multi-step planning. This helps gauge the initial challenge and potential for frustration.\n3. Identify key puzzle mechanics and choke points: As the video progresses, identify areas where boxes can become permanently stuck or where intricate sequences of pushes are required. Assess if these moments create a satisfying challenge or feel like unfair traps, contributing to the 'frustrating' and 'challenging' scores.\n4. Look for clever or surprising interactions: Pay attention to any non-obvious solutions, emergent box interactions, or an 'aha!' moment where the player discovers a unique trick required to solve a section. This directly informs the 'surprising' rating.\n5. Evaluate the endgame and solution elegance: Observe the final sequence of moves as the last boxes are placed. A well-designed level often has an elegant or clean finish, whereas a poorly designed one might end with tedious, repetitive movements. This reflects on the overall 'design' and 'fun' qualities.\n6. Synthesize observations for final ratings: Consolidate the notes from all previous steps. Rate the level's overall 'fun' based on the balance of challenge and solvability, 'challenging' on the complexity of the observed solution, 'frustrating' on the prevalence of dead-ends, 'surprising' on the cleverness of its mechanics, and 'design' on the coherence and elegance of the entire puzzle layout."
+}

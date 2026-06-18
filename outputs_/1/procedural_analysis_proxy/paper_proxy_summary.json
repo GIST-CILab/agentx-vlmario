@@ -1,0 +1,123 @@
+{
+  "num_total_rows": 30,
+  "num_valid_rows": 30,
+  "rq1_proxy": {
+    "llm_accuracy": 0.5,
+    "paper_human_accuracy": 0.53,
+    "accuracy_gap": -0.030000000000000027
+  },
+  "internal_bias": {
+    "fun": {
+      "belief_human_mean": null,
+      "belief_ai_mean": 1.7,
+      "paper_trend": "Human > AI",
+      "llm_trend": null,
+      "trend_matches_paper": null,
+      "u_stat": null,
+      "p_value": null,
+      "significant": false
+    },
+    "challenge": {
+      "belief_human_mean": null,
+      "belief_ai_mean": 2.2,
+      "paper_trend": "AI > Human",
+      "llm_trend": null,
+      "trend_matches_paper": null,
+      "u_stat": null,
+      "p_value": null,
+      "significant": false
+    },
+    "frustration": {
+      "belief_human_mean": null,
+      "belief_ai_mean": 2.6,
+      "paper_trend": "AI > Human",
+      "llm_trend": null,
+      "trend_matches_paper": null,
+      "u_stat": null,
+      "p_value": null,
+      "significant": false
+    },
+    "surprise": {
+      "belief_human_mean": null,
+      "belief_ai_mean": 1.6,
+      "paper_trend": "AI > Human",
+      "llm_trend": null,
+      "trend_matches_paper": null,
+      "u_stat": null,
+      "p_value": null,
+      "significant": false
+    },
+    "design": {
+      "belief_human_mean": null,
+      "belief_ai_mean": 1.1,
+      "paper_trend": "Human > AI",
+      "llm_trend": null,
+      "trend_matches_paper": null,
+      "u_stat": null,
+      "p_value": null,
+      "significant": false
+    }
+  },
+  "paper_mean_comparison": {
+    "AI": {
+      "metrics": {
+        "fun": {
+          "llm_mean": 1.7,
+          "paper_mean": 2.92,
+          "absolute_error": 1.22
+        },
+        "challenge": {
+          "llm_mean": 2.2,
+          "paper_mean": 3.88,
+          "absolute_error": 1.6799999999999997
+        },
+        "frustration": {
+          "llm_mean": 2.6,
+          "paper_mean": 3.6,
+          "absolute_error": 1.0
+        },
+        "surprise": {
+          "llm_mean": 1.6,
+          "paper_mean": 2.65,
+          "absolute_error": 1.0499999999999998
+        },
+        "design": {
+          "llm_mean": 1.1,
+          "paper_mean": 2.7,
+          "absolute_error": 1.6
+        }
+      },
+      "group_mae": 1.31
+    },
+    "Human": {
+      "metrics": {
+        "fun": {
+          "llm_mean": null,
+          "paper_mean": 3.72,
+          "absolute_error": null
+        },
+        "challenge": {
+          "llm_mean": null,
+          "paper_mean": 3.65,
+          "absolute_error": null
+        },
+        "frustration": {
+          "llm_mean": null,
+          "paper_mean": 2.84,
+          "absolute_error": null
+        },
+        "surprise": {
+          "llm_mean": null,
+          "paper_mean": 2.62,
+          "absolute_error": null
+        },
+        "design": {
+          "llm_mean": null,
+          "paper_mean": 3.57,
+          "absolute_error": null
+        }
+      },
+      "group_mae": null
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "num_total_rows": 30,
+  "num_valid_rows": 30,
+  "rq1_proxy": {
+    "llm_accuracy": 0.4666666666666667,
+    "paper_human_accuracy": 0.53,
+    "accuracy_gap": -0.06333333333333335
+  },
+  "internal_bias": {
+    "fun": {
+      "belief_human_mean": 3.7142857142857144,
+      "belief_ai_mean": 1.9565217391304348,
+      "paper_trend": "Human > AI",
+      "llm_trend": "Human > AI",
+      "trend_matches_paper": true,
+      "u_stat": 13.5,
+      "p_value": 0.0005929782243748667,
+      "significant": true
+    },
+    "challenge": {
+      "belief_human_mean": 1.5714285714285714,
+      "belief_ai_mean": 1.608695652173913,
+      "paper_trend": "AI > Human",
+      "llm_trend": "AI > Human",
+      "trend_matches_paper": true,
+      "u_stat": 79.0,
+      "p_value": 0.9565751417690828,
+      "significant": false
+    },
+    "frustration": {
+      "belief_human_mean": 1.0,
+      "belief_ai_mean": 1.565217391304348,
+      "paper_trend": "AI > Human",
+      "llm_trend": "AI > Human",
+      "trend_matches_paper": true,
+      "u_stat": 56.0,
+      "p_value": 0.11144460355552052,
+      "significant": false
+    },
+    "surprise": {
+      "belief_human_mean": 1.1428571428571428,
+      "belief_ai_mean": 1.2173913043478262,
+      "paper_trend": "AI > Human",
+      "llm_trend": "AI > Human",
+      "trend_matches_paper": true,
+      "u_stat": 74.5,
+      "p_value": 0.6972444075760068,
+      "significant": false
+    },
+    "design": {
+      "belief_human_mean": 3.857142857142857,
+      "belief_ai_mean": 1.6521739130434783,
+      "paper_trend": "Human > AI",
+      "llm_trend": "Human > AI",
+      "trend_matches_paper": true,
+      "u_stat": 7.5,
+      "p_value": 9.13459985014081e-05,
+      "significant": true
+    }
+  },
+  "paper_mean_comparison": {
+    "AI": {
+      "metrics": {
+        "fun": {
+          "llm_mean": 1.9565217391304348,
+          "paper_mean": 2.92,
+          "absolute_error": 0.9634782608695651
+        },
+        "challenge": {
+          "llm_mean": 1.608695652173913,
+          "paper_mean": 3.88,
+          "absolute_error": 2.271304347826087
+        },
+        "frustration": {
+          "llm_mean": 1.565217391304348,
+          "paper_mean": 3.6,
+          "absolute_error": 2.034782608695652
+        },
+        "surprise": {
+          "llm_mean": 1.2173913043478262,
+          "paper_mean": 2.65,
+          "absolute_error": 1.4326086956521737
+        },
+        "design": {
+          "llm_mean": 1.6521739130434783,
+          "paper_mean": 2.7,
+          "absolute_error": 1.047826086956522
+        }
+      },
+      "group_mae": 1.55
+    },
+    "Human": {
+      "metrics": {
+        "fun": {
+          "llm_mean": 3.7142857142857144,
+          "paper_mean": 3.72,
+          "absolute_error": 0.005714285714285783
+        },
+        "challenge": {
+          "llm_mean": 1.5714285714285714,
+          "paper_mean": 3.65,
+          "absolute_error": 2.0785714285714283
+        },
+        "frustration": {
+          "llm_mean": 1.0,
+          "paper_mean": 2.84,
+          "absolute_error": 1.8399999999999999
+        },
+        "surprise": {
+          "llm_mean": 1.1428571428571428,
+          "paper_mean": 2.62,
+          "absolute_error": 1.4771428571428573
+        },
+        "design": {
+          "llm_mean": 3.857142857142857,
+          "paper_mean": 3.57,
+          "absolute_error": 0.28714285714285737
+        }
+      },
+      "group_mae": 1.1377142857142857
+    }
+  }
+}

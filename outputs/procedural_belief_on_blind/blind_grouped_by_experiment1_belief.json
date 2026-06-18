@@ -1,0 +1,84 @@
+{
+  "sources": {
+    "experiment1": {
+      "mario": "outputs\\procedural_experiments\\01_creator_judgment\\mario\\results_20260513-003359.csv",
+      "sokoban": "outputs\\procedural_experiments\\01_creator_judgment\\sokoban\\results_20260513-003359.csv"
+    },
+    "blind": {
+      "mario": "outputs\\procedural_experiments\\02_no_creator\\mario\\results_20260513-003525.csv",
+      "sokoban": "outputs\\procedural_experiments\\02_no_creator\\sokoban\\results_20260513-005549.csv"
+    }
+  },
+  "num_joined": 60,
+  "belief_counts": {
+    "AI": 28,
+    "Human": 32
+  },
+  "rows": [
+    {
+      "metric": "fun",
+      "n_belief_ai": 28,
+      "belief_ai_mean_blind": 2.1732142857142858,
+      "belief_ai_sd_blind": 0.7278179135909718,
+      "n_belief_human": 32,
+      "belief_human_mean_blind": 3.2125,
+      "belief_human_sd_blind": 0.5755782506146712,
+      "human_minus_ai": 1.0392857142857141,
+      "mann_whitney_u": 128.5,
+      "p_value": 2.236103906207829e-06,
+      "q_holm": 8.944415624831316e-06
+    },
+    {
+      "metric": "challenging",
+      "n_belief_ai": 28,
+      "belief_ai_mean_blind": 2.3339285714285714,
+      "belief_ai_sd_blind": 0.9348255503161055,
+      "n_belief_human": 32,
+      "belief_human_mean_blind": 2.425,
+      "belief_human_sd_blind": 0.7629526683835298,
+      "human_minus_ai": 0.09107142857142847,
+      "mann_whitney_u": 421.0,
+      "p_value": 0.6944490477948502,
+      "q_holm": 0.6944490477948502
+    },
+    {
+      "metric": "frustrating",
+      "n_belief_ai": 28,
+      "belief_ai_mean_blind": 2.5928571428571425,
+      "belief_ai_sd_blind": 1.247197917534601,
+      "n_belief_human": 32,
+      "belief_human_mean_blind": 1.6625,
+      "belief_human_sd_blind": 0.5407581297019118,
+      "human_minus_ai": -0.9303571428571424,
+      "mann_whitney_u": 634.5,
+      "p_value": 0.005802847840602011,
+      "q_holm": 0.01740854352180603
+    },
+    {
+      "metric": "surprising",
+      "n_belief_ai": 28,
+      "belief_ai_mean_blind": 2.105357142857143,
+      "belief_ai_sd_blind": 0.8135813926950902,
+      "n_belief_human": 32,
+      "belief_human_mean_blind": 1.6265625,
+      "belief_human_sd_blind": 0.623851767830954,
+      "human_minus_ai": -0.47879464285714324,
+      "mann_whitney_u": 593.5,
+      "p_value": 0.03152323698591889,
+      "q_holm": 0.06304647397183778
+    },
+    {
+      "metric": "design",
+      "n_belief_ai": 28,
+      "belief_ai_mean_blind": 1.858285714285714,
+      "belief_ai_sd_blind": 0.6614546739681304,
+      "n_belief_human": 32,
+      "belief_human_mean_blind": 2.96875,
+      "belief_human_sd_blind": 0.6766556755291472,
+      "human_minus_ai": 1.110464285714286,
+      "mann_whitney_u": 112.5,
+      "p_value": 6.804476278208347e-07,
+      "q_holm": 3.4022381391041734e-06
+    }
+  ]
+}

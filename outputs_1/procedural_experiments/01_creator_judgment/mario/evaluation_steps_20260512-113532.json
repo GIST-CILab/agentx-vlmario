@@ -1,0 +1,66 @@
+{
+  "game_profile": {
+    "game_name": "Super Mario Bros",
+    "subject_noun": "level",
+    "verb": "playing",
+    "observation_cue": "the layout, enemy placement, difficulty flow, and how the player interacts with the world"
+  },
+  "model": "google/gemini-2.5-pro",
+  "prompt": "You are designing a standardized evaluation protocol for gameplay videos of Super Mario Bros levels.\nA reviewer will watch a short video of a player playing the level and rate it against the criteria below on a 1-5 Likert scale.\n\nEvaluation Criteria:\n- enjoyment: It was fun to play. (Measures the fundamental enjoyment and fun of the gameplay.)\n- difficulty: It was very challenging. (Measures cognitive and operational difficulty, as well as the desire for challenge.)\n- frustration: I felt frustrated while playing it. (Captures negative emotions, feelings of unfairness, or feeling stuck.)\n- novelty: It had surprises or unexpected elements. (Evaluates novelty or unexpectedness compared to existing games.)\n- aesthetics: The layout felt well-designed and high quality. (Assesses the completeness of the level composition and visual harmony.)\n\nEvaluation Steps:\nGenerate a concise numbered chain-of-thoughts (4-6 steps) that the reviewer should follow to evaluate the video against ALL five criteria above. The steps must be objective, game-agnostic within this genre, and applicable to any level. Focus on the layout, enemy placement, difficulty flow, and how the player interacts with the world.\n\nReturn strict JSON only:\n{\"evaluation_steps\": [\"1. ...\", \"2. ...\", \"3. ...\", \"4. ...\"]}",
+  "raw_response_text": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1778553332-MZmaeWWY6wGsAZiDDbAi\",\"object\":\"chat.completion\",\"created\":1778553332,\"model\":\"google/gemini-2.5-pro\",\"provider\":\"Google\",\"system_fingerprint\":null,\"service_tier\":\"standard\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"STOP\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"evaluation_steps\\\": [\\n    \\\"1. Initial Impression: Observe the level's overall visual layout and initial player actions. Does the opening introduce the level's core mechanics or themes clearly? Assess the immediate 'aesthetics' and potential for 'novelty' from the first few seconds.\\\",\\n    \\\"2. Core Gameplay Loop: Analyze the primary obstacles and challenges presented (e.g., jump sequences, enemy patterns). Evaluate the 'difficulty' of these challenges and observe the player's reactions. Does the player seem engaged and having fun ('enjoyment'), or are they struggling in a way that suggests 'frustration'?\\\",\\n    \\\"3. Pacing and Flow: Trace the player's path through the level. Is there a clear progression of 'difficulty', with challenges building on each other? Or are there sudden, unfair spikes? Assess how the level's 'aesthetics' contribute to or detract from a smooth player experience.\\\",\\n    \\\"4. Player Interaction and Feedback: Watch for moments of surprise, discovery, or clever design ('novelty'). Note how the player navigates tricky sections. Does success feel rewarding ('enjoyment')? Do failures seem fair or cheap ('frustration')?\\\",\\n    \\\"5. Final Synthesis: Consider the entire playthrough, from start to finish. Synthesize observations from the previous steps to assign a final 1-5 rating for each of the five criteria: 'enjoyment', 'difficulty', 'frustration', 'novelty', and 'aesthetics', based on the complete gameplay experience shown in the video.\\\"\\n  ]\\n}\",\"refusal\":null}}],\"usage\":{\"prompt_tokens\":281,\"completion_tokens\":382,\"total_tokens\":663,\"cost\":0.00417125,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00417125,\"upstream_inference_prompt_cost\":0.00035125,\"upstream_inference_completions_cost\":0.00382},\"completion_tokens_details\":{\"reasoning_tokens\":54,\"image_tokens\":0,\"audio_tokens\":0}}}",
+  "raw_response_json": {
+    "id": "gen-1778553332-MZmaeWWY6wGsAZiDDbAi",
+    "object": "chat.completion",
+    "created": 1778553332,
+    "model": "google/gemini-2.5-pro",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "standard",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"evaluation_steps\": [\n    \"1. Initial Impression: Observe the level's overall visual layout and initial player actions. Does the opening introduce the level's core mechanics or themes clearly? Assess the immediate 'aesthetics' and potential for 'novelty' from the first few seconds.\",\n    \"2. Core Gameplay Loop: Analyze the primary obstacles and challenges presented (e.g., jump sequences, enemy patterns). Evaluate the 'difficulty' of these challenges and observe the player's reactions. Does the player seem engaged and having fun ('enjoyment'), or are they struggling in a way that suggests 'frustration'?\",\n    \"3. Pacing and Flow: Trace the player's path through the level. Is there a clear progression of 'difficulty', with challenges building on each other? Or are there sudden, unfair spikes? Assess how the level's 'aesthetics' contribute to or detract from a smooth player experience.\",\n    \"4. Player Interaction and Feedback: Watch for moments of surprise, discovery, or clever design ('novelty'). Note how the player navigates tricky sections. Does success feel rewarding ('enjoyment')? Do failures seem fair or cheap ('frustration')?\",\n    \"5. Final Synthesis: Consider the entire playthrough, from start to finish. Synthesize observations from the previous steps to assign a final 1-5 rating for each of the five criteria: 'enjoyment', 'difficulty', 'frustration', 'novelty', and 'aesthetics', based on the complete gameplay experience shown in the video.\"\n  ]\n}",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 281,
+      "completion_tokens": 382,
+      "total_tokens": 663,
+      "cost": 0.00417125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00417125,
+        "upstream_inference_prompt_cost": 0.00035125,
+        "upstream_inference_completions_cost": 0.00382
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 54,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "parsed": {
+    "evaluation_steps": [
+      "1. Initial Impression: Observe the level's overall visual layout and initial player actions. Does the opening introduce the level's core mechanics or themes clearly? Assess the immediate 'aesthetics' and potential for 'novelty' from the first few seconds.",
+      "2. Core Gameplay Loop: Analyze the primary obstacles and challenges presented (e.g., jump sequences, enemy patterns). Evaluate the 'difficulty' of these challenges and observe the player's reactions. Does the player seem engaged and having fun ('enjoyment'), or are they struggling in a way that suggests 'frustration'?",
+      "3. Pacing and Flow: Trace the player's path through the level. Is there a clear progression of 'difficulty', with challenges building on each other? Or are there sudden, unfair spikes? Assess how the level's 'aesthetics' contribute to or detract from a smooth player experience.",
+      "4. Player Interaction and Feedback: Watch for moments of surprise, discovery, or clever design ('novelty'). Note how the player navigates tricky sections. Does success feel rewarding ('enjoyment')? Do failures seem fair or cheap ('frustration')?",
+      "5. Final Synthesis: Consider the entire playthrough, from start to finish. Synthesize observations from the previous steps to assign a final 1-5 rating for each of the five criteria: 'enjoyment', 'difficulty', 'frustration', 'novelty', and 'aesthetics', based on the complete gameplay experience shown in the video."
+    ]
+  },
+  "text": "1. Initial Impression: Observe the level's overall visual layout and initial player actions. Does the opening introduce the level's core mechanics or themes clearly? Assess the immediate 'aesthetics' and potential for 'novelty' from the first few seconds.\n2. Core Gameplay Loop: Analyze the primary obstacles and challenges presented (e.g., jump sequences, enemy patterns). Evaluate the 'difficulty' of these challenges and observe the player's reactions. Does the player seem engaged and having fun ('enjoyment'), or are they struggling in a way that suggests 'frustration'?\n3. Pacing and Flow: Trace the player's path through the level. Is there a clear progression of 'difficulty', with challenges building on each other? Or are there sudden, unfair spikes? Assess how the level's 'aesthetics' contribute to or detract from a smooth player experience.\n4. Player Interaction and Feedback: Watch for moments of surprise, discovery, or clever design ('novelty'). Note how the player navigates tricky sections. Does success feel rewarding ('enjoyment')? Do failures seem fair or cheap ('frustration')?\n5. Final Synthesis: Consider the entire playthrough, from start to finish. Synthesize observations from the previous steps to assign a final 1-5 rating for each of the five criteria: 'enjoyment', 'difficulty', 'frustration', 'novelty', and 'aesthetics', based on the complete gameplay experience shown in the video."
+}

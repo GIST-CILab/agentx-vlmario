@@ -1,0 +1,181 @@
+{
+  "description": "Experiment 3 forced-creator ratings grouped by the creator belief observed in Experiment 1 for the same map.",
+  "sources": {
+    "experiment1": {
+      "mario": "outputs\\procedural_experiments\\01_creator_judgment\\mario\\results_20260513-003359.csv",
+      "sokoban": "outputs\\procedural_experiments\\01_creator_judgment\\sokoban\\results_20260513-003359.csv"
+    },
+    "forced_ai": {
+      "mario": "outputs\\procedural_experiments\\03_forced_creator\\mario\\ai\\results_20260513-011549.csv",
+      "sokoban": "outputs\\procedural_experiments\\03_forced_creator\\sokoban\\ai\\results_20260513-015549.csv"
+    },
+    "forced_human": {
+      "mario": "outputs\\procedural_experiments\\03_forced_creator\\mario\\human\\results_20260513-013549.csv",
+      "sokoban": "outputs\\procedural_experiments\\03_forced_creator\\sokoban\\human\\results_20260513-021601.csv"
+    }
+  },
+  "num_rows": 120,
+  "group_counts": {
+    "AI": {
+      "AI": 28,
+      "Human": 32
+    },
+    "Human": {
+      "AI": 28,
+      "Human": 32
+    }
+  },
+  "test": "Mann-Whitney U, two-sided; q_holm is Holm-Bonferroni corrected across all 10 tests.",
+  "rows": [
+    {
+      "forced_condition": "AI",
+      "metric": "fun",
+      "title": "fun",
+      "belief_ai_n": 28,
+      "belief_ai_mean": 1.8732142857142857,
+      "belief_ai_sd": 0.6780257482897795,
+      "belief_human_n": 32,
+      "belief_human_mean": 2.66875,
+      "belief_human_sd": 0.5532528442560593,
+      "belief_human_minus_ai": 0.7955357142857145,
+      "mann_whitney_u": 174.5,
+      "p_value": 5.1678356247210715e-05,
+      "q_holm": 0.000361748493730475
+    },
+    {
+      "forced_condition": "AI",
+      "metric": "challenging",
+      "title": "challenging",
+      "belief_ai_n": 28,
+      "belief_ai_mean": 1.7267857142857144,
+      "belief_ai_sd": 0.5787089946848075,
+      "belief_human_n": 32,
+      "belief_human_mean": 1.8578125,
+      "belief_human_sd": 0.5585276403187223,
+      "belief_human_minus_ai": 0.13102678571428572,
+      "mann_whitney_u": 381.5,
+      "p_value": 0.3276697142241828,
+      "q_holm": 0.7601012421071993
+    },
+    {
+      "forced_condition": "AI",
+      "metric": "frustrating",
+      "title": "frustrating",
+      "belief_ai_n": 28,
+      "belief_ai_mean": 2.117857142857143,
+      "belief_ai_sd": 1.312984604414146,
+      "belief_human_n": 32,
+      "belief_human_mean": 1.4734375,
+      "belief_human_sd": 0.41289387353949875,
+      "belief_human_minus_ai": -0.6444196428571429,
+      "mann_whitney_u": 514.0,
+      "p_value": 0.3299233124780645,
+      "q_holm": 0.7601012421071993
+    },
+    {
+      "forced_condition": "AI",
+      "metric": "surprising",
+      "title": "surprising",
+      "belief_ai_n": 28,
+      "belief_ai_mean": 1.5392857142857144,
+      "belief_ai_sd": 0.4439630329241102,
+      "belief_human_n": 32,
+      "belief_human_mean": 1.3125,
+      "belief_human_sd": 0.39370039370059057,
+      "belief_human_minus_ai": -0.22678571428571437,
+      "mann_whitney_u": 593.0,
+      "p_value": 0.03175055686676205,
+      "q_holm": 0.1905033412005723
+    },
+    {
+      "forced_condition": "AI",
+      "metric": "design",
+      "title": "design",
+      "belief_ai_n": 28,
+      "belief_ai_mean": 1.5446428571428572,
+      "belief_ai_sd": 0.545068681658438,
+      "belief_human_n": 32,
+      "belief_human_mean": 2.2390625,
+      "belief_human_sd": 0.5549970030433469,
+      "belief_human_minus_ai": 0.694419642857143,
+      "mann_whitney_u": 169.0,
+      "p_value": 3.638966837251164e-05,
+      "q_holm": 0.0002911173469800931
+    },
+    {
+      "forced_condition": "Human",
+      "metric": "fun",
+      "title": "fun",
+      "belief_ai_n": 28,
+      "belief_ai_mean": 2.0410714285714286,
+      "belief_ai_sd": 0.6893439677114073,
+      "belief_human_n": 32,
+      "belief_human_mean": 3.0375,
+      "belief_human_sd": 0.6651461154052617,
+      "belief_human_minus_ai": 0.9964285714285714,
+      "mann_whitney_u": 138.0,
+      "p_value": 4.456906637522392e-06,
+      "q_holm": 4.011215973770153e-05
+    },
+    {
+      "forced_condition": "Human",
+      "metric": "challenging",
+      "title": "challenging",
+      "belief_ai_n": 28,
+      "belief_ai_mean": 1.8892857142857142,
+      "belief_ai_sd": 0.6679650055783227,
+      "belief_human_n": 32,
+      "belief_human_mean": 2.2234375,
+      "belief_human_sd": 0.6931676210026343,
+      "belief_human_minus_ai": 0.33415178571428594,
+      "mann_whitney_u": 319.5,
+      "p_value": 0.057595541742823976,
+      "q_holm": 0.2879777087141199
+    },
+    {
+      "forced_condition": "Human",
+      "metric": "frustrating",
+      "title": "frustrating",
+      "belief_ai_n": 28,
+      "belief_ai_mean": 2.2464285714285714,
+      "belief_ai_sd": 1.2009971606520058,
+      "belief_human_n": 32,
+      "belief_human_mean": 1.7046875,
+      "belief_human_sd": 0.5792597298944743,
+      "belief_human_minus_ai": -0.5417410714285715,
+      "mann_whitney_u": 540.0,
+      "p_value": 0.17472775687258568,
+      "q_holm": 0.6989110274903427
+    },
+    {
+      "forced_condition": "Human",
+      "metric": "surprising",
+      "title": "surprising",
+      "belief_ai_n": 28,
+      "belief_ai_mean": 1.657142857142857,
+      "belief_ai_sd": 0.527347359996462,
+      "belief_human_n": 32,
+      "belief_human_mean": 1.4734375,
+      "belief_human_sd": 0.38625254462049363,
+      "belief_human_minus_ai": -0.18370535714285707,
+      "mann_whitney_u": 525.5,
+      "p_value": 0.25336708070239977,
+      "q_holm": 0.7601012421071993
+    },
+    {
+      "forced_condition": "Human",
+      "metric": "design",
+      "title": "design",
+      "belief_ai_n": 28,
+      "belief_ai_mean": 1.7660714285714287,
+      "belief_ai_sd": 0.6041605089998192,
+      "belief_human_n": 32,
+      "belief_human_mean": 2.8109375,
+      "belief_human_sd": 0.7173803570024087,
+      "belief_human_minus_ai": 1.0448660714285714,
+      "mann_whitney_u": 124.0,
+      "p_value": 1.6179138438508742e-06,
+      "q_holm": 1.6179138438508743e-05
+    }
+  ]
+}
